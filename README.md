@@ -16,13 +16,15 @@ An agent that researches 100 apps and asks of each one: **could this be an agent
 
 **Accuracy** (blind human audit: 15 apps, 90 claims, sample seed 42, scoring rules fixed before results; see `data/accuracy.json`):
 
-| | Pass 1 | Pass 2 (after loops) | Final |
-|---|---|---|---|
-| Precision on answered | 71.1% (64/90), CI95 61-80% | 68.2% (60/88), CI95 58-77% | matches human by construction |
-| Abstained (Unknown) | 0 | 2 | 0 |
-| Unsupported (excerpt not in page) | 5 | 0 | - |
+| | Pass 1 | Pass 2 (after L0-L4) | Pass 3 (L5, not blind) | Final |
+|---|---|---|---|---|
+| Precision on answered | 71.1% (64/90), CI95 61-80% | 68.2% (60/88), CI95 58-77% | 77.3% (68/88), CI95 68-85% | matches human by construction |
+| Abstained (Unknown) | 0 | 2 | 2 | 0 |
+| Unsupported (excerpt not in page) | 5 | 0 | 0 | - |
 
 All 90 human answers were scorable. The human fixed one data-entry slip in the truth file before the final score: the Salesforce auth row held a public_api answer and now reads OAuth2. See human_log.md.
+
+**Pass 3: the L5 community-MCP sweep, added after the audit.** The audit showed that 10 of the 11 MCP errors were the agent missing a community GitHub server once it had found the vendor's own. `agent/community_mcp.py` runs one Parallel search per app across **all 100 apps**. It accepts a community server only when the GitHub repo name itself contains both the app's name and "mcp", and the owner isn't the vendor. It changed 73 apps' MCP value. On the audit, MCP correctness went from 4 to 12 of 15, and overall precision rose to 77.3%. **This score is not blind:** the loop was designed from the same audit errors it's scored on, so it likely flatters the result. It also added one new error (Salesforce marked "Both" where the human found official only). `data/final.jsonl` is pass 3 plus the human corrections.
 
 **The honest result: the automated loops did not raise precision.** The confidence intervals overlap, so the 3-point drop is noise rather than a gain, and nothing here shows the "lower first pass rising to higher" pattern from the automated loops alone. The rise comes from the human tier. What the loops did achieve:
 - **Grounding.** Unsupported claims fell from 5 to 0. Unverified fields became Unknown instead of staying guesses.
@@ -125,4 +127,5 @@ python -m pytest -q
 - **Known wrong value outside the sample:** Datadog's dev_access came from the OAuth partner-sandbox path. It is left as is, not hand-fixed.
 - **Strict evidence costs coverage.** prod_gate is Unknown for 53 apps because no page stated it directly. Missing evidence is not proof of absence.
 - **The Composio catalog is a snapshot** (1,842 toolkits via REST), and `toolkits.get()` in SDK 0.34.0 returns at most 1,000. The aliases are hand-verified by listing each toolkit's tools.
+- **L5 vendor check is name-based:** LiveAgent's match (QualityUnit/liveagent-mcp-server) is the vendor's own org, so marking it "Both" is likely wrong. Pass 3 changes outside the audit sample were not hand-checked.
 - **Public docs only.** Nothing was checked by signing up or logging in.

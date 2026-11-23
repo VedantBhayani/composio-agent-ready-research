@@ -115,32 +115,97 @@
 {"app_id": 100, "app": "Grain", "field": "prod_gate", "old": "None", "new": "Unknown", "loop": "unverified->Unknown", "reason": "L0: no excerpt found verbatim in a fetched page"}
 {"app_id": 5, "app": "Twenty", "field": "dev_access", "old": "Unknown", "new": "Free self-serve", "loop": "L4", "reason": "browser evidence: The excerpt only shows how to create an API key in the developer settings but does not indicate whether this is free, requires a paid plan, or is self-service. No evidence of free self-service or paywall is provided."}
 {"app_id": 1, "app": "Salesforce", "field": "prod_gate", "old": "Unknown", "new": "Partner program", "loop": "L4", "reason": "browser evidence: The excerpt explicitly states that joining the Partner Program requires an application, indicating that a partner program approval gate exists."}
+{"app_id": 81, "app": "Stripe", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/seayniclabs/stripe-mcp (designed after audit; not blind)"}
+{"app_id": 3, "app": "Pipedrive", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/WillDent/pipedrive-mcp-server (designed after audit; not blind)"}
+{"app_id": 33, "app": "LinkedIn Ads", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/Nuraveda/linkedin-ads-mcp (designed after audit; not blind)"}
+{"app_id": 6, "app": "Podio", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/phases/mcp-server-for-podio (designed after audit; not blind)"}
+{"app_id": 7, "app": "Zoho CRM", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/LokiMCPUniverse/zoho-crm-mcp-server (designed after audit; not blind)"}
+{"app_id": 4, "app": "Attio", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/redriverwest/attio-mcp (designed after audit; not blind)"}
+{"app_id": 2, "app": "HubSpot", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/promptmetrics/hubspot-mcp (designed after audit; not blind)"}
+{"app_id": 9, "app": "Copper", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/OfirOhan/copper-mcp (designed after audit; not blind)"}
+{"app_id": 5, "app": "Twenty", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/mhenry3164/twenty-crm-mcp-server (designed after audit; not blind)"}
+{"app_id": 1, "app": "Salesforce", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/advancedcommunities/salesforce-mcp-server (designed after audit; not blind)"}
+{"app_id": 12, "app": "Intercom", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/raoulbia-ai/mcp-server-for-intercom (designed after audit; not blind)"}
+{"app_id": 14, "app": "Front", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/jp-pfh/front-mcp-server (designed after audit; not blind)"}
+{"app_id": 17, "app": "Plain", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/rembaumann/plain-mcp-server (designed after audit; not blind)"}
+{"app_id": 15, "app": "Pylon", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/Carter-S/pylon-mcp (designed after audit; not blind)"}
+{"app_id": 16, "app": "LiveAgent", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/QualityUnit/liveagent-mcp-server (designed after audit; not blind)"}
+{"app_id": 18, "app": "Help Scout", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/drewburchfield/help-scout-mcp-server (designed after audit; not blind)"}
+{"app_id": 19, "app": "Gorgias", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/benpalmer1/gorgias-mcp-server (designed after audit; not blind)"}
+{"app_id": 21, "app": "Slack", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/korotovsky/slack-mcp-server (designed after audit; not blind)"}
+{"app_id": 26, "app": "Discord", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/SaseQ/discord-mcp (designed after audit; not blind)"}
+{"app_id": 24, "app": "Lark (Larksuite)", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/haudnn/lark-mcp (designed after audit; not blind)"}
+{"app_id": 22, "app": "Twilio", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/griffinwork40/twilio-mcp (designed after audit; not blind)"}
+{"app_id": 29, "app": "Aircall", "field": "mcp", "old": "Unknown", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/CassiaResearch/aircall-mcp-server (designed after audit; not blind)"}
+{"app_id": 25, "app": "Pumble", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/nitindermohan/pumble-mcp (designed after audit; not blind)"}
+{"app_id": 13, "app": "Freshdesk", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/hashcott/freshdesk-mcp (designed after audit; not blind)"}
+{"app_id": 28, "app": "WhatsApp Business", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/tkhattar14/whatsapp-business-mcp (designed after audit; not blind)"}
+{"app_id": 30, "app": "Vonage", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/mobilebiz/vonage-mcp-server (designed after audit; not blind)"}
+{"app_id": 31, "app": "Google Ads", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/get-mcp-ads/google-ads-mcp-server (designed after audit; not blind)"}
+{"app_id": 35, "app": "Mailchimp", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/cyanheads/mailchimp-mcp-server (designed after audit; not blind)"}
+{"app_id": 32, "app": "Meta Ads", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/byadsco/meta-ads-mcp (designed after audit; not blind)"}
+{"app_id": 36, "app": "Klaviyo", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/scalably-io/klaviyo-mcp (designed after audit; not blind)"}
+{"app_id": 34, "app": "GoHighLevel", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/drausal/gohighlevel-mcp (designed after audit; not blind)"}
+{"app_id": 39, "app": "Threads (Meta)", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/schrab/threads-mcp (designed after audit; not blind)"}
+{"app_id": 43, "app": "BigCommerce", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/isaacgounton/bigcommerce-api-mcp (designed after audit; not blind)"}
+{"app_id": 38, "app": "Pinterest", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/aymandakirgh/pinterest-mcp (designed after audit; not blind)"}
+{"app_id": 46, "app": "Squarespace", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/timncox/squarespace-mcp (designed after audit; not blind)"}
+{"app_id": 51, "app": "DataForSEO", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/Skobyn/dataforseo-mcp-server (designed after audit; not blind)"}
+{"app_id": 41, "app": "Shopify", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/scalably-io/shopify-mcp (designed after audit; not blind)"}
+{"app_id": 53, "app": "Ahrefs", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/newilu/ahrefs-mcp (designed after audit; not blind)"}
+{"app_id": 55, "app": "Apify", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/ampcome-mcps/apify-mcp (designed after audit; not blind)"}
+{"app_id": 48, "app": "Gumroad", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/stcmain/gumroad-mcp (designed after audit; not blind)"}
+{"app_id": 56, "app": "Firecrawl", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/Msparihar/mcp-server-firecrawl (designed after audit; not blind)"}
+{"app_id": 63, "app": "Netlify", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/MCERQUA/netlify-mcp (designed after audit; not blind)"}
+{"app_id": 57, "app": "Bright Data", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/rakesh1308/brightdata-mcp-server (designed after audit; not blind)"}
+{"app_id": 62, "app": "Vercel", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/nganiet/mcp-vercel (designed after audit; not blind)"}
+{"app_id": 68, "app": "MongoDB Atlas", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/montumodi/mongodb-atlas-mcp-server (designed after audit; not blind)"}
+{"app_id": 66, "app": "Neo4j", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/mjftw/mcp_neo4j_knowledge_graph (designed after audit; not blind)"}
+{"app_id": 60, "app": "Clay", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/bpw-civic/clay-mcp-server (designed after audit; not blind)"}
+{"app_id": 72, "app": "Airtable", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/domdomegg/airtable-mcp-server (designed after audit; not blind)"}
+{"app_id": 67, "app": "Snowflake", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/christianclaudio/mcp-server-snowflake (designed after audit; not blind)"}
+{"app_id": 65, "app": "Supabase", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/mcp-use/supabase-mcp-server (designed after audit; not blind)"}
+{"app_id": 71, "app": "Notion", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/suekou/mcp-notion-server (designed after audit; not blind)"}
+{"app_id": 73, "app": "Linear", "field": "mcp", "old": "None found", "new": "Community", "loop": "L5", "reason": "community repo https://github.com/tacticlaunch/mcp-linear (designed after audit; not blind)"}
+{"app_id": 64, "app": "Cloudflare", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/wrxck/cloudflare-mcp (designed after audit; not blind)"}
+{"app_id": 70, "app": "Sentry", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/zereight/sentry-mcp (designed after audit; not blind)"}
+{"app_id": 74, "app": "Jira", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/thammarongg/jira-mcp (designed after audit; not blind)"}
+{"app_id": 75, "app": "Asana", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/BlZvi/asana-mcp-server (designed after audit; not blind)"}
+{"app_id": 77, "app": "ClickUp", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/trustxai/clickup-mcp (designed after audit; not blind)"}
+{"app_id": 80, "app": "Harvest", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/taiste/harvest-mcp-server (designed after audit; not blind)"}
+{"app_id": 69, "app": "Datadog", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/us-all/datadog-mcp-server (designed after audit; not blind)"}
+{"app_id": 82, "app": "Plaid", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/t-rhex/plaid-mcp (designed after audit; not blind)"}
+{"app_id": 83, "app": "Binance", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/trustxai/binance-mcp (designed after audit; not blind)"}
+{"app_id": 87, "app": "Xero", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/WYRE-AI/xero-mcp (designed after audit; not blind)"}
+{"app_id": 91, "app": "NotebookLM", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/ers123/notebooklm-mcp (designed after audit; not blind)"}
+{"app_id": 88, "app": "Brex", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/dennisonbertram/mcp-brex (designed after audit; not blind)"}
+{"app_id": 79, "app": "Smartsheet", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/prmbr42-bot/smartsheet-mcp-server (designed after audit; not blind)"}
+{"app_id": 93, "app": "Fathom", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/Dot-Fun/fathom-mcp (designed after audit; not blind)"}
+{"app_id": 86, "app": "QuickBooks", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/devwithmj/quickbooks-mcp (designed after audit; not blind)"}
+{"app_id": 78, "app": "Coda", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/vish288/mcp-coda (designed after audit; not blind)"}
+{"app_id": 97, "app": "higgsfield", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/Hikhakk/higgsfield-mcp-unified (designed after audit; not blind)"}
+{"app_id": 94, "app": "Consensus", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/haegyung/arxiv-consensus-mcp (designed after audit; not blind)"}
+{"app_id": 99, "app": "YouTube Transcript", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/jkawamoto/mcp-youtube-transcript (designed after audit; not blind)"}
+{"app_id": 96, "app": "Devin", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/Killea/devin-search-mcp (designed after audit; not blind)"}
+{"app_id": 100, "app": "Grain", "field": "mcp", "old": "Official", "new": "Both", "loop": "L5", "reason": "community repo https://github.com/eadm/grain-mcp-server (designed after audit; not blind)"}
 {"app_id": 1, "app": "Salesforce", "field": "auth", "old": ["OAuth2", "API key", "Token"], "new": "OAuth2", "loop": "human", "reason": "human blind check"}
 {"app_id": 1, "app": "Salesforce", "field": "access", "old": "Free self-serve ; Partner program", "new": "Free self-serve ; App review", "loop": "human", "reason": "human blind check"}
-{"app_id": 5, "app": "Twenty", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 1, "app": "Salesforce", "field": "mcp", "old": "Both", "new": "official", "loop": "human", "reason": "human blind check"}
 {"app_id": 20, "app": "Gladly", "field": "auth", "old": ["OAuth2", "API key", "Token", "Other"], "new": "Basic", "loop": "human", "reason": "human blind check"}
 {"app_id": 20, "app": "Gladly", "field": "access", "old": "Free self-serve ; Unknown", "new": "Partner or contact sales ; Unknown", "loop": "human", "reason": "human blind check"}
 {"app_id": 25, "app": "Pumble", "field": "auth", "old": ["API key", "OAuth2"], "new": "API key", "loop": "human", "reason": "human blind check"}
-{"app_id": 25, "app": "Pumble", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
 {"app_id": 39, "app": "Threads (Meta)", "field": "access", "old": "Unknown ; App review", "new": "Free self-serve ; App review", "loop": "human", "reason": "human blind check"}
-{"app_id": 39, "app": "Threads (Meta)", "field": "mcp", "old": "None found", "new": "Community", "loop": "human", "reason": "human blind check"}
 {"app_id": 40, "app": "SendGrid", "field": "auth", "old": ["API key"], "new": "API key; Basic", "loop": "human", "reason": "human blind check"}
 {"app_id": 40, "app": "SendGrid", "field": "access", "old": "Free self-serve ; Unknown", "new": "Free trial ; Unknown", "loop": "human", "reason": "human blind check"}
 {"app_id": 40, "app": "SendGrid", "field": "mcp", "old": "Community", "new": "Both", "loop": "human", "reason": "human blind check"}
 {"app_id": 43, "app": "BigCommerce", "field": "auth", "old": ["OAuth2", "Token"], "new": "OAuth2", "loop": "human", "reason": "human blind check"}
 {"app_id": 43, "app": "BigCommerce", "field": "access", "old": "Free self-serve ; App review", "new": "Free trial ; App review", "loop": "human", "reason": "human blind check"}
-{"app_id": 43, "app": "BigCommerce", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
 {"app_id": 54, "app": "MrScraper", "field": "auth", "old": ["OAuth2", "API key"], "new": "Token", "loop": "human", "reason": "human blind check"}
 {"app_id": 64, "app": "Cloudflare", "field": "auth", "old": ["OAuth2"], "new": "Token; API key", "loop": "human", "reason": "human blind check"}
-{"app_id": 64, "app": "Cloudflare", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
 {"app_id": 71, "app": "Notion", "field": "auth", "old": ["OAuth2", "API key", "Token"], "new": "OAuth2; Token", "loop": "human", "reason": "human blind check"}
 {"app_id": 71, "app": "Notion", "field": "access", "old": "Free self-serve ; App review", "new": "Free self-serve ; None", "loop": "human", "reason": "human blind check"}
-{"app_id": 71, "app": "Notion", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
-{"app_id": 72, "app": "Airtable", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
 {"app_id": 82, "app": "Plaid", "field": "auth", "old": ["OAuth2", "API key"], "new": "API key", "loop": "human", "reason": "human blind check"}
-{"app_id": 82, "app": "Plaid", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
 {"app_id": 85, "app": "iPayX", "field": "auth", "old": ["Token"], "new": "API key", "loop": "human", "reason": "human blind check"}
 {"app_id": 92, "app": "Otter AI", "field": "auth", "old": ["OAuth2", "Token"], "new": "API key", "loop": "human", "reason": "human blind check"}
 {"app_id": 92, "app": "Otter AI", "field": "access", "old": "Approval required ; Unknown", "new": "Paid plan ; Unknown", "loop": "human", "reason": "human blind check"}
 {"app_id": 92, "app": "Otter AI", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
-{"app_id": 100, "app": "Grain", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}

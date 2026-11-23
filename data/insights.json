@@ -90,15 +90,14 @@
   "Unknown": 1
  },
  "mcp": {
-  "Official": 68,
-  "Both": 14,
-  "None found": 9,
-  "Community": 8,
-  "Unknown": 1
+  "Both": 70,
+  "Community": 15,
+  "Official": 12,
+  "None found": 3
  },
  "integration_shape": {
-  "Multiple": 88,
-  "Hosted API": 10,
+  "Multiple": 95,
+  "Hosted API": 3,
   "MCP server": 2
  },
  "buildability": {
@@ -421,7 +420,7 @@
     "blocker": "None",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP server requires an active LiveAgent account; no free plan exists to obtain credentials without a trial."
    },
    {
@@ -443,7 +442,7 @@
     "blocker": "None",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": ""
    },
    {
@@ -476,7 +475,7 @@
     "blocker": "App review",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth client registration requires vendor review before credentials are issued"
    },
    {
@@ -509,7 +508,7 @@
     "blocker": "App review",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth2 and trading APIs require business verification and partner approval, limiting self-serve access."
    },
    {
@@ -601,7 +600,7 @@
     "blocker": "Partner gate",
     "composio": "copper",
     "tools": 65,
-    "mcp": "None found",
+    "mcp": "Community",
     "note": "OAuth registration requires contacting Copper to obtain client_id/client_secret"
    },
    {
@@ -612,7 +611,7 @@
     "blocker": "Partner gate",
     "composio": "front",
     "tools": 180,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP server is in beta; endpoints are read-mostly and may require scoping improvements for agent toolkits."
    },
    {
@@ -634,7 +633,7 @@
     "blocker": "Partner gate",
     "composio": "aircall",
     "tools": 48,
-    "mcp": "Unknown",
+    "mcp": "Community",
     "note": "Tech partner approval required for both API access and MCP publishing"
    },
    {
@@ -656,7 +655,7 @@
     "blocker": "Partner gate",
     "composio": "datadog",
     "tools": 255,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth2 client creation requires a Partner Sandbox Account, limiting self-serve developer access."
    }
   ],
@@ -680,7 +679,7 @@
     "blocker": "Paid plan",
     "composio": "ahrefs",
     "tools": 46,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP and API require paid plans; free access is limited to test queries only."
    },
    {
@@ -691,7 +690,7 @@
     "blocker": "Paid plan",
     "composio": "notebook_lm",
     "tools": 11,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "Requires paid Gemini Notebook Enterprise license and OAuth scope beyond standard gcloud token."
    },
    {
@@ -726,7 +725,7 @@
     "blocker": "App review",
     "composio": "hubspot",
     "tools": 354,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth PKCE required for MCP server; developer must create an MCP auth app in HubSpot account."
    },
    {
@@ -737,7 +736,7 @@
     "blocker": "App review",
     "composio": "pipedrive",
     "tools": 404,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth 2.0 required for public apps; API key only for private integrations"
    },
    {
@@ -748,7 +747,7 @@
     "blocker": "App review",
     "composio": "attio",
     "tools": 105,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth install for other workspaces requires publishing or sharing; unpublished apps limited to 25 workspaces."
    },
    {
@@ -770,7 +769,7 @@
     "blocker": "App review",
     "composio": "zoho",
     "tools": 115,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP servers require OAuth flow per session; no long-lived service accounts"
    },
    {
@@ -792,7 +791,7 @@
     "blocker": "App review",
     "composio": "intercom",
     "tools": 138,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "AU hosted workspaces not supported for MCP; OAuth scopes require app review."
    },
    {
@@ -803,7 +802,7 @@
     "blocker": "App review",
     "composio": "gorgias",
     "tools": 51,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "App must be approved by Gorgias team before public listing and API access tokens are issued"
    },
    {
@@ -814,7 +813,7 @@
     "blocker": "App review",
     "composio": "slack",
     "tools": 165,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "Workspace admins must approve MCP client integrations, adding a deployment step."
    },
    {
@@ -847,7 +846,7 @@
     "blocker": "App review",
     "composio": "discord",
     "tools": 23,
-    "mcp": "None found",
+    "mcp": "Community",
     "note": "OAuth2 scopes require approval for many endpoints, complicating broad agent toolkits"
    },
    {
@@ -858,7 +857,7 @@
     "blocker": "App review",
     "composio": "metaads",
     "tools": 99,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "App review required for partner/agency use cases; OAuth flow requires redirect URL setup"
    },
    {
@@ -869,7 +868,7 @@
     "blocker": "App review",
     "composio": "linkedin_ads",
     "tools": 28,
-    "mcp": "None found",
+    "mcp": "Community",
     "note": "Tiered vetting and use-case review required for API access and production approval"
    },
    {
@@ -880,7 +879,7 @@
     "blocker": "App review",
     "composio": "highlevel_location",
     "tools": 554,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth app approval required before public distribution; v1 API deprecated."
    },
    {
@@ -891,7 +890,7 @@
     "blocker": "App review",
     "composio": "pinterest",
     "tools": 27,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "Approval required for developer access and app review for production apps."
    },
    {
@@ -935,7 +934,7 @@
     "blocker": "App review",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth client registration requires vendor review before credentials are issued"
    },
    {
@@ -979,7 +978,7 @@
     "blocker": "App review",
     "composio": "snowflake",
     "tools": 16,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP server requires ACCOUNTADMIN role to set up; OAuth/PAT auth requires token management"
    },
    {
@@ -990,7 +989,7 @@
     "blocker": "App review",
     "composio": "linear",
     "tools": 47,
-    "mcp": "None found",
+    "mcp": "Community",
     "note": "No official MCP server found in sources; GraphQL API is broad but requires OAuth2 or API key setup"
    },
    {
@@ -1001,7 +1000,7 @@
     "blocker": "App review",
     "composio": "jira",
     "tools": 166,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "Admin enablement required for API token auth; some tools only available via OAuth 2.1"
    },
    {
@@ -1012,7 +1011,7 @@
     "blocker": "App review",
     "composio": "asana",
     "tools": 247,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP server requires Enterprise+ or Legacy Enterprise for app management controls"
    },
    {
@@ -1034,7 +1033,7 @@
     "blocker": "App review",
     "composio": "stripe",
     "tools": 428,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP requires OAuth or agent API key setup; OAuth flow may require user interaction per environment."
    },
    {
@@ -1056,7 +1055,7 @@
     "blocker": "App review",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth2 and trading APIs require business verification and partner approval, limiting self-serve access."
    },
    {
@@ -1067,7 +1066,7 @@
     "blocker": "App review",
     "composio": "xero",
     "tools": 109,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "Certification requires ten paying customers before publishing; MCP usage limited to Core plan or above for real orgs"
    },
    {
@@ -1078,7 +1077,7 @@
     "blocker": "App review",
     "composio": "brex",
     "tools": 84,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "MCP requires admin to enable beta feature in dashboard before use"
    },
    {
@@ -1113,7 +1112,7 @@
     "blocker": "Insufficient evidence",
     "composio": "quickbooks",
     "tools": 119,
-    "mcp": "Official",
+    "mcp": "Both",
     "note": "OAuth 2.0 flow requires user consent and realmID handling for production access"
    },
    {
@@ -1148,7 +1147,7 @@
     "blocker": "App review",
     "composio": "linkedin_ads",
     "tools": 28,
-    "mcp": "None found",
+    "mcp": "Community",
     "note": "Tiered vetting and use-case review required for API access and production approval"
    },
    {

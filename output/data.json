@@ -220,6 +220,19 @@
         "loop": "L4"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/advancedcommunities/salesforce-mcp-server",
+        "source_url": "https://github.com/advancedcommunities/salesforce-mcp-server",
+        "source_title": "GitHub - advancedcommunities/salesforce-mcp-server: MCP server that enables AI assistants to interact with Salesforce orgs through the Salesforce CLI, providing tools for Apex    execution, SOQL queries, metadata management, code analysis, and development automation. · GitHub",
+        "supporting_excerpt": "advancedcommunities/salesforce-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/advancedcommunities/salesforce-mcp-server\n* Description: MCP server that enables AI assistants to interact with Salesforce orgs through the Salesforce CLI, providing tools for Apex    execution, SOQL queries, metadata management, code analysis, and devel...\n* License: MIT license\n* Default branch: main\n* Created",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "auth_methods",
         "claim": "auth = OAuth2 (human)",
         "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
@@ -236,6 +249,19 @@
         "claim_field": "dev_access",
         "claim": "access = Free self-serve ; App review (human)",
         "source_url": "",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = official (human)",
+        "source_url": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -418,7 +444,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.hubspot.com"
     ],
@@ -634,6 +660,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/promptmetrics/hubspot-mcp",
+        "source_url": "https://github.com/promptmetrics/hubspot-mcp",
+        "source_title": "GitHub - promptmetrics/hubspot-mcp: Standalone MCP server for HubSpot CRM — 76 domain tools, write-safety preview/approve gate, undo snapshots, audit log. Bring-your-own-app OAuth (default) or private-app token. · GitHub",
+        "supporting_excerpt": "promptmetrics/hubspot-mcp\n\n* Page: GitHub repository\n* URL: github.com/promptmetrics/hubspot-mcp\n* Description: Standalone MCP server for HubSpot CRM — 76 domain tools, write-safety preview/approve gate, undo snapshots, audit log. Bring-your-own-app OAuth (default) or private-app token. - promptmetrics/hubsp...\n* Default branch: main\n* Created: 2026-07-07T13:05:24.000Z\n* Commits: 113\n\nTop-level fi",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -753,7 +792,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://www.pipedrive.com/en/features/mcp-server"
     ],
@@ -891,6 +930,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/WillDent/pipedrive-mcp-server",
+        "source_url": "https://github.com/WillDent/pipedrive-mcp-server",
+        "source_title": "GitHub - WillDent/pipedrive-mcp-server: Secure, self-hosted MCP server for Pipedrive CRM with v2 read tools, optional preview-first writes, stdio/HTTP transports, and Docker support. · GitHub",
+        "supporting_excerpt": "# WillDent/pipedrive-mcp-server\n\n- Page: GitHub repository\n- URL: github.com/WillDent/pipedrive-mcp-server\n- Description: Secure, self-hosted MCP server for Pipedrive CRM with v2 read tools, optional preview-first writes, stdio/HTTP transports, and Docker support. - WillDent/pipedrive-mcp-server\n- License: MIT license\n- Default branch: main\n- Created: 2025-03-13T20:42:24.000Z\n- Commits: 17\n\n## Top",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -999,7 +1051,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.attio.com/mcp"
     ],
@@ -1201,6 +1253,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/redriverwest/attio-mcp",
+        "source_url": "https://github.com/redriverwest/attio-mcp",
+        "source_title": "GitHub - redriverwest/attio-mcp: MCP server for integrating Attio CRM with AI agents · GitHub",
+        "supporting_excerpt": "redriverwest/attio-mcp\n\n* Page: GitHub repository\n* URL: github.com/redriverwest/attio-mcp\n* Description: MCP server for integrating Attio CRM with AI agents - redriverwest/attio-mcp\n* Stars: 8\n* Forks: 1\n* License: MIT license\n* Default branch: main\n* Created: 2025-11-06T13:15:17.000Z\n* Commits: 32\n\nTop-level files\n\n* .github/workflows/\n* attio_mcp/\n* tests/\n* .dockerignore\n* .env.example\n* .giti",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -1503,19 +1568,19 @@
       },
       {
         "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp, https://github.com/sebbaker/twenty-mcp",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
+        "claim": "community MCP server: https://github.com/mhenry3164/twenty-crm-mcp-server",
+        "source_url": "https://github.com/mhenry3164/twenty-crm-mcp-server",
+        "source_title": "GitHub - mhenry3164/twenty-crm-mcp-server: A Model Context Protocol (MCP) server for Twenty CRM integration. Enables natural language interactions with your CRM data through Claude and other AI assistants. Supports CRUD operations, dynamic schema discovery, and advanced search across people, companies, tasks, and notes. · GitHub",
+        "supporting_excerpt": "# mhenry3164/twenty-crm-mcp-server\n\n- Page: GitHub repository\n- URL: github.com/mhenry3164/twenty-crm-mcp-server\n- Description: A Model Context Protocol (MCP) server for Twenty CRM integration. Enables natural language interactions with your CRM data through Claude and other AI assistants. Supports CRUD operations, dynamic ...\n- License: MIT license\n- Default branch: main\n- Created: 2025-08-21T16:",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
         "verifier": "supported",
-        "loop": "human"
+        "loop": "L5"
       }
     ],
-    "verification_status": "human_corrected",
+    "verification_status": "reverified",
     "trace": {
       "queries": [
         "Twenty API authentication",
@@ -1673,7 +1738,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.podio.com/"
     ],
@@ -1797,6 +1862,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/phases/mcp-server-for-podio",
+        "source_url": "https://github.com/phases/mcp-server-for-podio",
+        "source_title": "GitHub - phases/mcp-server-for-podio: Model Context Protocol server for Podio · GitHub",
+        "supporting_excerpt": "phases/mcp-server-for-podio\n\n* Page: GitHub repository\n* URL: github.com/phases/mcp-server-for-podio\n* Description: Model Context Protocol server for Podio\n* License: MIT license\n* Default branch: main\n* Created: 2026-10-23T11:43:47.000Z\n* Commits: 9\n\nTop-level files\n\n* data/\n* docs/\n* scripts/\n* src/\n* tests/\n* .env.example\n* .eslintrc.json\n* .gitignore\n* .prettierrc.json\n* CONFIGURATION.md\n* CUR",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -1899,7 +1977,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://www.zoho.com/crm/developer/docs/mcp/overview.html"
     ],
@@ -2062,6 +2140,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/LokiMCPUniverse/zoho-crm-mcp-server",
+        "source_url": "https://github.com/LokiMCPUniverse/zoho-crm-mcp-server",
+        "source_title": "GitHub - LokiMCPUniverse/zoho-crm-mcp-server: MCP server for Zoho CRM - Complete CRM suite integration · GitHub",
+        "supporting_excerpt": "LokiMCPUniverse/zoho-crm-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/LokiMCPUniverse/zoho-crm-mcp-server\n* Description: MCP server for Zoho CRM - Complete CRM suite integration - LokiMCPUniverse/zoho-crm-mcp-server\n* Default branch: main\n* Created: 2025-06-09T03:53:52.000Z\n* Commits: 3\n\nTop-level files\n\n* src/zoho_crm_mcp/\n* tests/\n* .gitignore\n* README.md\n* pyproject.toml\n* pytest.ini",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -2439,9 +2530,9 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "copper",
@@ -2587,6 +2678,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/OfirOhan/copper-mcp",
+        "source_url": "https://github.com/OfirOhan/copper-mcp",
+        "source_title": "GitHub - OfirOhan/copper-mcp: MCP server for Copper CRM: let Claude, Cursor and other AI agents search contacts and deals, review the pipeline, and log notes and tasks. Unofficial. · GitHub",
+        "supporting_excerpt": "OfirOhan/copper-mcp\n\n* Page: GitHub repository\n* URL: github.com/OfirOhan/copper-mcp\n* Description: MCP server for Copper CRM: let Claude, Cursor and other AI agents search contacts and deals, review the pipeline, and log notes and tasks. Unofficial. - OfirOhan/copper-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-10-06T09:33:16.000Z\n* Commits: 5\n\nTop-level files\n\n* .github/work",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -3301,7 +3405,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.intercom.com/mcp",
       "https://mcp.eu.intercom.com/mcp"
@@ -3478,6 +3582,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/raoulbia-ai/mcp-server-for-intercom",
+        "source_url": "https://github.com/raoulbia-ai/mcp-server-for-intercom",
+        "source_title": "GitHub - raoulbia-ai/mcp-server-for-intercom · GitHub",
+        "supporting_excerpt": "raoulbia-ai/mcp-server-for-intercom\n\n* Page: GitHub repository\n* URL: github.com/raoulbia-ai/mcp-server-for-intercom\n* License: Apache-2.0 license\n* Default branch: master\n* Created: 2025-03-09T18:08:10.000Z\n* Commits: 53\n\nTop-level files\n\n* src/\n* tests/\n* .gitignore\n* Dockerfile\n* Dockerfile.standard\n* LICENSE\n* README.md\n* env-schema.json\n* glama-discovery-server.cjs\n* package-lock.json\n* packa",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -3590,7 +3707,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://<your-freshdesk-domain>/mcp"
     ],
@@ -3714,6 +3831,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/hashcott/freshdesk-mcp",
+        "source_url": "https://github.com/hashcott/freshdesk-mcp",
+        "source_title": "GitHub - hashcott/freshdesk-mcp: MCP server for Freshdesk — 194 tools, stdio & HTTP transports, full Zod validation. Works with Claude, Cursor, and any MCP client. · GitHub",
+        "supporting_excerpt": "hashcott/freshdesk-mcp\n\n* Page: GitHub repository\n* URL: github.com/hashcott/freshdesk-mcp\n* Description: MCP server for Freshdesk — 194 tools, stdio & HTTP transports, full Zod validation. Works with Claude, Cursor, and any MCP client. - hashcott/freshdesk-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-06-05T08:52:01.000Z\n* Commits: 35\n\nTop-level files\n\n* .github/\n* docs/\n* scr",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -3807,7 +3937,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://community.front.com/groups/beta-mcp-server-83",
       "https://help.front.com/en/articles/4883136"
@@ -3959,6 +4089,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/jp-pfh/front-mcp-server",
+        "source_url": "https://github.com/jp-pfh/front-mcp-server",
+        "source_title": "GitHub - jp-pfh/front-mcp-server: MCP server for Front API ...",
+        "supporting_excerpt": "GitHub - jp-pfh/front-mcp-server: MCP server for Front API ...\nA Model Context Protocol (MCP) server that gives AI assistants read-only access to your Front workspace -- conversations, messages, contacts, and inboxes. No install needed. Just add the configuration below and your MCP client will download and run the server automatically. Add to your ~/.claude.json under mcpServers:",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -4070,7 +4213,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.usepylon.com",
       "https://mcp.eu.usepylon.com"
@@ -4247,6 +4390,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Carter-S/pylon-mcp",
+        "source_url": "https://github.com/Carter-S/pylon-mcp",
+        "source_title": "GitHub - Carter-S/pylon-mcp: MCP server exposing the full Pylon API (114 endpoints) — auto-generated from Pylon's OpenAPI spec. Covers knowledge base CRUD and other surface area missing from the hosted connector. · GitHub",
+        "supporting_excerpt": "Carter-S/pylon-mcp\n\n* Page: GitHub repository\n* URL: github.com/Carter-S/pylon-mcp\n* Description: MCP server exposing the full Pylon API (114 endpoints) — auto-generated from Pylon's OpenAPI spec. Covers knowledge base CRUD and other surface area missing from the hosted connector. - Carter-...\n* License: MIT license\n* Default branch: main\n* Created: 2026-04-13T08:32:38.000Z\n* Commits: 2\n\nTop-level",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -4366,7 +4522,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://support.liveagent.com/647358-MCP-Integration-for-Agents",
       "https://www.liveagent.com/features/mcp-server/"
@@ -4502,6 +4658,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/QualityUnit/liveagent-mcp-server",
+        "source_url": "https://github.com/QualityUnit/liveagent-mcp-server",
+        "source_title": "LiveAgent MCP Server - GitHub",
+        "supporting_excerpt": "LiveAgent MCP Server - GitHub\nAn MCP (Model Context Protocol) server that provides access to LiveAgent API functionality, enabling AI assistants to interact with your LiveAgent helpdesk system.",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -4621,7 +4790,7 @@
     "public_api": "yes",
     "api_type": "GraphQL",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.plain.com/mcp"
     ],
@@ -4758,6 +4927,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/rembaumann/plain-mcp-server",
+        "source_url": "https://github.com/rembaumann/plain-mcp-server",
+        "source_title": "GitHub - rembaumann/plain-mcp-server · GitHub",
+        "supporting_excerpt": "# rembaumann/plain-mcp-server\n\n- Page: GitHub repository\n- URL: github.com/rembaumann/plain-mcp-server\n- Default branch: main\n- Created: 2026-02-15T22:15:41.000Z\n- Commits: 4\n\n## Top-level files\n\n- .circleci/\n- src/\n- .env.example\n- .gitignore\n- .tool-versions\n- README.md\n- package-lock.json\n- package.json\n- tsconfig.json\n\n## README.md\n\n# Plain MCP Server\n\nAn MCP (Model Context Protocol) server fo",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -4881,7 +5063,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.helpscout.net/mcp"
     ],
@@ -5083,6 +5265,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/drewburchfield/help-scout-mcp-server",
+        "source_url": "https://github.com/drewburchfield/help-scout-mcp-server",
+        "source_title": "GitHub - drewburchfield/help-scout-mcp-server: MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents, plus opt-in writes for drafting replies and triage · GitHub",
+        "supporting_excerpt": "drewburchfield/help-scout-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/drewburchfield/help-scout-mcp-server\n* Description: MCP server for Help Scout - search conversations, customers, organizations, reports, and Docs with AI agents, plus opt-in writes for drafting replies and triage - drewburchfield/help-scout-mcp-server\n* License: MIT license\n* Default branch: main\n* Created: 2025-06-1",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -5198,7 +5393,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://docs.gorgias.com/en-US/connect-your-ai-assistant-to-the-gorgias-mcp-6310546"
     ],
@@ -5388,6 +5583,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/benpalmer1/gorgias-mcp-server",
+        "source_url": "https://github.com/benpalmer1/gorgias-mcp-server",
+        "source_title": "GitHub - benpalmer1/Gorgias-MCP-Server: Helpful MCP server for the Gorgias API · GitHub",
+        "supporting_excerpt": "benpalmer1/gorgias-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/benpalmer1/gorgias-mcp-server\n* Description: Helpful MCP server for the Gorgias API\n* License: MIT license\n* Default branch: main\n* Created: 2026-03-26T17:50:33.000Z\n* Commits: 33\n\nTop-level files\n\n* .github/workflows/\n* src/\n* .env.example\n* .gitignore\n* CHANGELOG.md\n* CONTRIBUTING.md\n* LICENSE\n* README.md\n* eslint.config.",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -5806,7 +6014,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://docs.slack.dev/ai/slack-mcp-server",
       "https://docs.slack.dev/ai/slack-mcp-server?daeda_placement=mcp_recs"
@@ -5957,6 +6165,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/korotovsky/slack-mcp-server",
+        "source_url": "https://github.com/korotovsky/slack-mcp-server",
+        "source_title": "GitHub - korotovsky/slack-mcp-server: The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic. · GitHub",
+        "supporting_excerpt": "# korotovsky/slack-mcp-server\n\n- Page: GitHub repository\n- URL: github.com/korotovsky/slack-mcp-server\n- Description: The most powerful MCP Slack Server with no permission requirements, Apps support, GovSlack, DMs, Group DMs and smart history fetch logic. - korotovsky/slack-mcp-server\n- License: MIT license\n- Default branch: master\n- Created: 2025-04-12T11:31:34.000Z\n- Commits: 445\n\n## Top-level f",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -6067,7 +6288,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "mcp.twilio.com/docs"
     ],
@@ -6219,6 +6440,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/griffinwork40/twilio-mcp",
+        "source_url": "https://github.com/griffinwork40/twilio-mcp",
+        "source_title": "GitHub - griffinwork40/twilio-mcp: Model Context Protocol (MCP) server for Twilio SMS messaging with intelligent conversation management · GitHub",
+        "supporting_excerpt": "griffinwork40/twilio-mcp\n\n* Page: GitHub repository\n* URL: github.com/griffinwork40/twilio-mcp\n* Description: Model Context Protocol (MCP) server for Twilio SMS messaging with intelligent conversation management - griffinwork40/twilio-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2025-12-12T21:40:30.000Z\n* Commits: 6\n\nTop-level files\n\n* .github/workflows/\n* src/\n* tests/\n* .env.exam",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -6581,7 +6815,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://open.larksuite.com/document/uAjLw4CM/ukTMukTMukTM/mcp_integration/use_cases"
     ],
@@ -6705,6 +6939,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/haudnn/lark-mcp",
+        "source_url": "https://github.com/haudnn/lark-mcp",
+        "source_title": "GitHub - haudnn/lark-mcp: Lark Open Platform MCP Server — Connect AI assistants to Lark/Feishu · GitHub",
+        "supporting_excerpt": "haudnn/lark-mcp\n\n* Page: GitHub repository\n* URL: github.com/haudnn/lark-mcp\n* Description: Lark Open Platform MCP Server — Connect AI assistants to Lark/Feishu - haudnn/lark-mcp\n* Default branch: main\n* Created: 2026-04-09T15:12:28.000Z\n* Commits: 3\n\nTop-level files\n\n* src/\n* tests/\n* .env.example\n* .gitignore\n* Dockerfile\n* README.md\n* package-lock.json\n* package.json\n* tsconfig.json\n\nREADME.md\n",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -7020,22 +7267,22 @@
         "loop": "L3"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/nitindermohan/pumble-mcp",
+        "source_url": "https://github.com/nitindermohan/pumble-mcp",
+        "source_title": "GitHub - nitindermohan/pumble-mcp: A standalone MCP server that gives AI agents complete access to the Pumble messaging platform. Built on the official Pumble SDK and the Model Context Protocol. · GitHub",
+        "supporting_excerpt": "nitindermohan/pumble-mcp\n\n* Page: GitHub repository\n* URL: github.com/nitindermohan/pumble-mcp\n* Description: A standalone MCP server that gives AI agents complete access to the Pumble messaging platform. Built on the official Pumble SDK and the Model Context Protocol. - nitindermohan/pumble-mcp\n* Default branch: master\n* Created: 2026-03-31T06:55:29.000Z\n* Commits: 104\n\nTop-level files\n\n* .planni",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "auth_methods",
         "claim": "auth = API key (human)",
         "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/, https://pumble.com/learn/pumble/ai-automation-guide/",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
-        "verifier": "supported",
-        "loop": "human"
-      },
-      {
-        "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://pumble.com/mcp, https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/, https://github.com/shoutkol/pumble-mcp-server",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -7159,9 +7406,9 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "discord",
@@ -7242,6 +7489,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/SaseQ/discord-mcp",
+        "source_url": "https://github.com/SaseQ/discord-mcp",
+        "source_title": "GitHub - SaseQ/discord-mcp: A MCP server for the Discord integration. Enable your AI assistants to seamlessly interact with Discord. Enhance your Discord experience with powerful automation capabilities. · GitHub",
+        "supporting_excerpt": "# SaseQ/discord-mcp\n\n- Page: GitHub repository\n- URL: github.com/SaseQ/discord-mcp\n- Description: A MCP server for the Discord integration. Enable your AI assistants to seamlessly interact with Discord. Enhance your Discord experience with powerful automation capabilities. - SaseQ/discord-mcp\n- License: MIT license\n- Default branch: main\n- Created: 2025-03-14T21:00:40.000Z\n- Commits: 115\n\n## Top-l",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -7638,7 +7898,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.facebook.com/whatsapp_business_tools"
     ],
@@ -7828,6 +8088,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/tkhattar14/whatsapp-business-mcp",
+        "source_url": "https://github.com/tkhattar14/whatsapp-business-mcp",
+        "source_title": "GitHub - tkhattar14/whatsapp-business-mcp: MCP server for WhatsApp Business Cloud API. 50+ tools for messaging, templates, media, analytics, flows and webhooks. · GitHub",
+        "supporting_excerpt": "tkhattar14/whatsapp-business-mcp\n\n* Page: GitHub repository\n* URL: github.com/tkhattar14/whatsapp-business-mcp\n* Description: MCP server for WhatsApp Business Cloud API. 50+ tools for messaging, templates, media, analytics, flows and webhooks. - tkhattar14/whatsapp-business-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-03-28T13:11:08.000Z\n* Commits: 1\n\nTop-level files\n\n* mcp_se",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -7964,12 +8237,12 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Unknown",
+    "mcp": "Community",
     "mcp_urls": [
       "https://developer.aircall.io/docs/how-to-register",
       "https://developer.aircall.io/docs/mcp-faqs"
     ],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "aircall",
@@ -8090,6 +8363,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/CassiaResearch/aircall-mcp-server",
+        "source_url": "https://github.com/CassiaResearch/aircall-mcp-server",
+        "source_title": "GitHub - CassiaResearch/aircall-mcp-server: Unofficial MCP server for Aircall · GitHub",
+        "supporting_excerpt": "CassiaResearch/aircall-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/CassiaResearch/aircall-mcp-server\n* Description: Unofficial MCP server for Aircall\n* License: MIT license\n* Default branch: main\n* Created: 2026-08-07T23:36:02.000Z\n* Commits: 6\n\nTop-level files\n\n* .github/workflows/\n* docs/\n* scripts/\n* src/\n* .env.example\n* .gitignore\n* .mcpbignore\n* AGENTS.md\n* CLAUDE.md\n* LICENSE\n* ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -8211,7 +8497,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://documentation-mcp.vonage.dev/mcp"
     ],
@@ -8385,6 +8671,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/mobilebiz/vonage-mcp-server",
+        "source_url": "https://github.com/mobilebiz/vonage-mcp-server",
+        "source_title": "GitHub - mobilebiz/vonage-mcp-server · GitHub",
+        "supporting_excerpt": "mobilebiz/vonage-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/mobilebiz/vonage-mcp-server\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2025-07-07T02:50:52.000Z\n* Commits: 108\n\nTop-level files\n\n* .github/ISSUE_TEMPLATE/\n* docs/\n* scripts/\n* src/\n* tests/\n* .dockerignore\n* .env.example\n* .gcloudignore\n* .gitignore\n* CONTRIBUTING.md\n* Dockerfile\n* HANDOFF.md\n* LICENSE\n* ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -8488,7 +8787,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
     ],
@@ -8651,6 +8950,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/get-mcp-ads/google-ads-mcp-server",
+        "source_url": "https://github.com/get-mcp-ads/google-ads-mcp-server",
+        "source_title": "GitHub - get-mcp-ads/google-ads-mcp-server: Google Ads MCP server: 35 read tools, 13 opt-in preview-first writes. · GitHub",
+        "supporting_excerpt": "get-mcp-ads/google-ads-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/get-mcp-ads/google-ads-mcp-server\n* Description: Google Ads MCP server: 35 read tools, 13 opt-in preview-first writes. - get-mcp-ads/google-ads-mcp-server\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2026-11-08T12:07:27.000Z\n* Commits: 1\n\nTop-level files\n\n* .github/\n* scripts/\n* src/\n* test/\n* .env.ex",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -8771,7 +9083,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.facebook.com/ads"
     ],
@@ -9000,6 +9312,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/byadsco/meta-ads-mcp",
+        "source_url": "https://github.com/byadsco/meta-ads-mcp",
+        "source_title": "GitHub - byadsco/meta-ads-mcp: MCP server for Meta Ads (Facebook/Instagram) - agency multi-account, cloud-ready · GitHub",
+        "supporting_excerpt": "byadsco/meta-ads-mcp\n\n* Page: GitHub repository\n* URL: github.com/byadsco/meta-ads-mcp\n* Description: MCP server for Meta Ads (Facebook/Instagram) - agency multi-account, cloud-ready - byadsco/meta-ads-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-02-23T18:48:50.000Z\n* Commits: 158\n\nTop-level files\n\n* .github/\n* docs/\n* scripts/\n* skills/\n* src/\n* tests/\n* .dockerignore\n* .env.",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -9119,9 +9444,9 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "linkedin_ads",
@@ -9254,6 +9579,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Nuraveda/linkedin-ads-mcp",
+        "source_url": "https://github.com/Nuraveda/linkedin-ads-mcp",
+        "source_title": "GitHub - Nuraveda/linkedin-ads-mcp: MCP server for the LinkedIn Marketing API — campaigns, analytics, creatives, from any MCP client. MIT. · GitHub",
+        "supporting_excerpt": "Nuraveda/linkedin-ads-mcp\n\n* Page: GitHub repository\n* URL: github.com/Nuraveda/linkedin-ads-mcp\n* Description: MCP server for the LinkedIn Marketing API — campaigns, analytics, creatives, from any MCP client. MIT. - Nuraveda/linkedin-ads-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-05-29T09:01:22.000Z\n* Commits: 13\n\nTop-level files\n\n* .github/workflows/\n* linkedin_ads_mcp/\n* ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -9377,7 +9715,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://services.leadconnectorhq.com/mcp/openai/v2/",
       "https://services.leadconnectorhq.com/mcp/anthropic/v2"
@@ -9555,6 +9893,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/drausal/gohighlevel-mcp",
+        "source_url": "https://github.com/drausal/gohighlevel-mcp",
+        "source_title": "GitHub - drausal/gohighlevel-mcp: Model Context Protocol (MCP) server for GoHighLevel API - Complete access to contacts, opportunities, calendars, workflows, and more · GitHub",
+        "supporting_excerpt": "drausal/gohighlevel-mcp\n\n* Page: GitHub repository\n* URL: github.com/drausal/gohighlevel-mcp\n* Description: Model Context Protocol (MCP) server for GoHighLevel API - Complete access to contacts, opportunities, calendars, workflows, and more - drausal/gohighlevel-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2025-10-09T02:29:37.000Z\n* Commits: 8\n\nTop-level files\n\n* docs/\n* src/\n* .en",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -9674,9 +10025,9 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "mailchimp",
@@ -9796,6 +10147,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/cyanheads/mailchimp-mcp-server",
+        "source_url": "https://github.com/cyanheads/mailchimp-mcp-server",
+        "source_title": "GitHub - cyanheads/mailchimp-mcp-server: Draft, test, and send Mailchimp campaigns straight from your MCP client — with audience management, subscriber CRUD, and post-send analytics behind safe-by-default send gates. STDIO or Streamable HTTP. · GitHub",
+        "supporting_excerpt": "README.md\n\n@cyanheads/mailchimp-mcp-server\n\nDraft, test, and send Mailchimp campaigns straight from your MCP client — with audience management, subscriber CRUD, and post-send analytics behind safe-by-default send gates. STDIO or Streamable HTTP.\n18 Tools (+2 conditional) • 4 Resources • 1 Prompt\nVersion License Docker MCP SDK npm TypeScript Bun\nInstall in Claude Desktop Install in Cursor Install i",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -9923,7 +10287,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.klaviyo.com/mcp"
     ],
@@ -10152,6 +10516,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/scalably-io/klaviyo-mcp",
+        "source_url": "https://github.com/scalably-io/klaviyo-mcp",
+        "source_title": "GitHub - scalably-io/klaviyo-mcp: Klaviyo MCP server: campaigns, flows, segments, metrics, reports, profiles across many accounts. Runs in production at Scalably. · GitHub",
+        "supporting_excerpt": "scalably-io/klaviyo-mcp\n\n* Page: GitHub repository\n* URL: github.com/scalably-io/klaviyo-mcp\n* Description: Klaviyo MCP server: campaigns, flows, segments, metrics, reports, profiles across many accounts. Runs in production at Scalably. - scalably-io/klaviyo-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-09-08T19:07:27.000Z\n* Commits: 4\n\nTop-level files\n\n* .github/\n* src/\n* test",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -10530,7 +10907,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://developers.pinterest.com/about-pinterest-mcp/"
     ],
@@ -10693,6 +11070,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/aymandakirgh/pinterest-mcp",
+        "source_url": "https://github.com/aymandakirgh/pinterest-mcp",
+        "source_title": "GitHub - aymandakirgh/pinterest-mcp: MCP server for the Pinterest API v5 — 35 tools across boards, pins, analytics, search and OAuth, over stdio or HTTP. · GitHub",
+        "supporting_excerpt": "aymandakirgh/pinterest-mcp\n\n* Page: GitHub repository\n* URL: github.com/aymandakirgh/pinterest-mcp\n* Description: MCP server for the Pinterest API v5 — 35 tools across boards, pins, analytics, search and OAuth, over stdio or HTTP. - aymandakirgh/pinterest-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-09-11T10:05:28.000Z\n* Commits: 10\n\nTop-level files\n\n* .github/workflows/\n* src",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -10897,22 +11287,22 @@
         "loop": "L3"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/schrab/threads-mcp",
+        "source_url": "https://github.com/schrab/threads-mcp",
+        "source_title": "GitHub - schrab/threads-mcp: Threads MCP Server · GitHub",
+        "supporting_excerpt": "schrab/threads-mcp\n\n* Page: GitHub repository\n* URL: github.com/schrab/threads-mcp\n* Description: Threads MCP Server\n* Default branch: main\n* Created: 2026-09-27T20:18:13.000Z\n* Commits: 16\n\nTop-level files\n\n* scripts/\n* skills/pig/\n* tests/\n* threads_mcp/\n* .env.example\n* .gitignore\n* AGENTS.md\n* README.md\n* SKILL.md\n* pyproject.toml\n\nREADME.md\n\nThreads MCP Server\n\nAn MCP (Model Context Protocol)",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "dev_access",
         "claim": "access = Free self-serve ; App review (human)",
         "source_url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api, https://developers.facebook.com/docs/resp-plat-initiatives/app-review/introduction, https://developers.facebook.com/docs/resp-plat-initiatives/individual-processes/data-handling-questions/faqs",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
-        "verifier": "supported",
-        "loop": "human"
-      },
-      {
-        "claim_field": "mcp",
-        "claim": "mcp = Community (human)",
-        "source_url": "https://github.com/andreaselmi/threads-mcp, https://github.com/SmarterCL/meta-mcp-instagram, https://github.com/meta/agentic-tools",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -11382,7 +11772,7 @@
     "public_api": "yes",
     "api_type": "GraphQL",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://github.com/Shopify/shopify-ai-toolkit"
     ],
@@ -11546,6 +11936,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/scalably-io/shopify-mcp",
+        "source_url": "https://github.com/scalably-io/shopify-mcp",
+        "source_title": "GitHub - scalably-io/shopify-mcp: A universal, read-only MCP server for the Shopify Admin GraphQL API. Read-only enforced at the query-parser level. Multi-store. Built by Scalably. · GitHub",
+        "supporting_excerpt": "scalably-io/shopify-mcp\n\n* Page: GitHub repository\n* URL: github.com/scalably-io/shopify-mcp\n* Description: A universal, read-only MCP server for the Shopify Admin GraphQL API. Read-only enforced at the query-parser level. Multi-store. Built by Scalably. - scalably-io/shopify-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-06-21T09:42:31.000Z\n* Commits: 9\n\nTop-level files\n\n* .git",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -12154,6 +12557,19 @@
         "loop": "L3"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/isaacgounton/bigcommerce-api-mcp",
+        "source_url": "https://github.com/isaacgounton/bigcommerce-api-mcp",
+        "source_title": "GitHub - isaacgounton/bigcommerce-api-mcp: BigCommerce MCP Server · GitHub",
+        "supporting_excerpt": "isaacgounton/bigcommerce-api-mcp\n\n* Page: GitHub repository\n* URL: github.com/isaacgounton/bigcommerce-api-mcp\n* Description: BigCommerce MCP Server\n* Default branch: main\n* Created: 2025-08-28T16:34:36.000Z\n* Commits: 15\n\nTop-level files\n\n* .github/\n* commands/\n* lib/\n* scripts/\n* test/\n* tools/bigcommerce/\n* .env.example\n* .gitignore\n* .gitkeep\n* CLAUDE.md\n* Dockerfile\n* README.md\n* index.js\n* m",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "auth_methods",
         "claim": "auth = OAuth2 (human)",
         "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
@@ -12170,19 +12586,6 @@
         "claim_field": "dev_access",
         "claim": "access = Free trial ; App review (human)",
         "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/publishing-apps",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
-        "verifier": "supported",
-        "loop": "human"
-      },
-      {
-        "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview, https://docs.bigcommerce.com/developer/api-reference/mcp/store-management, https://github.com/isaacgounton/bigcommerce-api-mcp",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -12886,7 +13289,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.squarespace.com/mcp"
     ],
@@ -13008,6 +13411,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/timncox/squarespace-mcp",
+        "source_url": "https://github.com/timncox/squarespace-mcp",
+        "source_title": "GitHub - timncox/squarespace-mcp: Let AI agents manage your Squarespace websites — menus, pages, blog posts, products, images, SEO, and site settings through natural language. · GitHub",
+        "supporting_excerpt": "timncox/squarespace-mcp\n\n* Page: GitHub repository\n* URL: github.com/timncox/squarespace-mcp\n* Description: Let AI agents manage your Squarespace websites — menus, pages, blog posts, products, images, SEO, and site settings through natural language. - timncox/squarespace-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-02-23T19:48:57.000Z\n* Commits: 308\n\nTop-level files\n\n* .claude",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -13418,7 +13834,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://gumroad.com/muse/v1/mcp",
       "https://gumroad.com/claude/v1/mcp",
@@ -13635,6 +14051,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/stcmain/gumroad-mcp",
+        "source_url": "https://github.com/stcmain/gumroad-mcp",
+        "source_title": "GitHub - stcmain/gumroad-mcp: MCP server for the Gumroad API — products, sales and payouts as tools for Claude and other MCP clients. Python / FastMCP. · GitHub",
+        "supporting_excerpt": "stcmain/gumroad-mcp\n\n* Page: GitHub repository\n* URL: github.com/stcmain/gumroad-mcp\n* Description: MCP server for the Gumroad API — products, sales and payouts as tools for Claude and other MCP clients. Python / FastMCP. - stcmain/gumroad-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-08-01T12:20:03.000Z\n* Commits: 3\n\nTop-level files\n\n* .github/\n* gumroad_mcp/\n* .gitignore\n* LI",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -14252,7 +14681,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.dataforseo.com/mcp"
     ],
@@ -14376,6 +14805,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Skobyn/dataforseo-mcp-server",
+        "source_url": "https://github.com/Skobyn/dataforseo-mcp-server",
+        "source_title": "GitHub - Skobyn/dataforseo-mcp-server: A comprehensive stdio MCP server for DataForSEO API · GitHub",
+        "supporting_excerpt": "Skobyn/dataforseo-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/Skobyn/dataforseo-mcp-server\n* Description: A comprehensive stdio MCP server for DataForSEO API - Skobyn/dataforseo-mcp-server\n* License: MIT license\n* Default branch: main\n* Created: 2025-03-17T03:39:01.000Z\n* Commits: 56\n\nTop-level files\n\n* .github/workflows/\n* docs/\n* examples/\n* src/\n* test/\n* .env.example\n* .gitignore\n*",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -14794,7 +15236,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://api.ahrefs.com/mcp/mcp"
     ],
@@ -14971,6 +15413,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/newilu/ahrefs-mcp",
+        "source_url": "https://github.com/newilu/ahrefs-mcp",
+        "source_title": "GitHub - newilu/ahrefs-mcp: MCP server for the Ahrefs API v3: keyword research, SERP analysis, backlinks, site metrics · GitHub",
+        "supporting_excerpt": "newilu/ahrefs-mcp\n\n* Page: GitHub repository\n* URL: github.com/newilu/ahrefs-mcp\n* Description: MCP server for the Ahrefs API v3: keyword research, SERP analysis, backlinks, site metrics - newilu/ahrefs-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-07-20T19:08:52.000Z\n* Commits: 1\n\nTop-level files\n\n* src/\n* .env.example\n* .gitignore\n* LICENSE\n* README.md\n* package-lock.json\n* p",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -15450,7 +15905,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.apify.com"
     ],
@@ -15652,6 +16107,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/ampcome-mcps/apify-mcp",
+        "source_url": "https://github.com/ampcome-mcps/apify-mcp",
+        "source_title": "GitHub - ampcome-mcps/apify-mcp: actors-mcp-server · GitHub",
+        "supporting_excerpt": "ampcome-mcps/apify-mcp\n\n* Page: GitHub repository\n* URL: github.com/ampcome-mcps/apify-mcp\n* Description: actors-mcp-server\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2025-07-15T08:01:37.000Z\n* Commits: 220\n\nTop-level files\n\n* .actor/\n* docs/\n* src/\n* tests/\n* .dockerignore\n* .editorconfig\n* .env.example\n* .gitignore\n* .npmignore\n* .nvmrc\n* CHANGELOG.md\n* Dockerfile\n* LICENSE.",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -15767,7 +16235,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.firecrawl.dev/v2/mcp",
       "https://mcp.firecrawl.dev/v2/mcp-oauth"
@@ -16048,6 +16516,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Msparihar/mcp-server-firecrawl",
+        "source_url": "https://github.com/Msparihar/mcp-server-firecrawl",
+        "source_title": "GitHub - Msparihar/mcp-server-firecrawl · GitHub",
+        "supporting_excerpt": "Msparihar/mcp-server-firecrawl\n\n* Page: GitHub repository\n* URL: github.com/Msparihar/mcp-server-firecrawl\n* License: MIT license\n* Default branch: main\n* Created: 2025-02-07T17:51:32.000Z\n* Commits: 8\n\nTop-level files\n\n* .github/workflows/\n* docs/\n* examples/\n* src/\n* tests/\n* .eslintrc.json\n* .gitignore\n* .prettierrc\n* CODE_OF_CONDUCT.md\n* CONTRIBUTING.md\n* Dockerfile\n* LICENSE\n* README.md\n* doc",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -16163,7 +16644,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.brightdata.com"
     ],
@@ -16287,6 +16768,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/rakesh1308/brightdata-mcp-server",
+        "source_url": "https://github.com/rakesh1308/brightdata-mcp-server",
+        "source_title": "Bright Data MCP Server - GitHub",
+        "supporting_excerpt": "Bright Data MCP Server - GitHub\nA compact, self-hosted Model Context Protocol server for Bright Data. It exposes nine tools for web search, anti-bot page retrieval, structured dataset scraping, asynchronous snapshot collection, and AI-ranked discovery.\n\n## \n\nBright Data MCP Server - GitHub\nThe server authenticates outbound Bright Data requests, but it does not authenticate inbound MCP clients. Pro",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -16826,7 +17320,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://university.clay.com/docs/connect-to-clay-mcp",
       "https://university.clay.com/docs/mcp-security-privacy"
@@ -16977,6 +17471,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/bpw-civic/clay-mcp-server",
+        "source_url": "https://github.com/bpw-civic/clay-mcp-server",
+        "source_title": "GitHub - bpw-civic/clay-mcp-server: MCP server for Clay.com API - people and company enrichment · GitHub",
+        "supporting_excerpt": "bpw-civic/clay-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/bpw-civic/clay-mcp-server\n* Description: MCP server for Clay.com API - people and company enrichment - bpw-civic/clay-mcp-server\n* License: MIT license\n* Default branch: main\n* Created: 2026-01-30T13:58:54.000Z\n* Commits: 1\n\nTop-level files\n\n* src/\n* .gitignore\n* CHANGELOG.md\n* LICENSE\n* README.md\n* package.json\n* tsconfig.json",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -17402,9 +17909,9 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "vercel",
@@ -17551,6 +18058,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/nganiet/mcp-vercel",
+        "source_url": "https://github.com/nganiet/mcp-vercel",
+        "source_title": "GitHub - nganiet/mcp-vercel: MCP server connecting Claude to Vercel · GitHub",
+        "supporting_excerpt": "# nganiet/mcp-vercel\n\n- Page: GitHub repository\n- URL: github.com/nganiet/mcp-vercel\n- Description: MCP server connecting Claude to Vercel\n- Stars: 69\n- Forks: 17\n- Default branch: main\n- Created: 2024-12-27T17:24:36.000Z\n- Commits: 39\n\n## Top-level files\n\n- docs/\n- src/\n- .gitignore\n- CLAUDE.md\n- Dockerfile\n- README.md\n- package-lock.json\n- package.json\n- tsconfig.json\n\n## README.md\n\n# Vercel MCP",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -17683,7 +18203,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://www.netlify.com/knowledge-base/how-to-build-and-deploy-an-mcp-server-on-netlify/"
     ],
@@ -17859,6 +18379,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/MCERQUA/netlify-mcp",
+        "source_url": "https://github.com/MCERQUA/netlify-mcp",
+        "source_title": "GitHub - MCERQUA/netlify-mcp: MCP server for Netlify integration - manage Netlify sites through Model Context Protocol · GitHub",
+        "supporting_excerpt": "MCERQUA/netlify-mcp\n\n* Page: GitHub repository\n* URL: github.com/MCERQUA/netlify-mcp\n* Description: MCP server for Netlify integration - manage Netlify sites through Model Context Protocol - MCERQUA/netlify-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2025-03-16T02:55:34.000Z\n* Commits: 9\n\nTop-level files\n\n* .github/workflows/\n* docs/\n* src/\n* .dockerignore\n* .env.example\n* .gitign",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -18090,22 +18623,22 @@
         "loop": "L3"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/wrxck/cloudflare-mcp",
+        "source_url": "https://github.com/wrxck/cloudflare-mcp",
+        "source_title": "GitHub - wrxck/cloudflare-mcp: MCP server exposing the entire Cloudflare API (2,655 operations) as tools — dynamic OpenAPI-driven tool generation · GitHub",
+        "supporting_excerpt": "wrxck/cloudflare-mcp\n\n* Page: GitHub repository\n* URL: github.com/wrxck/cloudflare-mcp\n* Description: MCP server exposing the entire Cloudflare API (2,655 operations) as tools — dynamic OpenAPI-driven tool generation - wrxck/cloudflare-mcp\n* Stars: 2\n* Forks: 0\n* License: MIT license\n* Default branch: develop\n* Created: 2026-03-11T20:52:26.000Z\n* Commits: 12\n\nTop-level files\n\n* src/\n* .gitignore\n*",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "auth_methods",
         "claim": "auth = Token; API key (human)",
         "source_url": "https://developers.cloudflare.com/api/overview/, https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
-        "verifier": "supported",
-        "loop": "human"
-      },
-      {
-        "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/, https://github.com/cloudflare/mcp, https://github.com/mattzcarey/cloudflare-mcp",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -18277,7 +18810,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.supabase.com/mcp?features=docs%2Caccount%2Cdatabase%2Cdebugging%2Cdevelopment%2Cfunctions%2Cbranching%2Cfeedback%2Cnotebooks"
     ],
@@ -18467,6 +19000,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/mcp-use/supabase-mcp-server",
+        "source_url": "https://github.com/mcp-use/supabase-mcp-server",
+        "source_title": "GitHub - mcp-use/supabase-mcp-server: A powerful Model Context Protocol (MCP) server for Supabase, built with https://github.com/mcp-use/mcp-use. This server provides interactive tools and beautiful React widgets for exploring and querying your Supabase database. · GitHub",
+        "supporting_excerpt": "mcp-use/supabase-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/mcp-use/supabase-mcp-server\n* Description: A powerful Model Context Protocol (MCP) server for Supabase, built with github.com/mcp-use/mcp-use. This server provides interactive tools and beautiful React widgets for exploring and quer...\n* Default branch: main\n* Created: 2025-12-13T17:22:21.000Z\n* Commits: 9\n\nTop-level files\n\n*",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -18588,7 +19134,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://neo4j.com/docs/mcp/current/quickstart"
     ],
@@ -18793,6 +19339,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/mjftw/mcp_neo4j_knowledge_graph",
+        "source_url": "https://github.com/mjftw/mcp_neo4j_knowledge_graph",
+        "source_title": "GitHub - mjftw/mcp_neo4j_knowledge_graph: A Model Context Protocol to allow access to a Neo4j backed knowledge graph · GitHub",
+        "supporting_excerpt": "mjftw/mcp_neo4j_knowledge_graph\n\n* Page: GitHub repository\n* URL: github.com/mjftw/mcp_neo4j_knowledge_graph\n* Description: A Model Context Protocol to allow access to a Neo4j backed knowledge graph - mjftw/mcp_neo4j_knowledge_graph\n* Default branch: master\n* Created: 2025-03-28T00:22:36.000Z\n* Commits: 46\n\nTop-level files\n\n* mcp_neo4j_knowledge_graph/\n* tests/\n* .gitignore\n* README.md\n* Taskfile.",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -18902,7 +19461,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://www.snowflake.com/en/developers/guides/getting-started-with-snowflake-mcp-server/",
       "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp"
@@ -19105,6 +19664,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/christianclaudio/mcp-server-snowflake",
+        "source_url": "https://github.com/christianclaudio/mcp-server-snowflake",
+        "source_title": "GitHub - christianclaudio/mcp-server-snowflake: Enterprise Model Context Protocol (MCP) server for Snowflake data cloud and Cortex AI. · GitHub",
+        "supporting_excerpt": "christianclaudio/mcp-server-snowflake\n\n* Page: GitHub repository\n* URL: github.com/christianclaudio/mcp-server-snowflake\n* Description: Enterprise Model Context Protocol (MCP) server for Snowflake data cloud and Cortex AI. - christianclaudio/mcp-server-snowflake\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2026-08-27T21:47:36.000Z\n* Commits: 56\n\nTop-level files\n\n* .github/\n* doc",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -19222,7 +19794,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://www.mongodb.com/docs/mcp-server/overview"
     ],
@@ -19333,6 +19905,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/montumodi/mongodb-atlas-mcp-server",
+        "source_url": "https://github.com/montumodi/mongodb-atlas-mcp-server",
+        "source_title": "GitHub - montumodi/mongodb-atlas-mcp-server: MCP server for mongodb atlas api. Internally uses mongodb-atlas-api-client · GitHub",
+        "supporting_excerpt": "montumodi/mongodb-atlas-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/montumodi/mongodb-atlas-mcp-server\n* Description: MCP server for mongodb atlas api. Internally uses mongodb-atlas-api-client - montumodi/mongodb-atlas-mcp-server\n* Stars: 3\n* Forks: 2\n* License: MIT license\n* Default branch: main\n* Created: 2025-08-13T13:39:47.000Z\n* Commits: 36\n\nTop-level files\n\n* .github/workflows/\n*",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -19425,7 +20010,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://docs.datadoghq.com/mcp_server/setup"
     ],
@@ -19590,6 +20175,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/us-all/datadog-mcp-server",
+        "source_url": "https://github.com/us-all/datadog-mcp-server",
+        "source_title": "GitHub - us-all/datadog-mcp-server: Datadog MCP server — 159 tools for metrics, monitors, logs, APM, RUM, synthetics, incidents, fleet, status pages, and more. Read-only by default. · GitHub",
+        "supporting_excerpt": "us-all/datadog-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/us-all/datadog-mcp-server\n* Description: Datadog MCP server — 159 tools for metrics, monitors, logs, APM, RUM, synthetics, incidents, fleet, status pages, and more. Read-only by default. - us-all/datadog-mcp-server\n* License: MIT license\n* Default branch: main\n* Created: 2026-02-26T08:41:19.000Z\n* Commits: 94\n\nTop-level files\n\n",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -19708,7 +20306,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "mcp.sentry.dev/mcp"
     ],
@@ -19884,6 +20482,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/zereight/sentry-mcp",
+        "source_url": "https://github.com/zereight/sentry-mcp",
+        "source_title": "GitHub - zereight/sentry-mcp · GitHub",
+        "supporting_excerpt": "zereight/sentry-mcp\n\n* Page: GitHub repository\n* URL: github.com/zereight/sentry-mcp\n* Default branch: main\n* Created: 2025-04-01T07:17:13.000Z\n* Commits: 11\n\nTop-level files\n\n* src/\n* .gitignore\n* Dockerfile\n* README.md\n* package-lock.json\n* package.json\n* smithery.yaml\n* tsconfig.json\n\nREADME.md\n\nSentry MCP Server\n\n@zereight/sentry-server\n\nSentry MCP(Model Context Protocol) Server. Allows intera",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -20190,6 +20801,19 @@
         "loop": "L3"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/suekou/mcp-notion-server",
+        "source_url": "https://github.com/suekou/mcp-notion-server",
+        "source_title": "GitHub - suekou/mcp-notion-server: A Model Context Protocol server for connecting Notion to MCP-compatible clients · GitHub",
+        "supporting_excerpt": "suekou/mcp-notion-server\n\n* Page: GitHub repository\n* URL: github.com/suekou/mcp-notion-server\n* Description: A Model Context Protocol server for connecting Notion to MCP-compatible clients - suekou/mcp-notion-server\n* License: MIT license\n* Default branch: main\n* Created: 2024-11-30T10:01:30.000Z\n* Commits: 142\n\nTop-level files\n\n* .github/\n* docs/\n* scripts/\n* src/\n* .gitignore\n* .node-version\n* ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "auth_methods",
         "claim": "auth = OAuth2; Token (human)",
         "source_url": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://developers.notion.com/reference/intro",
@@ -20206,19 +20830,6 @@
         "claim_field": "dev_access",
         "claim": "access = Free self-serve ; None (human)",
         "source_url": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://www.notion.com/help/create-integrations-with-the-notion-api",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
-        "verifier": "supported",
-        "loop": "human"
-      },
-      {
-        "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://developers.notion.com/guides/mcp/overview, https://github.com/makenotion/notion-mcp-server, https://github.com/snickery/notion-mcp",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -20539,19 +21150,19 @@
       },
       {
         "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://airtable.com/platform/mcp, https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server, https://github.com/rashidazarang/airtable-mcp",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
+        "claim": "community MCP server: https://github.com/domdomegg/airtable-mcp-server",
+        "source_url": "https://github.com/domdomegg/airtable-mcp-server",
+        "source_title": "GitHub - domdomegg/airtable-mcp-server: 🗂️🤖 Airtable Model Context Protocol Server, for allowing AI systems to interact with your Airtable bases · GitHub",
+        "supporting_excerpt": "# domdomegg/airtable-mcp-server\n\n- Page: GitHub repository\n- URL: github.com/domdomegg/airtable-mcp-server\n- Description: 🗂️🤖 Airtable Model Context Protocol Server, for allowing AI systems to interact with your Airtable bases - domdomegg/airtable-mcp-server\n- License: MIT license\n- Default branch: master\n- Created: 2024-12-12T17:16:40.000Z\n- Commits: 162\n\n## Top-level files\n\n- .github/workflows/\n",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
         "verifier": "supported",
-        "loop": "human"
+        "loop": "L5"
       }
     ],
-    "verification_status": "human_corrected",
+    "verification_status": "reverified",
     "trace": {
       "queries": [
         "Airtable API authentication",
@@ -20665,9 +21276,9 @@
     "public_api": "yes",
     "api_type": "GraphQL",
     "api_breadth": "Broad",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "linear",
@@ -20814,6 +21425,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/tacticlaunch/mcp-linear",
+        "source_url": "https://github.com/tacticlaunch/mcp-linear",
+        "source_title": "GitHub - tacticlaunch/mcp-linear: MCP server that enables AI assistants to interact with Linear project management system through natural language, allowing users to retrieve, create, and update issues, projects, and teams. · GitHub",
+        "supporting_excerpt": "tacticlaunch/mcp-linear\n\n* Page: GitHub repository\n* URL: github.com/tacticlaunch/mcp-linear\n* Description: MCP server that enables AI assistants to interact with Linear project management system through natural language, allowing users to retrieve, create, and update issues, projects, and teams. - tacti...\n* License: MIT license\n* Default branch: main\n* Created: 2025-03-23T15:27:19.000Z\n* Commits",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -20926,7 +21550,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.atlassian.com/v2/mcp"
     ],
@@ -21130,6 +21754,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/thammarongg/jira-mcp",
+        "source_url": "https://github.com/thammarongg/jira-mcp",
+        "source_title": "GitHub - thammarongg/jira-mcp: MCP server exposing the Jira REST API — boards, sprints, epics, issues, JQL, transitions, comments, worklogs, and a generic passthrough — for Jira Cloud and Data Center · GitHub",
+        "supporting_excerpt": "thammarongg/jira-mcp\n\n* Page: GitHub repository\n* URL: github.com/thammarongg/jira-mcp\n* Description: MCP server exposing the Jira REST API — boards, sprints, epics, issues, JQL, transitions, comments, worklogs, and a generic passthrough — for Jira Cloud and Data Center - thammarongg/jira-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-08-29T12:59:03.000Z\n* Commits: 14\n\nTop-level",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -21261,7 +21898,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.asana.com/v2/mcp"
     ],
@@ -21476,6 +22113,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/BlZvi/asana-mcp-server",
+        "source_url": "https://github.com/BlZvi/asana-mcp-server",
+        "source_title": "GitHub - BlZvi/asana-mcp-server: MCP server that gives AI assistants full access to Asana — 80 tools, 18 prompt templates, browsable resources. One npx command to set up. · GitHub",
+        "supporting_excerpt": "BlZvi/asana-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/BlZvi/asana-mcp-server\n* Description: MCP server that gives AI assistants full access to Asana — 80 tools, 18 prompt templates, browsable resources. One npx command to set up. - BlZvi/asana-mcp-server\n* License: MIT license\n* Default branch: main\n* Created: 2026-02-21T13:07:38.000Z\n* Commits: 9\n\nTop-level files\n\n* .github/\n* scrip",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -21961,7 +22611,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.clickup.com/mcp"
     ],
@@ -22112,6 +22762,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/trustxai/clickup-mcp",
+        "source_url": "https://github.com/trustxai/clickup-mcp",
+        "source_title": "GitHub - trustxai/clickup-mcp: MCP server for the ClickUp API — manage Spaces, Folders, Lists, tasks, Docs, views, comments, custom fields, time tracking, webhooks and Chat (166 tools, v2 + v3) from any MCP client. · GitHub",
+        "supporting_excerpt": "trustxai/clickup-mcp\n\n* Page: GitHub repository\n* URL: github.com/trustxai/clickup-mcp\n* Description: MCP server for the ClickUp API — manage Spaces, Folders, Lists, tasks, Docs, views, comments, custom fields, time tracking, webhooks and Chat (166 tools, v2 + v3) from any MCP client. - trustxai/cl...\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2026-07-08T22:10:24.000Z\n* Commit",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -22245,7 +22908,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://coda.io/apis/mcp"
     ],
@@ -22434,6 +23097,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/vish288/mcp-coda",
+        "source_url": "https://github.com/vish288/mcp-coda",
+        "source_title": "GitHub - vish288/mcp-coda: MCP server for the Coda API — 54 tools, 12 resources, 5 prompts for docs, pages, tables, rows, formulas, permissions, publishing and automations. MCP 2026-07-28 (MCP 2.0); run with writes or locked read-only (MCP_READ_ONLY). · GitHub",
+        "supporting_excerpt": "vish288/mcp-coda\n\n* Page: GitHub repository\n* URL: github.com/vish288/mcp-coda\n* Description: MCP server for the Coda API — 54 tools, 12 resources, 5 prompts for docs, pages, tables, rows, formulas, permissions, publishing and automations. MCP 2026-07-28 (MCP 2.0); run with writes or locked...\n* License: MIT license\n* Default branch: main\n* Created: 2026-02-23T21:59:29.000Z\n* Commits: 168\n\nTop-lev",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -22562,7 +23238,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools"
     ],
@@ -22674,6 +23350,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/prmbr42-bot/smartsheet-mcp-server",
+        "source_url": "https://github.com/prmbr42-bot/smartsheet-mcp-server",
+        "source_title": "GitHub - prmbr42-bot/smartsheet-mcp-server: Smartsheet MCP · GitHub",
+        "supporting_excerpt": "prmbr42-bot/smartsheet-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/prmbr42-bot/smartsheet-mcp-server\n* Description: Smartsheet MCP\n* Default branch: master\n* Created: 2026-05-20T15:11:20.000Z\n* Commits: 88\n\nTop-level files\n\n* .github/workflows/\n* .vscode/\n* src/\n* .deployment\n* .gitignore\n* .hintrc\n* README.md\n* deploy.zip\n* epo_utilization_standalone.html\n* mcp-tools-baseline.json\n* p",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -22790,7 +23479,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://api.harvestapp.com/mcp"
     ],
@@ -22940,6 +23629,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/taiste/harvest-mcp-server",
+        "source_url": "https://github.com/taiste/harvest-mcp-server",
+        "source_title": "GitHub - taiste/harvest-mcp-server: MCP Server for Harvest · GitHub",
+        "supporting_excerpt": "taiste/harvest-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/taiste/harvest-mcp-server\n* Description: MCP Server for Harvest\n* License: MIT license\n* Default branch: main\n* Created: 2025-03-20T11:38:03.000Z\n* Commits: 54\n\nTop-level files\n\n* .python-version\n* Dockerfile\n* LICENSE\n* claude-desktop-config-example.json\n* harvest-mcp-server.py\n* pyproject.toml\n* readme.md\n* uv.lock\n\nreadme.md",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -23054,7 +23756,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.stripe.com/"
     ],
@@ -23231,6 +23933,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/seayniclabs/stripe-mcp",
+        "source_url": "https://github.com/seayniclabs/stripe-mcp",
+        "source_title": "GitHub - seayniclabs/stripe-mcp: Read-only Stripe MCP server — balance, customers, payment intents, invoices, products, prices · GitHub",
+        "supporting_excerpt": "seayniclabs/stripe-mcp\n\n* Page: GitHub repository\n* URL: github.com/seayniclabs/stripe-mcp\n* Description: Read-only Stripe MCP server — balance, customers, payment intents, invoices, products, prices - seayniclabs/stripe-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-03-27T17:53:25.000Z\n* Commits: 12\n\nTop-level files\n\n* .github/workflows/\n* src/stripe_mcp/\n* tests/\n* .env.exampl",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -23517,22 +24232,22 @@
         "loop": "L3"
       },
       {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/t-rhex/plaid-mcp",
+        "source_url": "https://github.com/t-rhex/plaid-mcp",
+        "source_title": "GitHub - t-rhex/plaid-mcp: Read-only MCP server for analyzing Plaid-connected accounts from Claude or ChatGPT · GitHub",
+        "supporting_excerpt": "t-rhex/plaid-mcp\n\n* Page: GitHub repository\n* URL: github.com/t-rhex/plaid-mcp\n* Description: Read-only MCP server for analyzing Plaid-connected accounts from Claude or ChatGPT - t-rhex/plaid-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-04-21T03:05:50.000Z\n* Commits: 22\n\nTop-level files\n\n* .github/workflows/\n* deploy/\n* src/plaid_mcp/\n* tests/\n* .dockerignore\n* .env.example\n* ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
+      },
+      {
         "claim_field": "auth_methods",
         "claim": "auth = API key (human)",
         "source_url": "https://plaid.com/docs/api/, https://composio.dev/auth/plaid, https://docs.composio.dev/toolkits/plaid",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
-        "verifier": "supported",
-        "loop": "human"
-      },
-      {
-        "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://plaid.com/docs/resources/mcp/, https://github.com/plaid/ai-coding-toolkit, https://github.com/t-rhex/plaid-mcp",
         "source_title": "human check",
         "supporting_excerpt": "",
         "source_type": "official",
@@ -23667,7 +24382,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic"
     ],
@@ -23789,6 +24504,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/trustxai/binance-mcp",
+        "source_url": "https://github.com/trustxai/binance-mcp",
+        "source_title": "GitHub - trustxai/binance-mcp: MCP server for the Binance Spot + Wallet REST API — deposits, withdrawals, every trade, balances, market data, and kill-switch-gated spot/OCO/TWAP/convert trading with a plain API key (83 tools, no OAuth, no withdrawals). · GitHub",
+        "supporting_excerpt": "trustxai/binance-mcp\n\n* Page: GitHub repository\n* URL: github.com/trustxai/binance-mcp\n* Description: MCP server for the Binance Spot + Wallet REST API — deposits, withdrawals, every trade, balances, market data, and kill-switch-gated spot/OCO/TWAP/convert trading with a plain API key (83 tools, no...\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2026-09-23T09:55:46.000Z\n* Commit",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -24489,7 +25217,7 @@
     "public_api": "unknown",
     "api_type": "Unknown",
     "api_breadth": "Unknown",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://developer.intuit.com/app/developer/qbo/docs/get-started/mcp-connector"
     ],
@@ -24613,6 +25341,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/devwithmj/quickbooks-mcp",
+        "source_url": "https://github.com/devwithmj/quickbooks-mcp",
+        "source_title": "GitHub - devwithmj/quickbooks-mcp: Open-source MCP server connecting QuickBooks Desktop to LLMs and AI agents · GitHub",
+        "supporting_excerpt": "devwithmj/quickbooks-mcp\n\n* Page: GitHub repository\n* URL: github.com/devwithmj/quickbooks-mcp\n* Description: Open-source MCP server connecting QuickBooks Desktop to LLMs and AI agents - devwithmj/quickbooks-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-10-17T04:23:04.000Z\n* Commits: 114\n\nTop-level files\n\n* .claude-plugin/\n* .github/\n* docs/\n* packaging/\n* site/\n* src/\n* tests/",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -24757,7 +25498,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://developer.xero.com/faq/remote-mcp"
     ],
@@ -24907,6 +25648,19 @@
         "excerpt_match": false,
         "verifier": "unsupported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/WYRE-AI/xero-mcp",
+        "source_url": "https://github.com/WYRE-AI/xero-mcp",
+        "source_title": "GitHub - WYRE-AI/xero-mcp: Xero MCP server for accounting data (contacts, invoices, payments, accounts, reports) · GitHub",
+        "supporting_excerpt": "WYRE-AI/xero-mcp\n\n* Page: GitHub repository\n* URL: github.com/WYRE-AI/xero-mcp\n* Description: Xero MCP server for accounting data (contacts, invoices, payments, accounts, reports) - WYRE-AI/xero-mcp\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2026-02-24T00:25:26.000Z\n* Commits: 85\n\nTop-level files\n\n* .github/\n* scripts/\n* src/\n* ui/\n* .env.example\n* .gitignore\n* .releaserc.json",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -24998,7 +25752,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://api.brex.com/mcp"
     ],
@@ -25149,6 +25903,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/dennisonbertram/mcp-brex",
+        "source_url": "https://github.com/dennisonbertram/mcp-brex",
+        "source_title": "GitHub - dennisonbertram/mcp-brex: A model context protocol server for Brex · GitHub",
+        "supporting_excerpt": "dennisonbertram/mcp-brex\n\n* Page: GitHub repository\n* URL: github.com/dennisonbertram/mcp-brex\n* Description: A model context protocol server for Brex\n* License: MIT license\n* Default branch: main\n* Created: 2025-08-27T19:21:38.000Z\n* Commits: 82\n\nTop-level files\n\n* docs/\n* documentation/\n* e2e/helpers/\n* scripts/\n* src/\n* .env.example\n* .env.test\n* .eslintignore\n* .eslintrc.json\n* .gitignore\n* CH",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -25852,7 +26619,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://notebook.googleapis.com/mcp"
     ],
@@ -26002,6 +26769,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/ers123/notebooklm-mcp",
+        "source_url": "https://github.com/ers123/notebooklm-mcp",
+        "source_title": "GitHub - ers123/notebooklm-mcp: Secure MCP server for Google NotebookLM — 16 tools, AES-256-GCM encrypted cookies, macOS Keychain, browser sandbox enabled · GitHub",
+        "supporting_excerpt": "ers123/notebooklm-mcp\n\n* Page: GitHub repository\n* URL: github.com/ers123/notebooklm-mcp\n* Description: Secure MCP server for Google NotebookLM — 16 tools, AES-256-GCM encrypted cookies, macOS Keychain, browser sandbox enabled - ers123/notebooklm-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-02-06T08:49:16.000Z\n* Commits: 25\n\nTop-level files\n\n* src/\n* tests/unit/security/\n* .gi",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -26387,7 +27167,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://api.fathom.ai/mcp"
     ],
@@ -26603,6 +27383,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Dot-Fun/fathom-mcp",
+        "source_url": "https://github.com/Dot-Fun/fathom-mcp",
+        "source_title": "GitHub - Dot-Fun/fathom-mcp: Model Context Protocol server for Fathom AI - access meeting recordings, transcripts, summaries, teams, and webhooks · GitHub",
+        "supporting_excerpt": "Dot-Fun/fathom-mcp\n\n* Page: GitHub repository\n* URL: github.com/Dot-Fun/fathom-mcp\n* Description: Model Context Protocol server for Fathom AI - access meeting recordings, transcripts, summaries, teams, and webhooks - Dot-Fun/fathom-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2025-10-12T19:55:00.000Z\n* Commits: 15\n\nTop-level files\n\n* .dockerignore\n* .dockerignore.container\n* .gitig",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -26716,7 +27509,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://docs.consensus.app/mcp-plans-and-access"
     ],
@@ -26892,6 +27685,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/haegyung/arxiv-consensus-mcp",
+        "source_url": "https://github.com/haegyung/arxiv-consensus-mcp",
+        "source_title": "GitHub - haegyung/arxiv-consensus-mcp: MCP server for searching and normalizing arXiv and Consensus research metadata. · GitHub",
+        "supporting_excerpt": "What It Does\n\n* Searches the public arXiv Atom API without an API key.\n* Searches the Consensus HTTP API when CONSENSUS_API_KEY is configured.\n* Normalizes arXiv and Consensus records into one paper-oriented schema.\n* Deduplicates merged results by arXiv ID, DOI, URL, then normalized title.\n* Exposes the auth boundary clearly: MCP client authorization belongs at the gateway/resource-server layer; ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -27313,7 +28119,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.devin.ai/",
       "https://mcp.devin.ai/mcp"
@@ -27490,6 +28296,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Killea/devin-search-mcp",
+        "source_url": "https://github.com/Killea/devin-search-mcp",
+        "source_title": "GitHub - Killea/devin-search-mcp · GitHub",
+        "supporting_excerpt": "Killea/devin-search-mcp\n\n* Page: GitHub repository\n* URL: github.com/Killea/devin-search-mcp\n* License: MIT license\n* Default branch: main\n* Created: 2026-10-08T19:30:22.000Z\n* Commits: 4\n\nTop-level files\n\n* lib/\n* test/\n* .gitignore\n* LICENSE\n* NOTICE\n* README.md\n* package-lock.json\n* package.json\n* server.js\n\nREADME.md\n\ndevin-search-mcp\n\nAn MCP (Model Context Protocol) stdio server that exposes ",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -27616,7 +28435,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://higgsfield.ai/mcp",
       "https://higgsfield.ai/cli"
@@ -27819,6 +28638,19 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/Hikhakk/higgsfield-mcp-unified",
+        "source_url": "https://github.com/Hikhakk/higgsfield-mcp-unified",
+        "source_title": "GitHub - Hikhakk/higgsfield-mcp-unified: Local-first MCP server for the Higgsfield AI API: 85 typed image & video models (Seedance 2.5, Kling 3.0, Wan 3, Genjutsu, Soul, Cinema Studio), webhooks, cost estimates, Soul ID training. Opt-in web backend for Sora 2, Veo 3, Nano Banana. · GitHub",
+        "supporting_excerpt": "Hikhakk/higgsfield-mcp-unified\n\n* Page: GitHub repository\n* URL: github.com/Hikhakk/higgsfield-mcp-unified\n* Description: Local-first MCP server for the Higgsfield AI API: 85 typed image & video models (Seedance 2.5, Kling 3.0, Wan 3, Genjutsu, Soul, Cinema Studio), webhooks, cost estimates, Soul ID training. Opt-...\n* License: MIT license\n* Default branch: main\n* Created: 2026-04-25T08:07:32.000Z",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -28180,7 +29012,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://transcriptapi.com/mcp"
     ],
@@ -28317,6 +29149,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "community MCP server: https://github.com/jkawamoto/mcp-youtube-transcript",
+        "source_url": "https://github.com/jkawamoto/mcp-youtube-transcript",
+        "source_title": "GitHub - jkawamoto/mcp-youtube-transcript: MCP server retrieving transcripts of YouTube videos · GitHub",
+        "supporting_excerpt": "# jkawamoto/mcp-youtube-transcript\n\n- Page: GitHub repository\n- URL: github.com/jkawamoto/mcp-youtube-transcript\n- Description: MCP server retrieving transcripts of YouTube videos - jkawamoto/mcp-youtube-transcript\n- License: MIT license\n- Default branch: main\n- Created: 2025-02-08T02:49:22.000Z\n- Commits: 317\n\n## Top-level files\n\n- .github/\n- src/mcp_youtube_transcript/\n- tests/\n- .dockerignore\n-",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L5"
       }
     ],
     "verification_status": "reverified",
@@ -28612,19 +29457,19 @@
       },
       {
         "claim_field": "mcp",
-        "claim": "mcp = Both (human)",
-        "source_url": "https://developers.grain.com/mcp/, https://support.grain.com/en/articles/14811968-grain-mcp, https://github.com/eadm/grain-mcp-server",
-        "source_title": "human check",
-        "supporting_excerpt": "",
-        "source_type": "official",
-        "retrieved_at": "",
-        "fetched_via": "none",
-        "excerpt_match": null,
+        "claim": "community MCP server: https://github.com/eadm/grain-mcp-server",
+        "source_url": "https://github.com/eadm/grain-mcp-server",
+        "source_title": "GitHub - eadm/grain-mcp-server: MCP Server for Grain · GitHub",
+        "supporting_excerpt": "eadm/grain-mcp-server\n\n* Page: GitHub repository\n* URL: github.com/eadm/grain-mcp-server\n* Description: MCP Server for Grain\n* License: Apache-2.0 license\n* Default branch: main\n* Created: 2025-04-27T14:48:15.000Z\n* Commits: 10\n\nTop-level files\n\n* src/grain_mcp_server/\n* tests/\n* .gitignore\n* LICENSE\n* README.md\n* pyproject.toml\n* uv.lock\n\nREADME.md\n\nMseeP.ai Security Assessment Badge\n\nGrain MCP S",
+        "source_type": "third-party",
+        "retrieved_at": "2026-11-23T16:10:23.151929+00:00",
+        "fetched_via": "parallel_index",
+        "excerpt_match": true,
         "verifier": "supported",
-        "loop": "human"
+        "loop": "L5"
       }
     ],
-    "verification_status": "human_corrected",
+    "verification_status": "reverified",
     "trace": {
       "queries": [
         "Grain API authentication",

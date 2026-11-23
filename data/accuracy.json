@@ -553,7 +553,221 @@
    "excerpt_verbatim_rate": 0.916,
    "judge_supported_rate": 0.862,
    "unknown_core_fields": 16
+  },
+  "pass3": {
+   "apps": 100,
+   "evidence_items": 1186,
+   "excerpt_verbatim_rate": 0.922,
+   "judge_supported_rate": 0.87,
+   "unknown_core_fields": 16
   }
+ },
+ "pass3": {
+  "checked": 90,
+  "correct": 68,
+  "incorrect": 20,
+  "abstained_unknown": 2,
+  "unresolved": 0,
+  "unsupported": 0,
+  "precision_on_answered": 0.773,
+  "precision_ci95": [
+   0.675,
+   0.848
+  ],
+  "answer_rate": 0.978,
+  "strict_accuracy": 0.756,
+  "by_claim": {
+   "auth": {
+    "incorrect": 11,
+    "correct": 4
+   },
+   "access": {
+    "incorrect": 6,
+    "correct": 8,
+    "abstained": 1
+   },
+   "public_api": {
+    "correct": 15
+   },
+   "mcp": {
+    "incorrect": 3,
+    "correct": 12
+   },
+   "composio_toolkit": {
+    "correct": 15
+   },
+   "buildability": {
+    "correct": 14,
+    "abstained": 1
+   }
+  },
+  "errors": [
+   {
+    "app": "Salesforce",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Token",
+    "human": "OAuth2",
+    "human_source": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "notes": ""
+   },
+   {
+    "app": "Salesforce",
+    "claim": "access",
+    "agent": "Free self-serve ; Partner program",
+    "human": "Free self-serve ; App review",
+    "human_source": "",
+    "notes": ""
+   },
+   {
+    "app": "Salesforce",
+    "claim": "mcp",
+    "agent": "Both",
+    "human": "Official",
+    "human_source": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+    "notes": ""
+   },
+   {
+    "app": "Gladly",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Other;Token",
+    "human": "Basic",
+    "human_source": "https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "notes": ""
+   },
+   {
+    "app": "Gladly",
+    "claim": "access",
+    "agent": "Free self-serve ; Unknown",
+    "human": "Partner or contact sales ; Unknown",
+    "human_source": "https://www.gladly.ai/, https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "notes": ""
+   },
+   {
+    "app": "Pumble",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key",
+    "human_source": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/, https://pumble.com/learn/pumble/ai-automation-guide/",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "auth",
+    "agent": "API key",
+    "human": "API key;Basic",
+    "human_source": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication, https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "access",
+    "agent": "Free self-serve ; Unknown",
+    "human": "Free trial ; Unknown",
+    "human_source": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts, https://www.twilio.com/docs/sendgrid/ui/account-and-settings/verifying-your-account",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "mcp",
+    "agent": "Community",
+    "human": "Both",
+    "human_source": "https://www.twilio.com/docs/ai/mcp, https://github.com/deyikong/sendgrid-mcp",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "auth",
+    "agent": "OAuth2;Token",
+    "human": "OAuth2",
+    "human_source": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "access",
+    "agent": "Free self-serve ; App review",
+    "human": "Free trial ; App review",
+    "human_source": "https://docs.bigcommerce.com/developer/docs/overview/quick-start, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/publishing-apps",
+    "notes": ""
+   },
+   {
+    "app": "MrScraper",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "Token",
+    "human_source": "https://docs.mrscraper.com/docs/api/authentication, https://docs.mrscraper.com/docs/api/overview",
+    "notes": ""
+   },
+   {
+    "app": "Cloudflare",
+    "claim": "auth",
+    "agent": "OAuth2",
+    "human": "API key;Token",
+    "human_source": "https://developers.cloudflare.com/api/overview/, https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
+    "notes": ""
+   },
+   {
+    "app": "Notion",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Token",
+    "human": "OAuth2;Token",
+    "human_source": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://developers.notion.com/reference/intro",
+    "notes": ""
+   },
+   {
+    "app": "Notion",
+    "claim": "access",
+    "agent": "Free self-serve ; App review",
+    "human": "Free self-serve ; None",
+    "human_source": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://www.notion.com/help/create-integrations-with-the-notion-api",
+    "notes": ""
+   },
+   {
+    "app": "Plaid",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key",
+    "human_source": "https://plaid.com/docs/api/, https://composio.dev/auth/plaid, https://docs.composio.dev/toolkits/plaid",
+    "notes": ""
+   },
+   {
+    "app": "iPayX",
+    "claim": "auth",
+    "agent": "Token",
+    "human": "API key",
+    "human_source": "https://www.ipayx.ai/docs/api, https://www.ipayx.ai/docs/mcp-server, https://www.ipayx.ai/developers",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "auth",
+    "agent": "OAuth2;Token",
+    "human": "API key",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "access",
+    "agent": "Approval required ; Unknown",
+    "human": "Paid plan ; Unknown",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API, https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API, https://otter.ai/pricing",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server, https://github.com/DarrenZal/otter-mcp",
+    "notes": ""
+   }
+  ],
+  "diag_official_mcp_agreement": {
+   "agree": 14,
+   "n": 15
+  },
+  "note": "L5 designed after seeing audit errors; this score is not blind"
  },
  "final": {
   "checked": 90,
@@ -561,7 +775,7 @@
   "incorrect": 0,
   "abstained_unknown": 0,
   "unresolved": 0,
-  "unsupported": 2,
+  "unsupported": 1,
   "precision_on_answered": 1.0,
   "precision_ci95": [
    0.959,

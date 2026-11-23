@@ -165,11 +165,18 @@ def main():
                 "unknown_core_fields": sum(r[f] in ("Unknown", "unknown") or r[f] == [] for r in recs.values()
                                            for f in ("auth_methods", "dev_access", "public_api"))}
     res["automated"] = {"pass1": auto(p1), "pass2": auto(p2)}
+    base = p2
+    if (D / "pass3.jsonl").exists():  # L5 community-MCP sweep: designed after the audit -> NOT blind
+        p3 = load(D / "pass3.jsonl")
+        res["pass3"] = score(p3, rows)
+        res["pass3"]["note"] = "L5 designed after seeing audit errors; this score is not blind"
+        res["automated"]["pass3"] = auto(p3)
+        base = p3
     if "--apply" in sys.argv:
-        final = apply_corrections(p2, rows)
+        final = apply_corrections(base, rows)
         res["final"] = score(final, rows)
     out.write_text(json.dumps(res, indent=1), encoding="utf-8")
-    for k in ("pass1", "pass2", "final"):
+    for k in ("pass1", "pass2", "pass3", "final"):
         if k in res:
             s = res[k]
             print(f"{k}: correct {s['correct']}/{s['correct']+s['incorrect']} answered "

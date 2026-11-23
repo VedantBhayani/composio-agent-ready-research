@@ -333,8 +333,8 @@ const cards=[
    "Build-now = buildable and no Composio toolkit yet."]];
 for(const c of cards)$("answers").append(h("div",{class:"card"},h("div",{class:"q"},c[0]),h("div",{class:"a"},c[1]),h("div",{class:"d"},c[2])));
 const stat=(v,l)=>h("div",{class:"stat"},h("b",{},v),h("span",{},l));
-const accTxt=()=>{if(!A)return["audit pending","Human audit pending"];const a=A.pass2,b=A.pass1;
- return[`${fp(b&&b.precision_on_answered)} \u2192 ${fp(a&&a.precision_on_answered)}`,`human-audited precision, pass 1 \u2192 pass 2 (${a&&a.checked} claims, 15 apps). The loops did not raise it.`]};
+const accTxt=()=>{if(!A)return["audit pending","Human audit pending"];const a=A.pass3||A.pass2,b=A.pass1;
+ return[`${fp(b&&b.precision_on_answered)} \u2192 ${fp(A.pass2.precision_on_answered)} \u2192 ${fp(a&&a.precision_on_answered)}`,`human-audited precision: pass 1 \u2192 pass 2 (blind) \u2192 pass 3 (fix designed from audit errors, not blind). ${a&&a.checked} claims, 15 apps.`]};
 $("stats").append(stat(`${N}/100`,"apps researched"),stat((I.composio||{}).covered_pct+"%","Composio toolkit coverage"),
  stat(I.official_mcp_pct+"%","official MCP server"),stat(...accTxt()));
 function stacked(parts,total,label){const s=sv("svg",{class:"stack",viewBox:"0 0 1000 34",preserveAspectRatio:"none",role:"img","aria-label":label});let x=0;
@@ -436,11 +436,12 @@ $("vlines").append(...cp.verify.map(s=>h("li",{},s)));
 function pend(){return h("div",{class:"pending"},h("b",{},"Human audit pending."),h("p",{},"No accuracy numbers are published until the blind audit is scored. Automated checks below do not replace it."))}
 const V=$("vbody");
 if(!A)V.append(pend());
-else{const tiers=[["pass1","Pass 1"],["pass2","Pass 2"],["final","Final (human-corrected: matches the human by construction, not a measurement)"]].filter(t=>A[t[0]]);
+else{const tiers=[["pass1","Pass 1"],["pass2","Pass 2"],["pass3","Pass 3 (L5, not blind)"],["final","Final (human-corrected: matches the human by construction, not a measurement)"]].filter(t=>A[t[0]]);
  const p1=A.pass1,p2=A.pass2,bc1=p1.by_claim,bc2=p2.by_claim,d2=p2.diag_official_mcp_agreement||{};
  const mcpErr=p2.errors.filter(e=>e.claim==="mcp"),mcpBoth=mcpErr.filter(e=>e.human==="Both").length;
  V.append(h("div",{class:"card"},h("b",{},"What the audit says"),h("ul",{},
-  h("li",{},`The automated loops did not improve precision: pass 1 ${fp(p1.precision_on_answered)} (CI ${p1.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}) vs pass 2 ${fp(p2.precision_on_answered)} (CI ${p2.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}). The intervals overlap; the difference is noise, not a gain. What the loops did remove was ${p1.unsupported} unsupported claim(s) (pass 1) → ${p2.unsupported} (pass 2).`),
+  h("li",{},`The blind-measured loops (L0–L4) did not improve precision: pass 1 ${fp(p1.precision_on_answered)} (CI ${p1.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}) vs pass 2 ${fp(p2.precision_on_answered)} (CI ${p2.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}). The intervals overlap; the difference is noise, not a gain. What the loops did remove was ${p1.unsupported} unsupported claim(s) (pass 1) → ${p2.unsupported} (pass 2).`),
+  ...(A.pass3?[h("li",{},`Pass 3 (L5 community-MCP sweep, all 100 apps) raised precision to ${fp(A.pass3.precision_on_answered)} (CI ${A.pass3.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}); MCP went from ${bc2.mcp.correct} to ${A.pass3.by_claim.mcp.correct} of 15 correct. Caveat: L5 was designed after seeing these audit errors, so this score is not blind and likely flatters it. It also added one new error (Salesforce marked "Both"; the human found official only).`)]:[]),
   h("li",{},`Public API, Composio toolkit and buildability were ${bc2.public_api.correct}/15, ${bc2.composio_toolkit.correct}/15 and ${bc2.buildability.correct||0}/15 correct in pass 2. Errors sit in three fields: auth, access and MCP.`),
   h("li",{},`MCP: ${mcpBoth} of ${mcpErr.length} pass 2 MCP errors are "Official" where the human also found a community repo ("Both"). On whether an official MCP exists, agent and human agree on ${d2.agree}/${d2.n}. The agent did not search GitHub for community servers once it found the vendor's own one.`),
   h("li",{},`Auth is scored as an exact set, so one extra or missing method counts as wrong (${bc2.auth.incorrect} wrong in pass 2). The usual mistake is adding a method the human did not confirm (OAuth2 on Pumble, Plaid and MrScraper; Token on BigCommerce).`),
