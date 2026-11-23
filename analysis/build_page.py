@@ -99,6 +99,12 @@ def main():
         have = {r["app_id"] for r in records}
         records += [r for r in pass1 if r["app_id"] not in have]
         ds += f" (partial: {len(have)} re-verified, rest from pass1.jsonl)"
+    # verdicts are derived: re-apply the current rules so matrix and insights always agree
+    import sys
+    sys.path.insert(0, str(ROOT))
+    from agent import rules
+    from agent.schema import AppRecord
+    records = [rules.apply(AppRecord(**r)).model_dump() for r in records]
     records.sort(key=lambda r: r["app_id"])
     insights = jf(DATA / "insights.json") or {}
     accuracy = jf(DATA / "accuracy.json")

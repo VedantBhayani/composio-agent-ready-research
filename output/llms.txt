@@ -1,14 +1,14 @@
 # 100 Apps, Agent-Ready?
 
 What this is: a researched dataset of 100 apps (auth, access gating, API, MCP, Composio toolkit coverage) built by an AI agent for Composio, with source evidence per claim.
-Generated: 2026-11-23 19:37. Dataset: pass2.jsonl (partial: 36 re-verified, rest from pass1.jsonl).
+Generated: 2026-11-23 20:07. Dataset: pass2.jsonl.
 
 ## Headline numbers
-- OAuth2 in 93.3% of apps; API key in 46.7%.
-- Composio toolkit coverage: 93.3% (14 of 100).
-- Official MCP server: 80.0% of apps.
-- Main blockers: {"App review": 7, "Partner gate": 1}
-- Archetypes: {"Open API": 7, "Open + app review": 3, "Approval gate": 2, "Defeated": 1, "Partner gate": 1, "Paid gate": 1}
+- OAuth2 in 81.0% of apps; API key in 55.0%.
+- Composio toolkit coverage: 80.0% (80 of 100).
+- Official MCP server: 81.0% of apps.
+- Main blockers: {"App review": 37, "Insufficient evidence": 8, "Partner gate": 5, "Paid plan": 3}
+- Archetypes: {"Open API": 46, "Open + app review": 19, "Access unverified": 14, "Approval gate": 10, "Partner gate": 5, "Paid gate": 4, "MCP-only": 2}
 - Human audit: pending (no accuracy numbers published yet).
 
 ## Files

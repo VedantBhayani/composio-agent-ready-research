@@ -9,10 +9,16 @@ D = ROOT / "data"
 
 
 def load():
+    """Load the newest dataset and re-apply the current rules (verdicts are always derived, never stored truth)."""
+    import sys
+    sys.path.insert(0, str(ROOT))
+    from agent import rules
+    from agent.schema import AppRecord
     for name in ("final.jsonl", "pass2.jsonl", "pass1.jsonl"):
         p = D / name
         if p.exists():
-            return name, [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+            recs = [json.loads(l) for l in p.read_text(encoding="utf-8").splitlines() if l.strip()]
+            return name, [rules.apply(AppRecord(**r)).model_dump() for r in recs]
     raise SystemExit("no dataset")
 
 

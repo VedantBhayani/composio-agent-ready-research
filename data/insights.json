@@ -1,177 +1,234 @@
 {
  "dataset": "pass2.jsonl",
  "n_apps": 100,
+ "buildable_paths": {
+  "self_serve_api": 46,
+  "official_mcp_only": 40,
+  "official_mcp_only_apps": [
+   "Ahrefs",
+   "Asana",
+   "Attio",
+   "BigCommerce",
+   "Binance",
+   "Brex",
+   "ClickUp",
+   "Datadog",
+   "DealCloud",
+   "Front",
+   "GoHighLevel",
+   "Gorgias",
+   "HubSpot",
+   "Intercom",
+   "Jira",
+   "Mermaid CLI",
+   "Meta Ads",
+   "Monday.com",
+   "NotebookLM",
+   "Notion",
+   "Otter AI",
+   "Pinterest",
+   "Pipedrive",
+   "PitchBook",
+   "Plaid",
+   "Pumble",
+   "Pylon",
+   "QuickBooks",
+   "Ramp",
+   "Shopify",
+   "Slack",
+   "Smartsheet",
+   "Snowflake",
+   "Squarespace",
+   "Stripe",
+   "Twenty",
+   "WhatsApp Business",
+   "Xero",
+   "Zoho CRM",
+   "Zoho Cliq"
+  ],
+  "note": "Yes = self-serve API path OR vendor MCP path; split shown so MCP does not hide API gating"
+ },
  "auth": {
   "counts": {
-   "OAuth2": 73,
-   "API key": 48,
-   "Token": 38,
+   "OAuth2": 81,
+   "API key": 55,
+   "Token": 43,
    "Basic": 10,
    "Other": 1
   },
-  "unknown": 4,
-  "oauth_any": 73,
-  "api_key_any": 48,
-  "both_oauth_and_key": 35,
-  "oauth_pct": 73.0,
-  "api_key_pct": 48.0,
-  "both_pct": 35.0
+  "unknown": 1,
+  "oauth_any": 81,
+  "api_key_any": 55,
+  "both_oauth_and_key": 43,
+  "oauth_pct": 81.0,
+  "api_key_pct": 55.0,
+  "both_pct": 43.0
  },
  "dev_access": {
-  "Free self-serve": 46,
-  "Unknown": 34,
-  "Approval required": 9,
-  "Free trial": 6,
+  "Free self-serve": 64,
+  "Unknown": 15,
+  "Approval required": 12,
   "Paid plan": 4,
-  "Partner or contact sales": 1
+  "Free trial": 3,
+  "Partner or contact sales": 2
  },
  "prod_gate": {
-  "Unknown": 78,
-  "App review": 16,
-  "None": 5,
-  "Partner program": 1
+  "Unknown": 54,
+  "App review": 31,
+  "None": 10,
+  "Partner program": 5
  },
  "public_api": {
-  "yes": 95,
-  "unknown": 5
+  "yes": 98,
+  "unknown": 1,
+  "no": 1
  },
  "api_type": {
-  "REST": 91,
+  "REST": 93,
   "GraphQL": 4,
-  "Unknown": 4,
-  "None found": 1
+  "None found": 2,
+  "Unknown": 1
  },
  "mcp": {
-  "Official": 75,
+  "Official": 77,
   "None found": 10,
-  "Community": 7,
-  "Unknown": 5,
-  "Both": 3
+  "Community": 8,
+  "Both": 4,
+  "Unknown": 1
  },
  "integration_shape": {
-  "Multiple": 80,
-  "Hosted API": 15,
-  "MCP server": 5
+  "Multiple": 87,
+  "Hosted API": 11,
+  "MCP server": 2
  },
  "buildability": {
-  "Yes": 84,
-  "Unknown": 13,
-  "Partial": 3
+  "Yes": 86,
+  "Partial": 8,
+  "Unknown": 6
  },
  "confidence": {
-  "High": 64,
-  "Low": 36
+  "High": 83,
+  "Low": 15,
+  "Medium": 2
  },
  "archetypes": {
   "Open API": {
-   "count": 43,
+   "count": 46,
    "apps": [
     "Airtable",
-    "BigCommerce",
+    "Apify",
     "Bright Data",
-    "ClickUp",
+    "Clay",
+    "Close",
+    "Cloudflare",
     "Coda",
     "Consensus",
     "DataForSEO",
+    "Devin",
     "Fathom",
     "Firecrawl",
     "Freshdesk",
-    "Front",
+    "Gladly",
     "Google Ads",
     "Grain",
     "Gumroad",
     "Harvest",
-    "Jira",
+    "Help Scout",
+    "Klaviyo",
     "Lark (Larksuite)",
-    "Linear",
     "LiveAgent",
     "Mailchimp",
-    "Mermaid CLI",
+    "MongoDB Atlas",
+    "MrScraper",
     "Neo4j",
+    "Netlify",
     "Paygent Connect",
-    "Pumble",
+    "Plain",
+    "Podio",
     "Reducto",
     "SE Ranking",
     "Salesforce",
-    "Salesforce Commerce Cloud",
     "SendGrid",
-    "Slack",
-    "Stripe",
+    "Sentry",
     "Supabase",
     "Telegram",
     "Twilio",
+    "Vercel",
     "Vonage",
     "WooCommerce",
     "YouTube Transcript",
-    "Zendesk",
-    "Zoho CRM",
-    "Zoho Cliq",
+    "fanbasis",
     "higgsfield",
     "iPayX",
     "systeme.io"
    ]
   },
-  "Defeated": {
-   "count": 32,
+  "Open + app review": {
+   "count": 19,
    "apps": [
-    "Apify",
     "Asana",
-    "Brex",
-    "Clay",
-    "Close",
-    "Cloudflare",
-    "Datadog",
-    "Devin",
+    "Attio",
+    "BigCommerce",
     "Discord",
-    "Ecwid",
     "GitHub",
     "GoHighLevel",
-    "Help Scout",
+    "Intercom",
+    "Jira",
+    "Linear",
+    "Monday.com",
+    "Notion",
+    "Pipedrive",
+    "Plaid",
+    "Pumble",
+    "Slack",
+    "Snowflake",
+    "Stripe",
+    "Xero",
+    "Zoho CRM"
+   ]
+  },
+  "Access unverified": {
+   "count": 14,
+   "apps": [
+    "ClickUp",
+    "Ecwid",
+    "HubSpot",
     "LinkedIn Ads",
     "Magento (Adobe Commerce)",
-    "MongoDB Atlas",
-    "MrScraper",
-    "Netlify",
-    "Plaid",
-    "Plain",
-    "Podio",
+    "Meta Ads",
     "Pylon",
-    "Sentry",
     "Sherlock",
     "Shopify",
     "Smartsheet",
-    "Snowflake",
     "Threads (Meta)",
     "Twenty",
-    "Vercel",
     "WhatsApp Business",
-    "fanbasis"
-   ]
-  },
-  "Open + app review": {
-   "count": 8,
-   "apps": [
-    "Attio",
-    "HubSpot",
-    "Intercom",
-    "Klaviyo",
-    "Meta Ads",
-    "Monday.com",
-    "Notion",
-    "Xero"
+    "Zendesk"
    ]
   },
   "Approval gate": {
-   "count": 8,
+   "count": 10,
    "apps": [
-    "Amazon Selling Partner",
     "Binance",
-    "Copper",
+    "Brex",
     "Gorgias",
+    "Otter AI",
     "Pinterest",
     "PitchBook",
     "Ramp",
-    "Waterfall.io"
+    "Squarespace",
+    "Waterfall.io",
+    "Zoho Cliq"
+   ]
+  },
+  "Partner gate": {
+   "count": 5,
+   "apps": [
+    "Aircall",
+    "Amazon Selling Partner",
+    "Copper",
+    "Datadog",
+    "Front"
    ]
   },
   "Paid gate": {
@@ -180,64 +237,100 @@
     "Ahrefs",
     "DealCloud",
     "NotebookLM",
-    "Otter AI"
+    "Salesforce Commerce Cloud"
    ]
   },
   "MCP-only": {
-   "count": 3,
-   "apps": [
-    "Gladly",
-    "QuickBooks",
-    "Squarespace"
-   ]
-  },
-  "Partner gate": {
    "count": 2,
    "apps": [
-    "Aircall",
-    "Pipedrive"
+    "Mermaid CLI",
+    "QuickBooks"
    ]
   }
  },
  "blockers": {
-  "Insufficient evidence": 31,
-  "App review": 21,
-  "Paid plan": 4,
-  "Partner gate": 2
+  "App review": 37,
+  "Insufficient evidence": 8,
+  "Partner gate": 5,
+  "Paid plan": 3
  },
  "by_category": [
+  {
+   "category": "Developer, Infra and Data platforms",
+   "n": 10,
+   "self_serve": 9,
+   "gated": 1,
+   "unknown": 0,
+   "needs_review_to_ship": 3,
+   "self_serve_pct": 90.0,
+   "composio_coverage": 10,
+   "official_mcp": 8
+  },
+  {
+   "category": "AI, Research and Media-native",
+   "n": 10,
+   "self_serve": 8,
+   "gated": 2,
+   "unknown": 0,
+   "needs_review_to_ship": 0,
+   "self_serve_pct": 80.0,
+   "composio_coverage": 8,
+   "official_mcp": 10
+  },
   {
    "category": "Productivity and Project Management",
    "n": 10,
    "self_serve": 8,
    "gated": 0,
    "unknown": 2,
-   "needs_review_to_ship": 3,
+   "needs_review_to_ship": 5,
    "self_serve_pct": 80.0,
    "composio_coverage": 10,
    "official_mcp": 9
   },
   {
-   "category": "AI, Research and Media-native",
+   "category": "Support and Helpdesk",
+   "n": 10,
+   "self_serve": 7,
+   "gated": 1,
+   "unknown": 2,
+   "needs_review_to_ship": 3,
+   "self_serve_pct": 70.0,
+   "composio_coverage": 8,
+   "official_mcp": 9
+  },
+  {
+   "category": "Communications and Messaging",
+   "n": 10,
+   "self_serve": 7,
+   "gated": 2,
+   "unknown": 1,
+   "needs_review_to_ship": 4,
+   "self_serve_pct": 70.0,
+   "composio_coverage": 9,
+   "official_mcp": 7
+  },
+  {
+   "category": "Data, SEO and Scraping",
    "n": 10,
    "self_serve": 7,
    "gated": 2,
    "unknown": 1,
    "needs_review_to_ship": 0,
    "self_serve_pct": 70.0,
-   "composio_coverage": 8,
+   "composio_coverage": 7,
    "official_mcp": 8
   },
   {
-   "category": "Communications and Messaging",
+   "category": "CRM and Sales",
    "n": 10,
-   "self_serve": 7,
-   "gated": 1,
+   "self_serve": 6,
+   "gated": 2,
    "unknown": 2,
-   "needs_review_to_ship": 0,
-   "self_serve_pct": 70.0,
+   "needs_review_to_ship": 7,
+   "self_serve_pct": 60.0,
    "composio_coverage": 9,
-   "official_mcp": 7
+   "official_mcp": 9
   },
   {
    "category": "Marketing, Ads, Email and Social",
@@ -251,35 +344,13 @@
    "official_mcp": 6
   },
   {
-   "category": "CRM and Sales",
-   "n": 10,
-   "self_serve": 5,
-   "gated": 2,
-   "unknown": 3,
-   "needs_review_to_ship": 3,
-   "self_serve_pct": 50.0,
-   "composio_coverage": 9,
-   "official_mcp": 8
-  },
-  {
-   "category": "Support and Helpdesk",
-   "n": 10,
-   "self_serve": 5,
-   "gated": 1,
-   "unknown": 4,
-   "needs_review_to_ship": 2,
-   "self_serve_pct": 50.0,
-   "composio_coverage": 8,
-   "official_mcp": 9
-  },
-  {
    "category": "Finance and Fintech",
    "n": 10,
-   "self_serve": 4,
-   "gated": 3,
-   "unknown": 3,
-   "needs_review_to_ship": 4,
-   "self_serve_pct": 40.0,
+   "self_serve": 5,
+   "gated": 4,
+   "unknown": 1,
+   "needs_review_to_ship": 5,
+   "self_serve_pct": 50.0,
    "composio_coverage": 7,
    "official_mcp": 10
   },
@@ -287,34 +358,12 @@
    "category": "Ecommerce",
    "n": 10,
    "self_serve": 4,
-   "gated": 2,
-   "unknown": 4,
-   "needs_review_to_ship": 0,
+   "gated": 3,
+   "unknown": 3,
+   "needs_review_to_ship": 4,
    "self_serve_pct": 40.0,
    "composio_coverage": 3,
-   "official_mcp": 6
-  },
-  {
-   "category": "Data, SEO and Scraping",
-   "n": 10,
-   "self_serve": 4,
-   "gated": 2,
-   "unknown": 4,
-   "needs_review_to_ship": 0,
-   "self_serve_pct": 40.0,
-   "composio_coverage": 7,
-   "official_mcp": 8
-  },
-  {
-   "category": "Developer, Infra and Data platforms",
-   "n": 10,
-   "self_serve": 2,
-   "gated": 0,
-   "unknown": 8,
-   "needs_review_to_ship": 0,
-   "self_serve_pct": 20.0,
-   "composio_coverage": 10,
-   "official_mcp": 7
+   "official_mcp": 5
   }
  ],
  "composio": {
@@ -344,9 +393,9 @@
    "systeme.io"
   ]
  },
- "official_mcp_pct": 78.0,
+ "official_mcp_pct": 81.0,
  "long_tail_test": {
-  "gated_or_unknown_pct_with_toolkit": 12.5,
+  "gated_or_unknown_pct_with_toolkit": 10.0,
   "gated_or_unknown_pct_without_toolkit": 30.0,
   "n_with": 80,
   "n_without": 20
@@ -358,7 +407,7 @@
     "category": "CRM and Sales",
     "archetype": "Paid gate",
     "buildability": "Yes",
-    "blocker": "Paid plan",
+    "blocker": "App review",
     "composio": null,
     "tools": null,
     "mcp": "Official",
@@ -378,9 +427,9 @@
    {
     "app": "Gladly",
     "category": "Support and Helpdesk",
-    "archetype": "MCP-only",
+    "archetype": "Open API",
     "buildability": "Yes",
-    "blocker": "Insufficient evidence",
+    "blocker": "None",
     "composio": null,
     "tools": null,
     "mcp": "Official",
@@ -398,17 +447,6 @@
     "note": ""
    },
    {
-    "app": "WooCommerce",
-    "category": "Ecommerce",
-    "archetype": "Open API",
-    "buildability": "Yes",
-    "blocker": "None",
-    "composio": null,
-    "tools": null,
-    "mcp": "Official",
-    "note": "MCP requires installing a third-party plugin (mcp-adapter) not bundled with core WooCommerce."
-   },
-   {
     "app": "systeme.io",
     "category": "Marketing, Ads, Email and Social",
     "archetype": "Open API",
@@ -420,37 +458,37 @@
     "note": "MCP currently lacks OAuth2 support and has limited write operations (e.g., no funnel deletion)."
    },
    {
-    "app": "Squarespace",
-    "category": "Ecommerce",
-    "archetype": "MCP-only",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": null,
-    "tools": null,
-    "mcp": "Official",
-    "note": "OAuth client registration requires vendor review before credentials are issued"
-   },
-   {
-    "app": "Salesforce Commerce Cloud",
+    "app": "WooCommerce",
     "category": "Ecommerce",
     "archetype": "Open API",
     "buildability": "Yes",
     "blocker": "None",
     "composio": null,
     "tools": null,
-    "mcp": "None found",
-    "note": "No official MCP server found; API requires OAuth2 client setup in Account Manager/SLAS"
+    "mcp": "Both",
+    "note": "MCP requires installing a third-party plugin (mcp-adapter) not bundled with core WooCommerce."
    },
    {
-    "app": "Amazon Selling Partner",
+    "app": "fanbasis",
+    "category": "Ecommerce",
+    "archetype": "Open API",
+    "buildability": "Yes",
+    "blocker": "None",
+    "composio": null,
+    "tools": null,
+    "mcp": "Community",
+    "note": "No public API or authentication details found in sources; only a third-party MCP server is documented."
+   },
+   {
+    "app": "Squarespace",
     "category": "Ecommerce",
     "archetype": "Approval gate",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": null,
     "tools": null,
-    "mcp": "Both",
-    "note": "Approval required from selling partner before API credentials can be obtained"
+    "mcp": "Official",
+    "note": "OAuth client registration requires vendor review before credentials are issued"
    },
    {
     "app": "SE Ranking",
@@ -462,17 +500,6 @@
     "tools": null,
     "mcp": "Official",
     "note": "Rate limits may require contacting support to increase per-second limits."
-   },
-   {
-    "app": "Binance",
-    "category": "Finance and Fintech",
-    "archetype": "Approval gate",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": null,
-    "tools": null,
-    "mcp": "Official",
-    "note": "OAuth2 and trading APIs require business verification and partner approval, limiting self-serve access."
    },
    {
     "app": "iPayX",
@@ -497,6 +524,28 @@
     "note": "MCP server requires Node.js 18+ on the client machine; API key must be scoped to organization."
    },
    {
+    "app": "Binance",
+    "category": "Finance and Fintech",
+    "archetype": "Approval gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": null,
+    "tools": null,
+    "mcp": "Official",
+    "note": "OAuth2 and trading APIs require business verification and partner approval, limiting self-serve access."
+   },
+   {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "archetype": "MCP-only",
+    "buildability": "Yes",
+    "blocker": "None",
+    "composio": null,
+    "tools": null,
+    "mcp": "Both",
+    "note": "No public API; only CLI and community/official MCP servers available"
+   },
+   {
     "app": "Reducto",
     "category": "AI, Research and Media-native",
     "archetype": "Open API",
@@ -509,6 +558,28 @@
    }
   ],
   "gated_no_toolkit": [
+   {
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "archetype": "Paid gate",
+    "buildability": "Partial",
+    "blocker": "Paid plan",
+    "composio": null,
+    "tools": null,
+    "mcp": "None found",
+    "note": "No official MCP server found; API requires OAuth2 client setup in Account Manager/SLAS"
+   },
+   {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "archetype": "Partner gate",
+    "buildability": "Partial",
+    "blocker": "Partner gate",
+    "composio": null,
+    "tools": null,
+    "mcp": "Community",
+    "note": "Approval required from selling partner before API credentials can be obtained"
+   },
    {
     "app": "Waterfall.io",
     "category": "Data, SEO and Scraping",
@@ -523,15 +594,26 @@
   ],
   "partner_outreach": [
    {
-    "app": "Pipedrive",
+    "app": "Copper",
     "category": "CRM and Sales",
+    "archetype": "Partner gate",
+    "buildability": "Partial",
+    "blocker": "Partner gate",
+    "composio": "copper",
+    "tools": 65,
+    "mcp": "None found",
+    "note": "OAuth registration requires contacting Copper to obtain client_id/client_secret"
+   },
+   {
+    "app": "Front",
+    "category": "Support and Helpdesk",
     "archetype": "Partner gate",
     "buildability": "Yes",
     "blocker": "Partner gate",
-    "composio": "pipedrive",
-    "tools": 404,
+    "composio": "front",
+    "tools": 180,
     "mcp": "Official",
-    "note": "OAuth 2.0 required for public apps; API key only for private integrations"
+    "note": "MCP server is in beta; endpoints are read-mostly and may require scoping improvements for agent toolkits."
    },
    {
     "app": "Aircall",
@@ -543,30 +625,41 @@
     "tools": 48,
     "mcp": "Unknown",
     "note": "Tech partner approval required for both API access and MCP publishing"
+   },
+   {
+    "app": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "archetype": "Partner gate",
+    "buildability": "Partial",
+    "blocker": "Partner gate",
+    "composio": null,
+    "tools": null,
+    "mcp": "Community",
+    "note": "Approval required from selling partner before API credentials can be obtained"
+   },
+   {
+    "app": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "archetype": "Partner gate",
+    "buildability": "Yes",
+    "blocker": "Partner gate",
+    "composio": "datadog",
+    "tools": 255,
+    "mcp": "Official",
+    "note": "OAuth2 client creation requires a Partner Sandbox Account, limiting self-serve developer access."
    }
   ],
   "paid_plan": [
    {
-    "app": "Otter AI",
-    "category": "AI, Research and Media-native",
+    "app": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
     "archetype": "Paid gate",
-    "buildability": "Yes",
-    "blocker": "Paid plan",
-    "composio": "otter_ai_mcp",
-    "tools": 3,
-    "mcp": "Official",
-    "note": "API access limited to Enterprise workspaces; MCP requires OAuth2 authorization per user."
-   },
-   {
-    "app": "DealCloud",
-    "category": "CRM and Sales",
-    "archetype": "Paid gate",
-    "buildability": "Yes",
+    "buildability": "Partial",
     "blocker": "Paid plan",
     "composio": null,
     "tools": null,
-    "mcp": "Official",
-    "note": "MCP access requires DealCloud with Celeste license and specific user permissions; setup is restricted to paid plans and admin approval."
+    "mcp": "None found",
+    "note": "No official MCP server found; API requires OAuth2 client setup in Account Manager/SLAS"
    },
    {
     "app": "Ahrefs",
@@ -593,6 +686,61 @@
   ],
   "app_review": [
    {
+    "app": "Stripe",
+    "category": "Finance and Fintech",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "stripe",
+    "tools": 428,
+    "mcp": "Official",
+    "note": "MCP requires OAuth or agent API key setup; OAuth flow may require user interaction per environment."
+   },
+   {
+    "app": "Pipedrive",
+    "category": "CRM and Sales",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "pipedrive",
+    "tools": 404,
+    "mcp": "Official",
+    "note": "OAuth 2.0 required for public apps; API key only for private integrations"
+   },
+   {
+    "app": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "archetype": "Access unverified",
+    "buildability": "Unknown",
+    "blocker": "App review",
+    "composio": "linkedin_ads",
+    "tools": 28,
+    "mcp": "None found",
+    "note": "Tiered vetting and use-case review required for API access and production approval"
+   },
+   {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "archetype": "Approval gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "otter_ai_mcp",
+    "tools": 3,
+    "mcp": "Official",
+    "note": "API access limited to Enterprise workspaces; MCP requires OAuth2 authorization per user."
+   },
+   {
+    "app": "Zoho CRM",
+    "category": "CRM and Sales",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "zoho",
+    "tools": 115,
+    "mcp": "Official",
+    "note": "MCP servers require OAuth flow per session; no long-lived service accounts"
+   },
+   {
     "app": "Attio",
     "category": "CRM and Sales",
     "archetype": "Open + app review",
@@ -604,20 +752,9 @@
     "note": "OAuth install for other workspaces requires publishing or sharing; unpublished apps limited to 25 workspaces."
    },
    {
-    "app": "LinkedIn Ads",
-    "category": "Marketing, Ads, Email and Social",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "App review",
-    "composio": "linkedin_ads",
-    "tools": 28,
-    "mcp": "None found",
-    "note": "Tiered vetting and use-case review required for API access and production approval"
-   },
-   {
     "app": "HubSpot",
     "category": "CRM and Sales",
-    "archetype": "Open + app review",
+    "archetype": "Access unverified",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": "hubspot",
@@ -626,26 +763,26 @@
     "note": "OAuth PKCE required for MCP server; developer must create an MCP auth app in HubSpot account."
    },
    {
-    "app": "Copper",
+    "app": "DealCloud",
     "category": "CRM and Sales",
-    "archetype": "Approval gate",
-    "buildability": "Partial",
-    "blocker": "App review",
-    "composio": "copper",
-    "tools": 65,
-    "mcp": "None found",
-    "note": "OAuth registration requires contacting Copper to obtain client_id/client_secret"
-   },
-   {
-    "app": "Gorgias",
-    "category": "Support and Helpdesk",
-    "archetype": "Approval gate",
+    "archetype": "Paid gate",
     "buildability": "Yes",
     "blocker": "App review",
-    "composio": "gorgias",
-    "tools": 51,
+    "composio": null,
+    "tools": null,
     "mcp": "Official",
-    "note": "App must be approved by Gorgias team before public listing and API access tokens are issued"
+    "note": "MCP access requires DealCloud with Celeste license and specific user permissions; setup is restricted to paid plans and admin approval."
+   },
+   {
+    "app": "Twenty",
+    "category": "CRM and Sales",
+    "archetype": "Access unverified",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "twenty",
+    "tools": 23,
+    "mcp": "Official",
+    "note": "MCP server requires workspace URL; OAuth flow needs MCP client support for authorization spec."
    },
    {
     "app": "Intercom",
@@ -659,20 +796,64 @@
     "note": "AU hosted workspaces not supported for MCP; OAuth scopes require app review."
    },
    {
-    "app": "GoHighLevel",
-    "category": "Marketing, Ads, Email and Social",
-    "archetype": "Defeated",
+    "app": "Gorgias",
+    "category": "Support and Helpdesk",
+    "archetype": "Approval gate",
     "buildability": "Yes",
     "blocker": "App review",
-    "composio": "highlevel_location",
-    "tools": 554,
+    "composio": "gorgias",
+    "tools": 51,
     "mcp": "Official",
-    "note": "OAuth app approval required before public distribution; v1 API deprecated."
+    "note": "App must be approved by Gorgias team before public listing and API access tokens are issued"
+   },
+   {
+    "app": "Slack",
+    "category": "Communications and Messaging",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "slack",
+    "tools": 165,
+    "mcp": "Official",
+    "note": "Workspace admins must approve MCP client integrations, adding a deployment step."
+   },
+   {
+    "app": "Discord",
+    "category": "Communications and Messaging",
+    "archetype": "Open + app review",
+    "buildability": "Partial",
+    "blocker": "App review",
+    "composio": "discord",
+    "tools": 23,
+    "mcp": "None found",
+    "note": "OAuth2 scopes require approval for many endpoints, complicating broad agent toolkits"
+   },
+   {
+    "app": "Pumble",
+    "category": "Communications and Messaging",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "pumble",
+    "tools": 9,
+    "mcp": "Official",
+    "note": "API key generation requires installing an addon first; MCP requires creating an app and tokens."
+   },
+   {
+    "app": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "archetype": "Approval gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "zoho_cliq",
+    "tools": 162,
+    "mcp": "Official",
+    "note": "OAuth scopes and token refresh require domain-specific endpoints; setup is multi-step."
    },
    {
     "app": "Meta Ads",
     "category": "Marketing, Ads, Email and Social",
-    "archetype": "Open + app review",
+    "archetype": "Access unverified",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": "metaads",
@@ -681,15 +862,37 @@
     "note": "App review required for partner/agency use cases; OAuth flow requires redirect URL setup"
    },
    {
-    "app": "Klaviyo",
+    "app": "GoHighLevel",
     "category": "Marketing, Ads, Email and Social",
     "archetype": "Open + app review",
     "buildability": "Yes",
     "blocker": "App review",
-    "composio": "klaviyo",
-    "tools": 233,
+    "composio": "highlevel_location",
+    "tools": 554,
     "mcp": "Official",
-    "note": "MCP server access restricted to Owner/Admin/Manager roles."
+    "note": "OAuth app approval required before public distribution; v1 API deprecated."
+   },
+   {
+    "app": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "archetype": "Access unverified",
+    "buildability": "Unknown",
+    "blocker": "App review",
+    "composio": "threads",
+    "tools": 24,
+    "mcp": "None found",
+    "note": "App Review required for permissions beyond tester roles"
+   },
+   {
+    "app": "BigCommerce",
+    "category": "Ecommerce",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "bigcommerce",
+    "tools": 532,
+    "mcp": "Official",
+    "note": "MCP requires store owner privileges to enable on a store."
    },
    {
     "app": "Pinterest",
@@ -705,7 +908,7 @@
    {
     "app": "Squarespace",
     "category": "Ecommerce",
-    "archetype": "MCP-only",
+    "archetype": "Approval gate",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": null,
@@ -714,15 +917,26 @@
     "note": "OAuth client registration requires vendor review before credentials are issued"
    },
    {
-    "app": "Amazon Selling Partner",
+    "app": "Magento (Adobe Commerce)",
     "category": "Ecommerce",
-    "archetype": "Approval gate",
-    "buildability": "Yes",
+    "archetype": "Access unverified",
+    "buildability": "Unknown",
     "blocker": "App review",
     "composio": null,
     "tools": null,
-    "mcp": "Both",
-    "note": "Approval required from selling partner before API credentials can be obtained"
+    "mcp": "Community",
+    "note": "OAuth 1.0a workflow requires merchant-side admin configuration; no self-serve API keys for third-party apps"
+   },
+   {
+    "app": "Ecwid",
+    "category": "Ecommerce",
+    "archetype": "Access unverified",
+    "buildability": "Unknown",
+    "blocker": "App review",
+    "composio": null,
+    "tools": null,
+    "mcp": "None found",
+    "note": "No official MCP server found in provided sources"
    },
    {
     "app": "Waterfall.io",
@@ -736,6 +950,28 @@
     "note": "API access requires approval; no public MCP server found"
    },
    {
+    "app": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "archetype": "Open + app review",
+    "buildability": "Partial",
+    "blocker": "App review",
+    "composio": "github",
+    "tools": 883,
+    "mcp": "Community",
+    "note": "OAuth token handling differs between local and remote MCP servers; remote requires client-side token management."
+   },
+   {
+    "app": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "snowflake",
+    "tools": 16,
+    "mcp": "Official",
+    "note": "MCP server requires ACCOUNTADMIN role to set up; OAuth/PAT auth requires token management"
+   },
+   {
     "app": "Notion",
     "category": "Productivity and Project Management",
     "archetype": "Open + app review",
@@ -747,26 +983,37 @@
     "note": "PAT creation restricted on Business/Enterprise plans unless workspace owner enables it."
    },
    {
+    "app": "Linear",
+    "category": "Productivity and Project Management",
+    "archetype": "Open + app review",
+    "buildability": "Partial",
+    "blocker": "App review",
+    "composio": "linear",
+    "tools": 47,
+    "mcp": "None found",
+    "note": "No official MCP server found in sources; GraphQL API is broad but requires OAuth2 or API key setup"
+   },
+   {
+    "app": "Jira",
+    "category": "Productivity and Project Management",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "jira",
+    "tools": 166,
+    "mcp": "Official",
+    "note": "Admin enablement required for API token auth; some tools only available via OAuth 2.1"
+   },
+   {
     "app": "Asana",
     "category": "Productivity and Project Management",
-    "archetype": "Defeated",
+    "archetype": "Open + app review",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": "asana",
     "tools": 247,
     "mcp": "Official",
     "note": "MCP server requires Enterprise+ or Legacy Enterprise for app management controls"
-   },
-   {
-    "app": "Binance",
-    "category": "Finance and Fintech",
-    "archetype": "Approval gate",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": null,
-    "tools": null,
-    "mcp": "Official",
-    "note": "OAuth2 and trading APIs require business verification and partner approval, limiting self-serve access."
    },
    {
     "app": "Monday.com",
@@ -782,13 +1029,24 @@
    {
     "app": "Plaid",
     "category": "Finance and Fintech",
-    "archetype": "Defeated",
+    "archetype": "Open + app review",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": "plaid",
     "tools": 70,
     "mcp": "Official",
     "note": "Production access approval required for MCP and many API features."
+   },
+   {
+    "app": "Binance",
+    "category": "Finance and Fintech",
+    "archetype": "Approval gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": null,
+    "tools": null,
+    "mcp": "Official",
+    "note": "OAuth2 and trading APIs require business verification and partner approval, limiting self-serve access."
    },
    {
     "app": "Xero",
@@ -800,6 +1058,17 @@
     "tools": 109,
     "mcp": "Official",
     "note": "Certification requires ten paying customers before publishing; MCP usage limited to Core plan or above for real orgs"
+   },
+   {
+    "app": "Brex",
+    "category": "Finance and Fintech",
+    "archetype": "Approval gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "brex",
+    "tools": 84,
+    "mcp": "Official",
+    "note": "MCP requires admin to enable beta feature in dashboard before use"
    },
    {
     "app": "PitchBook",
@@ -826,28 +1095,6 @@
   ],
   "mcp_or_skill_only": [
    {
-    "app": "Gladly",
-    "category": "Support and Helpdesk",
-    "archetype": "MCP-only",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": null,
-    "tools": null,
-    "mcp": "Official",
-    "note": "MCP access requires organization-level beta enablement and eligible roles; MCP for Claude requires paid Claude plan"
-   },
-   {
-    "app": "Squarespace",
-    "category": "Ecommerce",
-    "archetype": "MCP-only",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": null,
-    "tools": null,
-    "mcp": "Official",
-    "note": "OAuth client registration requires vendor review before credentials are issued"
-   },
-   {
     "app": "QuickBooks",
     "category": "Finance and Fintech",
     "archetype": "MCP-only",
@@ -857,13 +1104,24 @@
     "tools": 119,
     "mcp": "Official",
     "note": "OAuth 2.0 flow requires user consent and realmID handling for production access"
+   },
+   {
+    "app": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "archetype": "MCP-only",
+    "buildability": "Yes",
+    "blocker": "None",
+    "composio": null,
+    "tools": null,
+    "mcp": "Both",
+    "note": "No public API; only CLI and community/official MCP servers available"
    }
   ],
   "defeated_or_unknown": [
    {
     "app": "LinkedIn Ads",
     "category": "Marketing, Ads, Email and Social",
-    "archetype": "Defeated",
+    "archetype": "Access unverified",
     "buildability": "Unknown",
     "blocker": "App review",
     "composio": "linkedin_ads",
@@ -872,356 +1130,59 @@
     "note": "Tiered vetting and use-case review required for API access and production approval"
    },
    {
-    "app": "Podio",
-    "category": "CRM and Sales",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "podio",
-    "tools": 143,
-    "mcp": "Official",
-    "note": ""
-   },
-   {
-    "app": "Twenty",
-    "category": "CRM and Sales",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "twenty",
-    "tools": 23,
-    "mcp": "Official",
-    "note": "MCP server requires workspace URL; OAuth flow needs MCP client support for authorization spec."
-   },
-   {
-    "app": "Plain",
+    "app": "Zendesk",
     "category": "Support and Helpdesk",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "plain",
-    "tools": 119,
-    "mcp": "Official",
-    "note": "MCP server requires per-user OAuth; no shared credentials for teams."
-   },
-   {
-    "app": "Close",
-    "category": "CRM and Sales",
-    "archetype": "Defeated",
+    "archetype": "Access unverified",
     "buildability": "Unknown",
     "blocker": "Insufficient evidence",
-    "composio": "close",
-    "tools": 75,
-    "mcp": "Unknown",
-    "note": "MCP access requires OAuth 2.0 or API key; no public MCP-only signup path."
-   },
-   {
-    "app": "Pylon",
-    "category": "Support and Helpdesk",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "pylon_mcp",
-    "tools": 12,
-    "mcp": "Official",
-    "note": "MCP server requires OAuth; API tokens only supported for REST API, not MCP."
-   },
-   {
-    "app": "Help Scout",
-    "category": "Support and Helpdesk",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "help_scout",
-    "tools": 129,
-    "mcp": "Official",
-    "note": "MCP connector is read-only; report tools require Plus or Pro plan."
-   },
-   {
-    "app": "Discord",
-    "category": "Communications and Messaging",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": "discord",
-    "tools": 23,
-    "mcp": "None found",
-    "note": "OAuth2 scopes require approval for many endpoints, complicating broad agent toolkits"
-   },
-   {
-    "app": "GoHighLevel",
-    "category": "Marketing, Ads, Email and Social",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": "highlevel_location",
-    "tools": 554,
-    "mcp": "Official",
-    "note": "OAuth app approval required before public distribution; v1 API deprecated."
-   },
-   {
-    "app": "WhatsApp Business",
-    "category": "Communications and Messaging",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "whatsapp",
-    "tools": 127,
-    "mcp": "Official",
-    "note": "MCP server and tools are in beta; interface and tool set may change"
-   },
-   {
-    "app": "Magento (Adobe Commerce)",
-    "category": "Ecommerce",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": null,
-    "tools": null,
+    "composio": "zendesk",
+    "tools": 483,
     "mcp": "Community",
-    "note": "OAuth 1.0a workflow requires merchant-side admin configuration; no self-serve API keys for third-party apps"
+    "note": "MCP server is third-party; official MCP not documented in sources."
    },
    {
     "app": "Threads (Meta)",
     "category": "Marketing, Ads, Email and Social",
-    "archetype": "Defeated",
+    "archetype": "Access unverified",
     "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
+    "blocker": "App review",
     "composio": "threads",
     "tools": 24,
     "mcp": "None found",
     "note": "App Review required for permissions beyond tester roles"
    },
    {
-    "app": "Shopify",
+    "app": "Magento (Adobe Commerce)",
     "category": "Ecommerce",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "shopify",
-    "tools": 386,
-    "mcp": "Official",
-    "note": "MCP server requires Node.js 18+ and CLI install; OAuth flows can be complex for new developers"
-   },
-   {
-    "app": "fanbasis",
-    "category": "Ecommerce",
-    "archetype": "Defeated",
+    "archetype": "Access unverified",
     "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
+    "blocker": "App review",
     "composio": null,
     "tools": null,
     "mcp": "Community",
-    "note": "No public API or authentication details found in sources; only a third-party MCP server is documented."
+    "note": "OAuth 1.0a workflow requires merchant-side admin configuration; no self-serve API keys for third-party apps"
    },
    {
     "app": "Ecwid",
     "category": "Ecommerce",
-    "archetype": "Defeated",
+    "archetype": "Access unverified",
     "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
+    "blocker": "App review",
     "composio": null,
     "tools": null,
     "mcp": "None found",
     "note": "No official MCP server found in provided sources"
    },
    {
-    "app": "MrScraper",
-    "category": "Data, SEO and Scraping",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "mrscraper",
-    "tools": 11,
-    "mcp": "Official",
-    "note": "OAuth2 scopes are required for MCP tools; API key fallback only when OAuth is unavailable."
-   },
-   {
-    "app": "Apify",
-    "category": "Data, SEO and Scraping",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "apify",
-    "tools": 184,
-    "mcp": "Official",
-    "note": "Full-permission Actors excluded from MCP server; OAuth required for production use"
-   },
-   {
     "app": "Sherlock",
     "category": "Data, SEO and Scraping",
-    "archetype": "Defeated",
+    "archetype": "Access unverified",
     "buildability": "Unknown",
     "blocker": "Insufficient evidence",
     "composio": null,
     "tools": null,
-    "mcp": "Unknown",
+    "mcp": "Community",
     "note": "API is narrow and interview-focused; no evidence of broader social media search API."
-   },
-   {
-    "app": "Netlify",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "netlify_mcp",
-    "tools": 9,
-    "mcp": "Official",
-    "note": "OAuth2 required for public integrations; PATs are personal-only tokens"
-   },
-   {
-    "app": "GitHub",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": "github",
-    "tools": 883,
-    "mcp": "Community",
-    "note": "OAuth token handling differs between local and remote MCP servers; remote requires client-side token management."
-   },
-   {
-    "app": "Vercel",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": "vercel",
-    "tools": 399,
-    "mcp": "None found",
-    "note": "No official MCP server documented; only REST API available."
-   },
-   {
-    "app": "Clay",
-    "category": "Data, SEO and Scraping",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "clay",
-    "tools": 15,
-    "mcp": "Official",
-    "note": "MCP scopes and available functions depend on admin-enabled roles; not all MCP functions mirror web app permissions."
-   },
-   {
-    "app": "MongoDB Atlas",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "mongodb",
-    "tools": 496,
-    "mcp": "Official",
-    "note": "IP access lists may block API calls if not configured, and service accounts require Organization Owner role to create."
-   },
-   {
-    "app": "Snowflake",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "snowflake",
-    "tools": 16,
-    "mcp": "Official",
-    "note": "MCP server requires ACCOUNTADMIN role to set up; OAuth/PAT auth requires token management"
-   },
-   {
-    "app": "Asana",
-    "category": "Productivity and Project Management",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": "asana",
-    "tools": 247,
-    "mcp": "Official",
-    "note": "MCP server requires Enterprise+ or Legacy Enterprise for app management controls"
-   },
-   {
-    "app": "Sentry",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": "sentry",
-    "tools": 210,
-    "mcp": "Unknown",
-    "note": "OAuth2 requires client registration; personal/org tokens require UI steps to create"
-   },
-   {
-    "app": "Cloudflare",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "cloudflare",
-    "tools": 171,
-    "mcp": "Official",
-    "note": "OAuth requires specific account roles (Super Administrator, Administrator, or OAuth Client Write) to create clients."
-   },
-   {
-    "app": "Datadog",
-    "category": "Developer, Infra and Data platforms",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "datadog",
-    "tools": 255,
-    "mcp": "Official",
-    "note": "OAuth2 client creation requires a Partner Sandbox Account, limiting self-serve developer access."
-   },
-   {
-    "app": "Plaid",
-    "category": "Finance and Fintech",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "App review",
-    "composio": "plaid",
-    "tools": 70,
-    "mcp": "Official",
-    "note": "Production access approval required for MCP and many API features."
-   },
-   {
-    "app": "Brex",
-    "category": "Finance and Fintech",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "brex",
-    "tools": 84,
-    "mcp": "Official",
-    "note": "MCP requires admin to enable beta feature in dashboard before use"
-   },
-   {
-    "app": "Smartsheet",
-    "category": "Productivity and Project Management",
-    "archetype": "Defeated",
-    "buildability": "Yes",
-    "blocker": "Insufficient evidence",
-    "composio": "smartsheet",
-    "tools": 180,
-    "mcp": "Official",
-    "note": "MCP server requires Business/Enterprise/Advanced Work Management plan"
-   },
-   {
-    "app": "Devin",
-    "category": "AI, Research and Media-native",
-    "archetype": "Defeated",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": "devin_mcp",
-    "tools": 23,
-    "mcp": "Unknown",
-    "note": "MCP requires organization ID header for PATs and enterprise keys; legacy keys lack session tools."
-   },
-   {
-    "app": "Mermaid CLI",
-    "category": "AI, Research and Media-native",
-    "archetype": "Open API",
-    "buildability": "Unknown",
-    "blocker": "Insufficient evidence",
-    "composio": null,
-    "tools": null,
-    "mcp": "Community",
-    "note": "No public API; only CLI and community/official MCP servers available"
    }
   ]
  }
