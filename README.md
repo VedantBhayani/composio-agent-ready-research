@@ -2,7 +2,7 @@
 
 An agent that researches 100 apps and asks of each one: **could this be an agent toolkit today, and if not, what's blocking it?** It records auth methods, how developers get credentials, the approval needed to go live, the API surface, MCP servers and Composio toolkit coverage. Every answer carries a fetched URL and a verbatim excerpt. The output is checked by four automated loops and then a blind human audit.
 
-- **Live page:** not deployed yet (GitHub Pages pending owner OK); open `output/index.html` locally
+- **Live page:** https://vedantbhayani.github.io/composio-agent-ready-research/
 - **Data:** `output/data.json`, `output/records.csv`, `output/llms.txt` (for agents)
 
 ## Results (all computed from `data/`)
