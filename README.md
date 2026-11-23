@@ -26,7 +26,7 @@ One human answer was outside the allowed values (Salesforce auth: "yes, Rest") a
 
 **The honest result: the automated loops did not raise precision.** The confidence intervals overlap, so the 3-point drop is noise rather than a gain, and nothing here shows the "lower first pass rising to higher" pattern from the automated loops alone. The rise comes from the human tier. What the loops did achieve:
 - **Grounding.** Unsupported claims fell from 5 to 0. Unverified fields became Unknown instead of staying guesses.
-- **Fewer Unknowns.** Unknown dev_access fell from 34 to 15 across all 100 apps.
+- **More Unknowns, on purpose.** Values the loops could not verify became Unknown, so across all 100 apps dev_access Unknown went from 1 in pass 1 to 14 in pass 2. That costs coverage, and the audit shows it did not buy precision.
 
 Where the errors are:
 - **Public API, Composio toolkit and buildability** were 15/15, 15/15 and 14/15 correct in pass 2.
