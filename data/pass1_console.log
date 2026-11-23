@@ -1,0 +1,98 @@
+﻿to research: 97 (already done: 3)
+  ok    3 Pipedrive                    Yes      Open + app review  6.4s $0.0020
+  ok    1 Salesforce                   Yes      Open + app review  9.4s $0.0021
+  ok    7 Zoho CRM                     Yes      Open API           5.6s $0.0020
+  ok    2 HubSpot                      Yes      Open + app review  15.1s $0.0021
+  ok    6 Podio                        Yes      Open API           11.0s $0.0019
+  ok    4 Attio                        Yes      Open + app review  17.6s $0.0021
+  ok    5 Twenty                       Yes      Open API           20.1s $0.0021
+  ok    9 Copper                       Partial  Approval gate      8.8s $0.0020
+  ok   10 DealCloud                    Yes      Paid gate          6.7s $0.0020
+  ok   11 Zendesk                      Yes      Open API           7.5s $0.0020
+  ok    8 Close                        Yes      Open API           11.1s $0.0020
+  ok   12 Intercom                     Yes      Open + app review  8.0s $0.0019
+  ok   14 Front                        Yes      Open API           7.3s $0.0020
+  ok   15 Pylon                        Yes      Open API           9.7s $0.0021
+  ok   17 Plain                        Yes      Open API           7.3s $0.0020
+  ok   16 LiveAgent                    Yes      Open API           10.7s $0.0020
+  ok   18 Help Scout                   Yes      Open API           7.7s $0.0021
+  ok   20 Gladly                       Yes      Partner gate       6.6s $0.0020
+  ok   19 Gorgias                      Yes      Approval gate      8.4s $0.0023
+  ok   21 Slack                        Yes      Open + app review  7.7s $0.0020
+  ok   22 Twilio                       Yes      Open API           6.8s $0.0019
+  ok   24 Lark (Larksuite)             Yes      Open API           7.4s $0.0022
+  ok   23 Zoho Cliq                    Yes      Open API           9.5s $0.0019
+  ok   26 Discord                      Partial  Open + app review  5.9s $0.0018
+  ok   29 Aircall                      Partial  Partner gate       6.7s $0.0019
+  ok   25 Pumble                       Yes      Open API           14.9s $0.0021
+  ok   28 WhatsApp Business            Yes      Open + app review  8.2s $0.0020
+  ok   13 Freshdesk                    Yes      Open API           36.9s $0.0020
+  ok   27 Telegram                     Yes      Open API           10.2s $0.0019
+  ok   35 Mailchimp                    Partial  Open + app review  26.0s $0.0019
+  ok   31 Google Ads                   Yes      Open + app review  28.1s $0.0020
+  ok   30 Vonage                       Yes      Open API           30.1s $0.0021
+  ok   34 GoHighLevel                  Yes      Open + app review  33.2s $0.0021
+  ok   36 Klaviyo                      Yes      Open + app review  7.1s $0.0021
+  ok   32 Meta Ads                     Yes      Open + app review  34.9s $0.0022
+  ok   37 systeme.io                   Yes      Open API           8.8s $0.0020
+  ok   39 Threads (Meta)               Partial  Open + app review  9.8s $0.0019
+  ok   42 WooCommerce                  Yes      Open API           15.9s $0.0020
+  ok   43 BigCommerce                  Yes      Open API           10.3s $0.0020
+  ok   44 Salesforce Commerce Cloud    Yes      Open API           8.2s $0.0020
+  ok   40 SendGrid                     Yes      Open API           27.1s $0.0019
+  ok   45 Magento (Adobe Commerce)     Partial  Open + app review  7.4s $0.0020
+  ok   38 Pinterest                    Yes      Approval gate      33.7s $0.0020
+  ok   41 Shopify                      Yes      Open API           27.9s $0.0021
+  ok   46 Squarespace                  Yes      Partner gate       5.2s $0.0019
+  ok   50 fanbasis                     Unknown  Defeated           4.1s $0.0015
+  ok   49 Amazon Selling Partner       Yes      Approval gate      7.2s $0.0021
+  ok   47 Ecwid                        Partial  Open + app review  9.0s $0.0019
+  ok   51 DataForSEO                   Yes      Open API           6.2s $0.0020
+  ok   52 SE Ranking                   Yes      Open API           6.0s $0.0020
+  ok   53 Ahrefs                       Yes      Paid gate          6.1s $0.0019
+  ok   48 Gumroad                      Yes      Open API           15.1s $0.0021
+  ok   54 MrScraper                    Yes      Open API           8.0s $0.0021
+  ok   55 Apify                        Yes      Open API           6.7s $0.0020
+  ok   56 Firecrawl                    Yes      Open API           10.7s $0.0023
+  ok   58 Sherlock                     Yes      Open API           13.2s $0.0015
+  ok   61 GitHub                       Yes      Open + app review  9.1s $0.0018
+  ok   63 Netlify                      Yes      Open API           7.5s $0.0020
+  ok   57 Bright Data                  Yes      Open API           26.8s $0.0020
+  ok   59 Waterfall.io                 Partial  Approval gate      26.0s $0.0019
+  ok   60 Clay                         Yes      Open API           27.3s $0.0021
+  ok   62 Vercel                       Yes      Open API           17.7s $0.0021
+  ok   65 Supabase                     Yes      Open API           7.4s $0.0020
+  ok   66 Neo4j                        Yes      Open API           6.7s $0.0020
+  ok   68 MongoDB Atlas                Yes      Open API           6.3s $0.0018
+  ok   67 Snowflake                    Yes      Open API           8.5s $0.0022
+  ok   71 Notion                       Yes      Open API           7.2s $0.0020
+  ok   72 Airtable                     Yes      Open API           8.1s $0.0020
+  ok   64 Cloudflare                   Yes      Open + app review  25.8s $0.0020
+  ok   73 Linear                       Yes      Open API           5.5s $0.0019
+  ok   70 Sentry                       Yes      Open API           16.7s $0.0020
+  ok   74 Jira                         Yes      Open + app review  7.0s $0.0021
+  ok   75 Asana                        Yes      Open + app review  6.6s $0.0020
+  ok   77 ClickUp                      Yes      Open API           5.4s $0.0020
+  ok   76 Monday.com                   Yes      Open + app review  7.5s $0.0022
+  ok   69 Datadog                      Yes      Partner gate       26.8s $0.0020
+  ok   80 Harvest                      Yes      Open API           7.8s $0.0020
+  ok   82 Plaid                        Yes      Paid gate          9.4s $0.0019
+  ok   83 Binance                      Yes      Approval gate      12.0s $0.0017
+  ok   85 iPayX                        Yes      Open API           6.6s $0.0018
+  ok   84 Paygent Connect              Yes      Open API           15.3s $0.0021
+  ok   88 Brex                         Yes      Open API           6.5s $0.0019
+  ok   79 Smartsheet                   Yes      Open API           33.8s $0.0019
+  ok   86 QuickBooks                   Yes      Open + app review  20.1s $0.0016
+  ok   87 Xero                         Yes      Open + app review  19.5s $0.0020
+  ok   91 NotebookLM                   Yes      Paid gate          7.0s $0.0020
+  ok   78 Coda                         Yes      Open API           47.6s $0.0020
+  ok   93 Fathom                       Yes      Open API           8.0s $0.0022
+  ok   89 Ramp                         Yes      Open + app review  16.4s $0.0021
+  ok   90 PitchBook                    Yes      Approval gate      18.1s $0.0019
+  ok   96 Devin                        Yes      Open API           7.7s $0.0020
+  ok   97 higgsfield                   Yes      Open API           9.4s $0.0021
+  ok   98 Mermaid CLI                  Yes      MCP-only           6.4s $0.0017
+  ok   95 Reducto                      Yes      Open API           16.0s $0.0022
+  ok   99 YouTube Transcript           Yes      Open API           8.3s $0.0020
+  ok   94 Consensus                    Yes      Open API           18.4s $0.0021
+  ok  100 Grain                        Yes      Open API           6.3s $0.0021

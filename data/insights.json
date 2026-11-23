@@ -1,0 +1,301 @@
+{
+ "dataset": "pass2.jsonl",
+ "n_apps": 15,
+ "auth": {
+  "counts": {
+   "OAuth2": 14,
+   "API key": 7,
+   "Token": 4,
+   "Basic": 2
+  },
+  "unknown": 0,
+  "oauth_any": 14,
+  "api_key_any": 7,
+  "both_oauth_and_key": 6,
+  "oauth_pct": 93.3,
+  "api_key_pct": 46.7,
+  "both_pct": 40.0
+ },
+ "dev_access": {
+  "Free self-serve": 7,
+  "Free trial": 3,
+  "Approval required": 2,
+  "Unknown": 1,
+  "Partner or contact sales": 1,
+  "Paid plan": 1
+ },
+ "prod_gate": {
+  "Unknown": 9,
+  "App review": 6
+ },
+ "public_api": {
+  "yes": 15
+ },
+ "api_type": {
+  "REST": 14,
+  "GraphQL": 1
+ },
+ "mcp": {
+  "Official": 12,
+  "None found": 2,
+  "Community": 1
+ },
+ "integration_shape": {
+  "Multiple": 13,
+  "Hosted API": 2
+ },
+ "buildability": {
+  "Yes": 13,
+  "Partial": 2
+ },
+ "confidence": {
+  "High": 14,
+  "Low": 1
+ },
+ "archetypes": {
+  "Open API": {
+   "count": 7,
+   "apps": [
+    "Close",
+    "Front",
+    "Plain",
+    "Podio",
+    "Stripe",
+    "Zendesk",
+    "Zoho CRM"
+   ]
+  },
+  "Open + app review": {
+   "count": 3,
+   "apps": [
+    "Attio",
+    "Intercom",
+    "Pipedrive"
+   ]
+  },
+  "Approval gate": {
+   "count": 2,
+   "apps": [
+    "Copper",
+    "LinkedIn Ads"
+   ]
+  },
+  "Defeated": {
+   "count": 1,
+   "apps": [
+    "HubSpot"
+   ]
+  },
+  "Partner gate": {
+   "count": 1,
+   "apps": [
+    "Otter AI"
+   ]
+  },
+  "Paid gate": {
+   "count": 1,
+   "apps": [
+    "DealCloud"
+   ]
+  }
+ },
+ "blockers": {
+  "App review": 7,
+  "Partner gate": 1
+ },
+ "by_category": [
+  {
+   "category": "Finance and Fintech",
+   "n": 1,
+   "self_serve": 1,
+   "gated": 0,
+   "unknown": 0,
+   "needs_review_to_ship": 0,
+   "self_serve_pct": 100.0,
+   "composio_coverage": 1,
+   "official_mcp": 1
+  },
+  {
+   "category": "Support and Helpdesk",
+   "n": 4,
+   "self_serve": 4,
+   "gated": 0,
+   "unknown": 0,
+   "needs_review_to_ship": 1,
+   "self_serve_pct": 100.0,
+   "composio_coverage": 4,
+   "official_mcp": 3
+  },
+  {
+   "category": "CRM and Sales",
+   "n": 8,
+   "self_serve": 5,
+   "gated": 2,
+   "unknown": 1,
+   "needs_review_to_ship": 4,
+   "self_serve_pct": 62.5,
+   "composio_coverage": 7,
+   "official_mcp": 7
+  },
+  {
+   "category": "Marketing, Ads, Email and Social",
+   "n": 1,
+   "self_serve": 0,
+   "gated": 1,
+   "unknown": 0,
+   "needs_review_to_ship": 1,
+   "self_serve_pct": 0.0,
+   "composio_coverage": 1,
+   "official_mcp": 0
+  },
+  {
+   "category": "AI, Research and Media-native",
+   "n": 1,
+   "self_serve": 0,
+   "gated": 1,
+   "unknown": 0,
+   "needs_review_to_ship": 0,
+   "self_serve_pct": 0.0,
+   "composio_coverage": 1,
+   "official_mcp": 1
+  }
+ ],
+ "composio": {
+  "covered": 14,
+  "covered_pct": 93.3,
+  "tools_total": 2640,
+  "not_covered": [
+   "DealCloud"
+  ]
+ },
+ "official_mcp_pct": 80.0,
+ "long_tail_test": {
+  "gated_or_unknown_pct_with_toolkit": 14.3,
+  "gated_or_unknown_pct_without_toolkit": 0.0,
+  "n_with": 14,
+  "n_without": 1
+ },
+ "opportunities": {
+  "quick_wins_build_now": [
+   {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "archetype": "Paid gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": null,
+    "tools": null,
+    "mcp": "Official",
+    "note": "MCP access requires DealCloud with Celeste license and specific user permissions; setup is restricted to paid plans and admin approval."
+   }
+  ],
+  "gated_no_toolkit": [],
+  "partner_outreach": [
+   {
+    "app": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "archetype": "Partner gate",
+    "buildability": "Yes",
+    "blocker": "Partner gate",
+    "composio": "otter_ai_mcp",
+    "tools": 3,
+    "mcp": "Official",
+    "note": "API access limited to Enterprise workspaces; MCP requires OAuth2 authorization per user."
+   }
+  ],
+  "paid_plan": [],
+  "app_review": [
+   {
+    "app": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "archetype": "Approval gate",
+    "buildability": "Partial",
+    "blocker": "App review",
+    "composio": "linkedin_ads",
+    "tools": 28,
+    "mcp": "None found",
+    "note": "Tiered vetting and use-case review required for API access and production approval"
+   },
+   {
+    "app": "Pipedrive",
+    "category": "CRM and Sales",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "pipedrive",
+    "tools": 404,
+    "mcp": "Official",
+    "note": "OAuth 2.0 required for public apps; API key only for private integrations"
+   },
+   {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "archetype": "Defeated",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "hubspot",
+    "tools": 354,
+    "mcp": "Official",
+    "note": "OAuth PKCE required for MCP server; developer must create an MCP auth app in HubSpot account."
+   },
+   {
+    "app": "Attio",
+    "category": "CRM and Sales",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "attio",
+    "tools": 105,
+    "mcp": "Official",
+    "note": "OAuth install for other workspaces requires publishing or sharing; unpublished apps limited to 25 workspaces."
+   },
+   {
+    "app": "DealCloud",
+    "category": "CRM and Sales",
+    "archetype": "Paid gate",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": null,
+    "tools": null,
+    "mcp": "Official",
+    "note": "MCP access requires DealCloud with Celeste license and specific user permissions; setup is restricted to paid plans and admin approval."
+   },
+   {
+    "app": "Copper",
+    "category": "CRM and Sales",
+    "archetype": "Approval gate",
+    "buildability": "Partial",
+    "blocker": "App review",
+    "composio": "copper",
+    "tools": 65,
+    "mcp": "None found",
+    "note": "OAuth registration requires contacting Copper to obtain client_id/client_secret"
+   },
+   {
+    "app": "Intercom",
+    "category": "Support and Helpdesk",
+    "archetype": "Open + app review",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "intercom",
+    "tools": 138,
+    "mcp": "Official",
+    "note": "AU hosted workspaces not supported for MCP; OAuth scopes require app review."
+   }
+  ],
+  "mcp_or_skill_only": [],
+  "defeated_or_unknown": [
+   {
+    "app": "HubSpot",
+    "category": "CRM and Sales",
+    "archetype": "Defeated",
+    "buildability": "Yes",
+    "blocker": "App review",
+    "composio": "hubspot",
+    "tools": 354,
+    "mcp": "Official",
+    "note": "OAuth PKCE required for MCP server; developer must create an MCP auth app in HubSpot account."
+   }
+  ]
+ }
+}

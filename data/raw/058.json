@@ -1,0 +1,193 @@
+{
+ "app": {
+  "id": 58,
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "hint_raw": "github.com/sherlock-project/sherlock",
+  "hint_url": "https://github.com/sherlock-project/sherlock",
+  "hint_note": null,
+  "seed_urls": [
+   "https://github.com/sherlock-project/sherlock"
+  ]
+ },
+ "search": {
+  "search_id": "search_07b0f5025fc05ae2746fba5c943492d9",
+  "results": [
+   {
+    "url": "https://app.sherlock.sh/reference",
+    "title": "Sherlock API Reference",
+    "publish_date": null,
+    "excerpts": [
+     "Open Search Search Keyboard Shortcut: Control ⌃ k\n* Introduction\n* Interviews Close Group - Interviews\n* Create a new interview HTTP Method: POST\n* Interviews /{interview_id} Open Group - Interviews/{interview_id}\n* Report Generation Status Open Group - Report Generation Status\n* Usage Open Group - Usage\n* Video Open Group - Video\n* WECP Open Group - WECP\n* Models Open Group - Models\nOpen API Client\nPowered by Scalar\n1.3.0\nOpenAPI 3.0.0\n\nSherlock Interview API\n\nDownload OpenAPI Document\njson Download OpenAPI Document\nyaml\nPublic API for managing interviews and accessing interview information.\nSherlock 2.0. Reports now carry Sherlock 2.0's verdict in a sherlock_2 block, beside the fields you already read. On October 15, 2026 Sherlock 2.0 becomes the default: report links to the new report, the report PDF is the new report's, and old report links lead to the new report. No field is renamed or removed, and scores keep their scale (0 to 10, higher is more trustworthy). Sherlock 1.0's score stays available as sherlock_2.sherlock_1_score .\nHuman review. Every interview result and every report webhook carries requires_human_review: true and a use_notice . Sherlock results are evidence for a person to review. Do not make a hiring decision on a Sherlock result alone.\nChangelog\n* Removed Oct 2026: skill and AI-fluency scores. Sherlock checks interview integrity only: is it a live person, the person you expected, a real person (not a deepfake), and are they answering on their own. It does not assess skills. Webhook payloads that carry the report no longer include final_summary , skill_summary , ai_usage.fluency_score , ai_usage.capability_score , ai_usage.prompt_quality_score , or the per-answer qa_pairs[].competence and qa_pairs[].qa_quality_score_0_100 . ai_usage.used , ai_usage.consent , ai_usage.commentary and ai_usage.evidence stay. The report PDF no longer has the Interview Insights section or these scores.\nServer\nServer: app.sherlock.sh/api/public/v1\nAuthentication Required\nSelected Auth Type: BearerAuth\n* API key authentication using Bearer token format. Example: Authorization: Bearer xxxxx\n* Bearer Token :\nClient Libraries\nShell Ruby Node.js PHP Python\nMore Select from all clients\nShell Curl\n\nInterviews ​ Copy link\n\nOperations for create interviews\nInterviews Operations\n* post /interviews"
+    ]
+   },
+   {
+    "url": "https://docs.cloudferro.com/en/latest/sherlock/Sherlock-authentication-API-keys-on-CloudFerro-Cloud/Sherlock-authentication-API-keys-on-CloudFerro-Cloud.html",
+    "title": "Authenticate to Sherlock AI with API keys on CloudFerro Cloud ",
+    "publish_date": null,
+    "excerpts": [
+     "# Authenticate to Sherlock AI with API keys on CloudFerro Cloud \n\nSherlock AI uses API keys to authenticate programmatic requests to AI models. You create API keys inside a Sherlock AI project in the control panel and then use them from your application, automation script, or backend service.\n\nTreat every API key as a secret. Do not share it with other users, commit it to a repository, paste it into documentation, or expose it in client-side code such as browsers and mobile applications. Production requests should go through your own backend, where the key can be loaded from an environment variable or a secrets management service.\n\n## Prerequisites \n\nBefore you start, make sure that:\n\n1. You can log in to the Sherlock AI control panel after completing [account and organization setup](docs.cloudferro.com/en/latest/sherlock/How-to-set-up-Sherlock-AI-on-CloudFerro-Cloud/How-to-set-up-Sherlock-AI-on-CloudFerro-Cloud.html).\n2. You have [selected the project](docs.cloudferro.com/en/latest/sherlock/Manage-Sherlock-projects-on-CloudFerro-Cloud/Manage-Sherlock-projects-on-CloudFerro-Cloud.html) where the API key will be created.\n3. Your account has permissions to manage API keys in that project.\n4. You know where the key will be stored after creation, because Sherlock AI shows the generated key only once.\n\n## Step 1: Open API Keys \n\nLog in to the Sherlock AI control panel and open the project in which you want to create the key. In the left navigation menu, select **API Keys** under **Resources**. The current console uses **Create API Key** for the creation action. The screenshots below show the earlier console layout, where this action is called **Add API key**.\n\nThe API keys page lists the keys already created in the current project. Use this page to check existing keys, create a new one, and manage project-level authentication for programmatic access.\n\n[image: Sherlock AI API Keys page]\n\n*API Keys page in the Sherlock AI control panel. [](#id1)*\n\n## Step 2: Start creating a new key \n\nClick **Create API Key** (**Add API key** in the earlier interface) to open the key creation window. Enter a clear name for the key, for example the name of the application, service, environment, or automation workflow that will use it.\n\nA descriptive name is important later, especially when several keys exist in the same project. It helps you recognize which application uses which key and makes key rotation safer.\n\n[image: Create API Keys window]\n\n*Window for entering the API key name before generation. [](#id2)*\n\n## Step 3: Generate and copy the key \n\nAfter entering the name, generate the key. Sherlock AI displays the new API key immediately after creation.\n\nCopy the key at this stage and store it in a secure location. This is the only time the full key is shown. If you close the window before saving it, you will need to create another key.\n\n[image: Newly generated Sherlock AI API key]\n\n*Newly generated API key. Copy it before closing the window. [](#id3)*\n\n## Step 4: Verify that the key was created \n\nAfter copying the key, return to the API keys page and verify that the new entry is visible in the list. The list shows the key name and creation date, which helps you identify recently created keys and distinguish them from older credentials.\n\nKeep only the keys that are still needed. When a key is no longer used, replace it in your application first, verify that the new key works, and then remove the old one from the project.\n\n[image: List of Sherlock AI API keys]\n\n*API keys list after a new key has been created. [](#id4)*"
+    ]
+   },
+   {
+    "url": "https://docs.cloudferro.com/en/latest/sherlock/Package-installation-and-examples-of-Sherlock-AI-code-on-CloudFerro-Cloud.html",
+    "title": "Package installation and examples of Sherlock AI code on ...",
+    "publish_date": null,
+    "excerpts": [
+     "Home > > Get started with the Sherlock API on CloudFerro Cloud\n\nGet started with the Sherlock API on CloudFerro Cloud \n\nAn application needs an API key, a model identifier, and an endpoint before it can request an answer. Sherlock provides an OpenAI-compatible API for language, vision, and embedding models. You can use curl for a first terminal request or the OpenAI Python client for an application running on your computer or a virtual machine.\nThe procedure below prepares the client, lists available model IDs, and sends a first chat request. The same account and project used in My Portal provide the context for the API key.\n\nPrerequisites \n\nNo. 1 Access to a Sherlock project\nComplete account and organization setup through My Portal, then create or select a project. Creating a project requires administrator privileges in the organization; for an existing project, use the access granted to your account.\nNo. 2 An API key for that project\nFollow Authenticate with API keys to create and securely store a key. Your account needs permission to manage API keys in the selected project. Have the key available for the environment-variable setup below.\nWarning\nKeep the API key secret. Do not share it, commit it to a repository, or expose it in browser or mobile application code. Production requests must pass through your backend, where the key is loaded from an environment variable or a secret store.\nNo.\n\n...\n\nFor Python requests, create and activate a virtual environment, then install the client. Skip this step if you only want to use curl.\nOn Linux or macOS:\npython3 -m venv .venv\nsource .venv/bin/activate\npython -m pip install openai\nOn Windows PowerShell:\npython -m venv .venv\n.\\.venv\\Scripts\\Activate.ps1\npython -m pip install openai\n\nConfigure the API key \n\nStore the key in SHERLOCK_API_KEY in the terminal where you will run the examples. The following prompts accept the key without putting its value in the command you type or displaying it on screen.\nIn Bash on Linux or macOS:\nread -r -s -p \"Sherlock API key: \" SHERLOCK_API_KEY\nprintf '\\n'\nexport SHERLOCK_API_KEY\nIn Windows PowerShell:\n$sherlockKey = Read-Host \"Sherlock API key\" -AsSecureString\n$env:SHERLOCK_API_KEY = [System.Net.NetworkCredential]::new([string]::Empty, $sherlockKey).Password\nRemove-Variable sherlockKey\nThe variable is available to programs launched from that terminal. Set it again in a new session, or configure it through your deployment’s secret storage. The Python examples explicitly read SHERLOCK_API_KEY and set base_url to the Sherlock service.\n\nList available models \n\nUse either example to query GET /models before choosing the model for a request.\n\nWith curl \n\ncurl api-sherlock.cloudferro.com/openai/v1/models \\\n-H \"Authorization: Bearer $SHERLOCK_API_KEY\"\n\nWith Python \n\nimport os\nfrom openai import OpenAI\n\nclient = OpenAI(\n    api_key=os.environ[\"SHERLOCK_API_KEY\"],\n    base_url=\"api-sherlock.cloudferro.com/openai/v1\",\n)\n\nmodels = client.models.list()\nfor model in models.data:\n    print(model.id)\nThe Python example prints the model IDs; use print(models) to inspect the full response. The chat examples below use speakleash/Bielik-11B-v3.0-Instruct. If it is absent from your response, replace it with an available chat model ID. An embedding model is not a substitute for a chat model.\n\nSend a request with curl \n\nSend a prompt to the chat completion endpoint. The command loads the API key from the environment and passes it as a bearer token.\ncurl api-sherlock.cloudferro.com/openai/v1/chat/completions \\\n-H \"Authorization: Bearer $SHERLOCK_API_KEY\" \\\n-H \"Content-Type: application/json\" \\\n-d '{\n    \"model\": \"speakleash/Bielik-11B-v3.0-Instruct\",\n    \"messages\": [\n      {\n        \"role\": \"system\",\n        \"content\": \"You are a helpful assistant.\"\n      },\n      {\n        \"role\": \"user\",\n        \"content\": \"Explain what Sherlock AI is in one paragraph.\"\n      }\n    ]\n  }'\nA successful request returns JSON containing the generated answer and response metadata.\n\nSend a request with Python \n\nThe client sends the same prompt to Sherlock and prints the generated answer.\nimport os\nfrom openai import OpenAI"
+    ]
+   },
+   {
+    "url": "https://app.withsherlock.ai/reference",
+    "title": "Sherlock API Reference",
+    "publish_date": "2026-01-25",
+    "excerpts": [
+     "Open Search Search Keyboard Shortcut: Control ⌃ k\n* Introduction\n* Interviews Close Group - Interviews\n* Create a new interview HTTP Method: POST\n* Interviews /{interview_id} Open Group - Interviews/{interview_id}\n* Report Generation Status Open Group - Report Generation Status\n* Usage Open Group - Usage\n* Video Open Group - Video\n* WECP Open Group - WECP\n* Models Open Group - Models\nOpen API Client\nPowered by Scalar\nv1.0.0\nOpenAPI 3.0.0\n\nSherlock Interview API\n\nDownload OpenAPI Document\njson Download OpenAPI Document\nyaml\nPublic API for managing interviews and accessing interview information\nServer\nServer: app.sherlock.sh/api/public/v1\n\nAuthentication Required\n\nSelected Auth Type: BearerAuth\n* API key authentication using Bearer token format. Example: Authorization: Bearer xxxxx\n* Bearer Token :\nShow Password |\nClient Libraries\nShell Ruby Node.js PHP Python\nMore Select from all clients\nShell Curl\n\nInterviews ​ Copy link\n\nOperations for create interviews\nInterviews Operations\n* post /interviews\nShow sidebar\nPOST\nServer: app.sherlock.sh/api/public/v1\n/interviews\nCopy URL Send Send post request to app.sherlock.sh/api/public/v1/interviews\nPOST\nCopy URL Send Send post request to app.sherlock.sh/api/public/v1/interviews\nOpen API Client Close Client\nCreate a new interview\nAll Auth Cookies Headers Query Body\nAll\n\nAuthentication Required\n\nSelected Auth Type: BearerAuth\n* API key authentication using Bearer token format. Example: Authorization: Bearer xxxxx\n* Bearer Token :\nShow Password |"
+    ]
+   },
+   {
+    "url": "https://docs.cloudferro.com/en/latest/sherlock/Sherlock-authentication-API-keys-on-CloudFerro-Cloud.html",
+    "title": "Authenticate to Sherlock AI with API keys on CloudFerro Cloud ",
+    "publish_date": null,
+    "excerpts": [
+     "Authenticate to Sherlock AI with API keys on CloudFerro Cloud \n\nSherlock AI uses API keys to authenticate programmatic requests to AI models. You create API keys inside a Sherlock AI project in the control panel and then use them from your application, automation script, or backend service.\nTreat every API key as a secret. Do not share it with other users, commit it to a repository, paste it into documentation, or expose it in client-side code such as browsers and mobile applications. Production requests should go through your own backend, where the key can be loaded from an environment variable or a secrets management service.\n\nPrerequisites \n\nBefore you start, make sure that:\n1. You can log in to the Sherlock AI control panel after completing account and organization setup.\n2. You have selected the project where the API key will be created.\n3. Your account has permissions to manage API keys in that project.\n4. You know where the key will be stored after creation, because Sherlock AI shows the generated key only once.\n\nStep 1: Open API Keys \n\nLog in to the Sherlock AI control panel and open the project in which you want to create the key. In the left navigation menu, select API Keys under Resources. The current console uses Create API Key for the creation action. The screenshots below show the earlier console layout, where this action is called Add API key.\nThe API keys page lists the keys already created in the current project. Use this page to check existing keys, create a new one, and manage project-level authentication for programmatic access.\n<Sherlock AI API Keys page>\nAPI Keys page in the Sherlock AI control panel. \n\nStep 2: Start creating a new key \n\nClick Create API Key (Add API key in the earlier interface) to open the key creation window. Enter a clear name for the key, for example the name of the application, service, environment, or automation workflow that will use it.\nA descriptive name is important later, especially when several keys exist in the same project. It helps you recognize which application uses which key and makes key rotation safer.\n<Create API Keys window>\nWindow for entering the API key name before generation. \n\nStep 3: Generate and copy the key \n\nAfter entering the name, generate the key. Sherlock AI displays the new API key immediately after creation.\nCopy the key at this stage and store it in a secure location. This is the only time the full key is shown. If you close the window before saving it, you will need to create another key.\n<Newly generated Sherlock AI API key>\nNewly generated API key. Copy it before closing the window. \n\nStep 4: Verify that the key was created \n\nAfter copying the key, return to the API keys page and verify that the new entry is visible in the list. The list shows the key name and creation date, which helps you identify recently created keys and distinguish them from older credentials.\nKeep only the keys that are still needed. When a key is no longer used, replace it in your application first, verify that the new key works, and then remove the old one from the project.\n<List of Sherlock AI API keys>\nAPI keys list after a new key has been created. \n\nUsing the API key securely \n\nStore the API key outside your source code. For local development, use an environment variable or a local secrets file that is excluded from version control. For production deployments, use the secret storage mechanism provided by your platform, CI/CD system, or infrastructure environment.\nDo not call Sherlock AI directly from frontend code."
+    ]
+   },
+   {
+    "url": "https://docs.cloudferro.com/en/latest/sherlock/sherlock.html",
+    "title": "Sherlock user guide on CloudFerro Cloud ",
+    "publish_date": null,
+    "excerpts": [
+     "## API and code \n\nCreate an API key in the console, then use the getting-started guide to install the client, configure authentication, and send a first request. The model and endpoint references cover model discovery, conversation history, embeddings, and image inputs. The final guide is for updating an existing Assistant module through its separate configuration API.\n\n- [Authenticate to Sherlock AI with API keys on CloudFerro Cloud](docs.cloudferro.com/en/latest/sherlock/Sherlock-authentication-API-keys-on-CloudFerro-Cloud.html)\n- [Get started with the Sherlock API on CloudFerro Cloud](docs.cloudferro.com/en/latest/sherlock/Package-installation-and-examples-of-Sherlock-AI-code-on-CloudFerro-Cloud.html)\n- [Sherlock AI models on CloudFerro Cloud](docs.cloudferro.com/en/latest/sherlock/Sherlock-AI-models-on-CloudFerro-Cloud.html)\n- [Models endpoint on CloudFerro Cloud](docs.cloudferro.com/en/latest/sherlock/Models-endpoints-on-CloudFerro-Cloud.html)\n- [Sherlock chat completion endpoint on CloudFerro Cloud](docs.cloudferro.com/en/latest/sherlock/Sherlock-chat-completion-endpoint-on-CloudFerro-Cloud.html)"
+    ]
+   },
+   {
+    "url": "https://github.com/bellingcat/toolkit/blob/main/gitbook/tools/sherlock/README.md",
+    "title": "toolkit/gitbook/tools/sherlock/README.md at main · bellingcat/toolkit · GitHub",
+    "publish_date": null,
+    "excerpts": [
+     "Sherlock is designed to be straightforward for open source investigations: it does not require API keys or login credentials for the sites it checks; instead, it simply constructs the expected profile URL for each site and observes the response to determine whether the username exists on a given platform. This means it only accesses publicly available information and cannot bypass privacy settings or account restrictions.\n\nSherlock is primarily a CLI tool, so some familiarity with the command line is required to install and run it. However, installation is relatively accessible: the latest version is published on PyPI for one-command install (e.g. `pipx install sherlock-project` or `pip install --user sherlock-project`).\n\n...\n\n### CLI Usage\n\n```\n# Single username (saves a user123.txt by default)\nsherlock user123\n\n# Multiple usernames\nsherlock alice bob charlie\n\n# Try common separators between name parts with the {?} helper\n# (expands to _  -  . between tokens)\nsherlock john{?}doe\n```\n\n...\n\n## Requirements\n\n* **Python 3.9+ environment** – Sherlock [requires Python 3.9](pypi.org/project/sherlock-project/) or higher installed on the system. Earlier versions are no longer supported in the latest release. Alternatively, Docker can be used to run Sherlock in a container, eliminating the need to install Python.\n* **Internet connection** – An active internet connection is required since Sherlock needs to send HTTP requests to each target website to check for the username’s profile. The speed of results depends on network speed and the number of sites checked.\n* **No account/API keys needed** – Sherlock uses direct web requests and does not require creating any account or API key to use. All searches are against publicly accessible URLs. (Be mindful of each site’s terms of service; Sherlock generates web traffic that in some cases might be seen as automated scraping).\n\n...\n\n* **Incomplete site coverage:** The tool focuses on global and popular services, but cannot cover every regional or niche platform. Investigators targeting local or emerging sites may need to supplement Sherlock with other tools, such as [_WhatsMyName_](whatsmyname.io/)_,_ or manual searching.\n* **No profile analysis:** Sherlock only reports where a username appears. It does not cross-reference or analyse the profile content. Determining whether matching usernames across platforms belong to the same person is left to the investigator.\n* **Outdated API:** There is no official Sherlock API. An experimental REST API exists but has not been maintained since 2021 and using it requires local setup. As of 2026, running Sherlock locally or via community web interfaces remains the recommended method."
+    ]
+   },
+   {
+    "url": "https://pypi.org/project/sherlock-api/",
+    "title": "sherlock-api · PyPI",
+    "publish_date": "2026-09-24",
+    "excerpts": [
+     "sherlock-api 0.1.0\n\nPython client for the Sherlock REST API\npip install sherlock-api Copy PIP instructions\n* Description\n* Metadata\n* Release files\n* Release history\n\nsherlock-api \n\nPython client for the Sherlock REST API. Build your own Sherlock applications — create cases and batches, upload inspection images with measurements, write log entries, and drive modal dialogs and notifications in a running Sherlock process.\n\nInstall \n\npip install sherlock-api\nRequires Python 3.10+.\n\nQuickstart \n\nfrom PIL import Image \n from sherlock_api import ( \n    SherlockAPIClient , \n    CreateCaseRequest , \n    CreateBatchRequest , \n    RobotPlatform , \n    DecisionClass , \n ) \n\n with SherlockAPIClient ( sherlock_port = 8080 ) as client : \n    case = client . post_case ( \n        CreateCaseRequest ( \n            \"Bushing inspection\" , \n            RobotPlatform . UNIVERSAL_ROBOTS , \n            \"0A0E012F7772596B03D92AAA544763BB\" , \n        ) \n    ) \n    batch = client . post_batch ( CreateBatchRequest ( case [ \"id\" ], \"Batch 1\" )) \n\n    image , measurements = client . upload_image_with_measurements ( \n        Image . open ( \"part.png\" ), \n        \"part.png\" , \n        DecisionClass . Ok , \n        [( \"diameter_mm\" , 12.04 ), ( \"roundness\" , 0.98 )], \n        batch [ \"id\" ], \n    ) \n\n    client . log_batch_info ( batch [ \"id\" ], f \"Uploaded { image [ 'image_name' ] } \" )\n\nConfiguration \n\nEvery constructor argument falls back to an environment variable. A script launched by Sherlock gets these for free, so SherlockAPIClient() with no arguments is usually all you need:\n* Argument | Environment variable | Default\n* sherlock_url | SHERLOCK_URL | localhost\n* sherlock_port | SHERLOCK_PORT | — (required)\n* sherlock_process_id | SHERLOCK_PROCESS_ID | None\n* sherlock_case_id | SHERLOCK_CASE_ID | None\n* sherlock_batch_id | SHERLOCK_BATCH_ID | None\nThe three id defaults are used whenever you omit the corresponding argument — client.get_case() reads sherlock_case_id , client.get_batch() reads sherlock_batch_id , and the process methods read sherlock_process_id . Omitting an argument that has no default raises SherlockConfigurationError .\nKeyword-only options: request_timeout (seconds, default 30.0 ), max_retries (default 3 , applied to connection errors and 502/503/504 on GET and DELETE), and session to supply your own requests.Session .\n\nModal dialogs\n\n...\n\nNotifications \n\nfrom sherlock_api import CreateNotificationRequest , NotificationAttachment \n\n client . post_notification ( \n    CreateNotificationRequest ( \n        \"Batch finished\" , \n        \"42 parts inspected, 3 rejected.\" , \n        [ NotificationAttachment ( \"report.pdf\" , \"application/pdf\" , pdf_bytes )], \n    ) \n )\nA notification sent to a process that no longer exists is logged as a warning on the sherlock_api.client logger rather than raised — it is fire-and-forget.\n\nAPI surface \n\n* Area | Methods\n* Files | get_file , post_file , post_file_from_memory\n* Cases | get_cases , get_case , post_case\n* Batches | get_batch , get_batches_for_case , post_batch\n* Images | get_image , get_images_for_batch , post_image , upload_image , upload_image_with_measurement , upload_image_with_measurements\n* Logs | get_log , post_log , log_{case,batch,image}_{error,warning,info}\n* Measurements | get_measurement , post_measurement , delete_measurement\n* Processes | get_process_state , is_process_running , get_env_state , get_env_vars , post_modal , get_modal , delete_modal , post_notification\nMethods returning JSON return the parsed dict or list from the server as-is.\n\nErrors \n\nSherlockError\n├── SherlockConfigurationError   (also a ValueError)  missing port or id\n└── SherlockAPIError             (also a RuntimeError) unexpected HTTP status\n    ├── SherlockBadRequestError  400\n    ├── SherlockNotFoundError    404\n    ├── SherlockTimeoutError     408\n    └── SherlockServerError      5xx\nSherlockAPIError carries .status_code , .reason , .body (truncated to 500 characters), .method and .url .\nfrom sherlock_api import SherlockNotFoundError"
+    ]
+   },
+   {
+    "url": "https://apify.com/misceres/sherlock/api/mcp",
+    "title": "Sherlock (misceres/sherlock) Actor",
+    "publish_date": null,
+    "excerpts": [
+     "Using Apify API\n\ncurl --request POST \\\n  --url \"api.apify.com/v2/acts/YOUR_USERNAME~sherlock/run\" \\\n  --header 'Content-Type: application/json' \\\n  --header 'Authorization: Bearer YOUR_API_TOKEN' \\\n  --data '{\n  \"usernames\": [\"johndoe\", \"janedoe\"],\n  }\n}'\n\nInput Parameters\n\nThe Actor accepts a JSON schema with the following structure:\n* Field | Type | Required | Default | Description\n\n...\n\nMCP server setup\n\n{\n    \"mcpServers\": {\n        \"apify\": {\n            \"type\": \"http\",\n            \"url\": \"mcp.apify.com/?tools=fetch-actor-details,misceres/sherlock\"\n        }\n    }\n}\nThe hosted server signs you in with OAuth on first connect, so no API token belongs in this config. Clients without OAuth support can send an Authorization: Bearer <APIFY_API_TOKEN> header instead, using a token from API & Integrations in Apify Console (console.apify.com/settings/integrations).\n\nOpenAPI specification"
+    ]
+   },
+   {
+    "url": "https://apify.com/misceres/sherlock/api?fpr=sherlock",
+    "title": "Sherlock (misceres/sherlock) Actor",
+    "publish_date": null,
+    "excerpts": [
+     "* AI agents and MCP clients — the Apify MCP server at mcp.apify.com (remote, streamable HTTP, OAuth on first use).\n\n...\n\napify call YOUR_USERNAME/sherlock --input='{\n  \"usernames\": [\"johndoe\", \"janedoe\"]\n}'\n\nUsing Apify API\n\ncurl --request POST \\\n  --url \"api.apify.com/v2/acts/YOUR_USERNAME~sherlock/run\" \\\n  --header 'Content-Type: application/json' \\\n  --header 'Authorization: Bearer YOUR_API_TOKEN' \\\n  --data '{\n  \"usernames\": [\"johndoe\", \"janedoe\"],\n  }\n}'\n\nInput Parameters\n\nThe Actor accepts a JSON schema with the following structure:\n\n...\n\nMCP server setup\n\n{\n    \"mcpServers\": {\n        \"apify\": {\n            \"type\": \"http\",\n            \"url\": \"mcp.apify.com/?tools=fetch-actor-details,misceres/sherlock\"\n        }\n    }\n}\nThe hosted server signs you in with OAuth on first connect, so no API token belongs in this config. Clients without OAuth support can send an Authorization: Bearer <APIFY_API_TOKEN> header instead, using a token from API & Integrations in Apify Console (console.apify.com/settings/integrations).\n\nOpenAPI specification"
+    ]
+   }
+  ],
+  "warnings": null,
+  "usage": [
+   {
+    "name": "sku_search",
+    "count": 1
+   }
+  ],
+  "metadata": null,
+  "session_id": "session_07b0f5025fc05ae2746fba5c943492d9"
+ },
+ "extraction_raw": "{\"description\": \"Hunt social media accounts by username across 400+ networks\", \"official_docs_url\": \"https://app.sherlock.sh/reference\", \"auth_methods\": [\"Token\"], \"auth_notes\": \"Bearer token = YOUR_SECRET_TOKEN\", \"auth_evidence\": [{\"url\": \"https://app.sherlock.sh/reference\", \"excerpt\": \"--header 'Authorization: Bearer YOUR_SECRET_TOKEN'\"}, {\"url\": \"https://app.withsherlock.ai/reference\", \"excerpt\": \"--header 'Authorization: Bearer YOUR_SECRET_TOKEN'\"}], \"dev_access\": \"Free self-serve\", \"dev_access_evidence\": [{\"url\": \"https://app.sherlock.sh/reference\", \"excerpt\": \"Public API for managing interviews and accessing interview information.\"}, {\"url\": \"https://app.withsherlock.ai/reference\", \"excerpt\": \"Public API for managing interviews and accessing interview information.\"}], \"prod_gate\": \"Unknown\", \"prod_gate_evidence\": [], \"public_api\": \"yes\", \"api_type\": \"REST\", \"api_breadth\": \"Narrow\", \"api_evidence\": [{\"url\": \"https://app.sherlock.sh/reference\", \"excerpt\": \"Public API for managing interviews and accessing interview information.\"}, {\"url\": \"https://app.withsherlock.ai/reference\", \"excerpt\": \"Public API for managing interviews and accessing interview information.\"}], \"mcp\": \"Community\", \"mcp_urls\": [\"https://apify.com/misceres/sherlock/api/mcp\"], \"mcp_evidence\": [{\"url\": \"https://apify.com/misceres/sherlock/api/mcp\", \"excerpt\": \"It connects to the hosted Apify MCP server with the Sherlock Actor already loaded.\"}], \"blocker_note\": \"API is narrow and interview-focused; no evidence of broader social media search API.\"}",
+ "extraction": {
+  "description": "Hunt social media accounts by username across 400+ networks",
+  "official_docs_url": "https://app.sherlock.sh/reference",
+  "auth_methods": [
+   "Token"
+  ],
+  "auth_notes": "Bearer token = YOUR_SECRET_TOKEN",
+  "auth_evidence": [
+   {
+    "url": "https://app.sherlock.sh/reference",
+    "excerpt": "--header 'Authorization: Bearer YOUR_SECRET_TOKEN'"
+   },
+   {
+    "url": "https://app.withsherlock.ai/reference",
+    "excerpt": "--header 'Authorization: Bearer YOUR_SECRET_TOKEN'"
+   }
+  ],
+  "dev_access": "Free self-serve",
+  "dev_access_evidence": [
+   {
+    "url": "https://app.sherlock.sh/reference",
+    "excerpt": "Public API for managing interviews and accessing interview information."
+   },
+   {
+    "url": "https://app.withsherlock.ai/reference",
+    "excerpt": "Public API for managing interviews and accessing interview information."
+   }
+  ],
+  "prod_gate": "Unknown",
+  "prod_gate_evidence": [],
+  "public_api": "yes",
+  "api_type": "REST",
+  "api_breadth": "Narrow",
+  "api_evidence": [
+   {
+    "url": "https://app.sherlock.sh/reference",
+    "excerpt": "Public API for managing interviews and accessing interview information."
+   },
+   {
+    "url": "https://app.withsherlock.ai/reference",
+    "excerpt": "Public API for managing interviews and accessing interview information."
+   }
+  ],
+  "mcp": "Community",
+  "mcp_urls": [
+   "https://apify.com/misceres/sherlock/api/mcp"
+  ],
+  "mcp_evidence": [
+   {
+    "url": "https://apify.com/misceres/sherlock/api/mcp",
+    "excerpt": "It connects to the hosted Apify MCP server with the Sherlock Actor already loaded."
+   }
+  ],
+  "blocker_note": "API is narrow and interview-focused; no evidence of broader social media search API."
+ },
+ "sources": [
+  {
+   "url": "https://github.com/sherlock-project/sherlock",
+   "title": "GitHub - sherlock-project/sherlock: Hunt down social media accounts by username across social networks",
+   "trimmed": "BranchesTags\n\n## Latest commit\n\n## History\n\n2,934 Commits\n\n## Folders and files\n\n| Name | | Name | Last commit message | Last commit date |\n| --- | --- | --- | --- | --- |\n\n## Repository files navigation\n\nHunt down social media accounts by username across 400+ social networks\n\nInstallation\n   •   \nUsage\n   •   \nContributing\n\n## Installation\n\n  \n\nWarning\n\nPackages for ParrotOS and Ubuntu 24.04, maintained by a third party, appear to be **broken**.  \nUsers of these systems should defer to `uv`/`pipx`/`pip` or Docker.\n\n| Method | Notes |\n| --- | --- |\n| `pipx install sherlock-project` | `pip` or ",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:11:09+0530"
+  },
+  {
+   "url": "https://app.sherlock.sh/reference",
+   "title": "Sherlock API Reference",
+   "trimmed": "1.3.0\n\nOpenAPI 3.0.0\n\n# Sherlock Interview API\n\nPublic API for managing interviews and accessing interview information.\n\n**Sherlock 2.0.** Reports now carry Sherlock 2.0's verdict in a `sherlock_2` block, beside the fields\nyou already read. On **October 15, 2026** Sherlock 2.0 becomes the default: `report` links to the new\nreport, the report PDF is the new report's, and old report links lead to the new report. No field is\nrenamed or removed, and scores keep their scale (0 to 10, higher is more trustworthy). Sherlock 1.0's\nscore stays available as `sherlock_2.sherlock_1_score`.\n\n**Human review.\n...\n\n* image\n\n  Type: string\n\n  Base64-encoded image string. only supports raw base64\n\n#### Responses\n\n* application/json\n* application/json\n* application/json\n* application/json\n\nRequest Example for post/interviews\n\n```\ncurl https://app.sherlock.sh/api/public/v1/interviews \\\n  --request POST \\\n  --header 'Content-Type: application/json' \\\n  --header 'Authorization: Bearer YOUR_SECRET_TOKEN' \\\n  --data '{\n  \"candidate_name\": \"John Doe\",\n  \"interview_link\": \"https://meet.google.com/abc-defg-hij\",\n  \"started_at\": \"2026-01-25T14:30:00Z\",\n  \"candidate_email\": \"john.doe@example.com\",\n  \"agent_name\": \"Sherlock Integrity\",\n  \"image\": \"/9j/4AAQSkZJRgABAgAAAQABAAD//gAPTGF2YzYyLjYuMTAwAP...\",\n  \"auth_header\": \"Authorization\",\n  \"auth_token\": \"webhook-secret-token\",\n  \"auth_url\": \"https://example.com/hooks/interview-report\"\n}'\n```\n\nShow Schema\n\n```\n{\n  \"data\": {\n    \"interview_id\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"request_id\": \"string\",\n    \"message\": \"Interview created successfully\"\n  },\n  \"meta\": {}\n}\n```\n\nInterview created successfully",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:11:09+0530"
+  },
+  {
+   "url": "https://app.withsherlock.ai/reference",
+   "title": "Sherlock API Reference",
+   "trimmed": "1.3.0\n\nOpenAPI 3.0.0\n\n# Sherlock Interview API\n\nPublic API for managing interviews and accessing interview information.\n\n**Sherlock 2.0.** Reports now carry Sherlock 2.0's verdict in a `sherlock_2` block, beside the fields\nyou already read. On **October 15, 2026** Sherlock 2.0 becomes the default: `report` links to the new\nreport, the report PDF is the new report's, and old report links lead to the new report. No field is\nrenamed or removed, and scores keep their scale (0 to 10, higher is more trustworthy). Sherlock 1.0's\nscore stays available as `sherlock_2.sherlock_1_score`.\n\n**Human review.\n...\n\n* image\n\n  Type: string\n\n  Base64-encoded image string. only supports raw base64\n\n#### Responses\n\n* application/json\n* application/json\n* application/json\n* application/json\n\nRequest Example for post/interviews\n\n```\ncurl https://app.sherlock.sh/api/public/v1/interviews \\\n  --request POST \\\n  --header 'Content-Type: application/json' \\\n  --header 'Authorization: Bearer YOUR_SECRET_TOKEN' \\\n  --data '{\n  \"candidate_name\": \"John Doe\",\n  \"interview_link\": \"https://meet.google.com/abc-defg-hij\",\n  \"started_at\": \"2026-01-25T14:30:00Z\",\n  \"candidate_email\": \"john.doe@example.com\",\n  \"agent_name\": \"Sherlock Integrity\",\n  \"image\": \"/9j/4AAQSkZJRgABAgAAAQABAAD//gAPTGF2YzYyLjYuMTAwAP...\",\n  \"auth_header\": \"Authorization\",\n  \"auth_token\": \"webhook-secret-token\",\n  \"auth_url\": \"https://example.com/hooks/interview-report\"\n}'\n```\n\nShow Schema\n\n```\n{\n  \"data\": {\n    \"interview_id\": \"123e4567-e89b-12d3-a456-426614174000\",\n    \"request_id\": \"string\",\n    \"message\": \"Interview created successfully\"\n  },\n  \"meta\": {}\n}\n```\n\nInterview created successfully",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:11:09+0530"
+  },
+  {
+   "url": "https://apify.com/misceres/sherlock/api/mcp",
+   "title": "Sherlock MCP server · Apify",
+   "trimmed": "## Configure MCP server with Sherlock\n\nAdd the configuration above to your project's\n\n```\n.mcp.json\n```\n\nfile for Claude Code, then run\n\n```\n/mcp\n```\n\nin Claude Code to sign in to Apify. It connects to the hosted Apify MCP server with the Sherlock Actor already loaded. Clients without OAuth support can authenticate with an\n\n```\nAuthorization: Bearer\n```\n\nheader carrying an API token from API & Integrations in Apify Console.\n\nFor other MCP clients, get a client-specific configuration with the Sherlock Actor preconfigured at https://mcp.apify.com/?tools=fetch-actor-details,misceres/sherlock.\n\nYou can connect to the Apify MCP server using an MCP client that supports Streamable HTTP.\n\nIf you want to learn more about our Apify MCP implementation, check out our MCP documentation. To learn more about the Model Context Protocol in general, refer to the official MCP documentation or read our blog post.",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:11:09+0530"
+  }
+ ]
+}

@@ -1,0 +1,36 @@
+# 100 Apps, Agent-Ready?
+
+What this is: a researched dataset of 100 apps (auth, access gating, API, MCP, Composio toolkit coverage) built by an AI agent for Composio, with source evidence per claim.
+Generated: 2026-11-23 19:37. Dataset: pass2.jsonl (partial: 36 re-verified, rest from pass1.jsonl).
+
+## Headline numbers
+- OAuth2 in 93.3% of apps; API key in 46.7%.
+- Composio toolkit coverage: 93.3% (14 of 100).
+- Official MCP server: 80.0% of apps.
+- Main blockers: {"App review": 7, "Partner gate": 1}
+- Archetypes: {"Open API": 7, "Open + app review": 3, "Approval gate": 2, "Defeated": 1, "Partner gate": 1, "Paid gate": 1}
+- Human audit: pending (no accuracy numbers published yet).
+
+## Files
+- index.html: the report
+- data.json: full records with evidence and trace
+- records.csv: flat table, one row per app
+- llms.txt: this file
+
+## Schema (data.json)
+- app_name, category, description, official_docs_url
+- auth_methods: OAuth2 | API key | Basic | Token | Other (empty = Unknown)
+- dev_access: how a developer gets credentials (Free self-serve, Free trial, Paid plan, Approval required, Partner or contact sales, Unknown)
+- prod_gate: approval needed to go live (None, App review, Partner program, Unknown)
+- public_api, api_type, api_breadth; mcp (Official, Community, Both, None found, Unknown)
+- composio_toolkit: exists, slug, tool_count, auth_schemes
+- buildability (Yes/Partial/No/Unknown), main_blocker, archetype, confidence
+- evidence[]: claim_field, supporting_excerpt, source_url, source_type, fetched_via, excerpt_match, verifier, loop
+- trace: queries, urls fetched, loops run, open issues
+
+## How verified
+- A human blindly audited 15 apps x 6 claims (a seeded, stratified sample) without seeing the agent's answers.
+- Pass 1 (frozen) and pass 2 (after verification loops) are both scored against the human answers.
+- Human corrections are a separate tier (final) and are not counted as loop gains.
+- Unknown is reported separately as answer rate, so abstaining is not disguised as being right or wrong.
+- Run: 100 apps, $0.1995 total, 12.9s average per app.

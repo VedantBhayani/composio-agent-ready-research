@@ -1,0 +1,220 @@
+{
+ "app": {
+  "id": 90,
+  "name": "PitchBook",
+  "category": "Finance and Fintech",
+  "hint_raw": "pitchbook.com (research API)",
+  "hint_url": "https://pitchbook.com",
+  "hint_note": "research API",
+  "seed_urls": [
+   "https://pitchbook.com"
+  ]
+ },
+ "search": {
+  "search_id": "search_90eeec2227cb3b3f96c1d0d19b3712f8",
+  "results": [
+   {
+    "url": "https://pitchbook.com/help/PitchBook-api",
+    "title": "Help: PitchBook API - PitchBook",
+    "publish_date": "2026-11-05",
+    "excerpts": [
+     "PitchBook API and Data Feed\n\n...\n\n**Create your API connection**\n\nTo start your API connection, you will need to send a request directly to our Direct Data team [through this link.](pitchbook.com/products/direct-access-data?adgroup=&device=c&_bk=pitchbook&_bt=692687660336&_bm=e&_bn=g&_bg=159619233076&kwdaud=kwd-334479000139&sfid=-dc_pcrid_692687660336_pkw_pitchbook_pmt_e_slid__p…)\n\nOr if you’re a PitchBook client, you can also head to the Plugins & Apps section from the My PitchBook section of the left-hand sidebar on the PitchBook Platform and choose PitchBook API."
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/help/pitchbook-api",
+    "title": "PitchBook API - PitchBook",
+    "publish_date": "2026-06-18",
+    "excerpts": [
+     "This section on PitchBook also allows you to reach out to our Direct Data team to request access to the API.\n\nNext steps\n\nOur team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure."
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence",
+    "title": "PitchBook Announces New Essential MCP Integration with Perplexity, Expanding Access to AI-Powered, Verifiable Market Intelligence | PitchBook",
+    "publish_date": "2026-03-12",
+    "excerpts": [
+     "Through Perplexity’s new PitchBook Essential MCP server, users can now access PitchBook’s trusted firmographic intelligence directly within Perplexity’s conversational interface.\nAI adoption continues to accelerate across financial services, but the ability to ask questions and receive answers powered by high-quality, comprehensive data is what drives better decision making and delivers meaningful ROI."
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/products/premium-connectors",
+    "title": "LLM Data Connectors for Enterprise AI Tools - PitchBook",
+    "publish_date": "2026-09-25",
+    "excerpts": [
+     "## How to get access\n\n[](help.pitchbook.com/s/article/Getting-started-with-PitchBook-Premium-Connectors)\n\nPitchBook clients with seat-based, unlimited, or trial licenses—and an enterprise partner license—can access the PitchBook Premium Connector by following the MCP integration guide.\n\n[Unlock access ](help.pitchbook.com/s/article/Getting-started-with-PitchBook-Premium-Connectors)"
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+    "title": "Help: Getting started with PitchBook's Premium Connector - PitchBook",
+    "publish_date": "2026-11-05",
+    "excerpts": [
+     "* Authenticate via SSO – Only licensed PitchBook users can access the connector. Authentication happens through single sign-on (SSO), ensuring that access is secure and tied to each user’s permissions. Additional application-level safeguards ensure that only approved AI platforms, such as authorized enterprise accounts, can interact with PitchBook data. For instructions on enabling SSO, see Getting started with single sign-on (SSO) ."
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/products/direct-access-data/api",
+    "title": "API: Flexibly call down data on demand - PitchBook",
+    "publish_date": "2026-11-19",
+    "excerpts": [
+     "PITCHBOOK DIRECT DATA\n\n# API: Flexibly call down data on demand\n\nPull the exact data you need into the systems you use every day. Get direct, flexible access to our in-depth private and public market data, so you can track trends, patterns and triggers as the market and your needs shift.\n\n[Request Direct Data](pitchbook.com/products/direct-access-data)"
+    ]
+   },
+   {
+    "url": "https://agentman.ai/agentskills/connections/mcp-server/pitchbook",
+    "title": "PitchBook MCP Server — Claude & AI Agents",
+    "publish_date": null,
+    "excerpts": [
+     "PitchBook Premium\n\nSearch PitchBook's private-capital database — companies, deals, funds, investors, people.\nAdd to Agentman Studio\nOpens Agent Studio, where connecting is one click. The connector URL below works in any MCP client.\nCategory Finance\nMade by PitchBook Premium\nSign-in OAuth sign-in\nTools 16 tools\nChecked 22 August 2026\nAnthropic tier Partner\nConnector URL\nCopy\nPaste it into any MCP client. Setup docs\n\nResources\n\n* Documentation\n* Listing in Anthropic’s directory\n\nWhat the PitchBook Premium connector does\n\nThe PitchBook MCP server connects PitchBook's private-capital database — 8.5 million private companies, 2.8 million deals, 597,000 investors and 154,000 funds — to Claude and other AI platforms. Anthropic's directory lists 16 tools, every one a read. Access needs an existing PitchBook licence and SSO, and is capped at 300 tool calls a day.\nVerified connector\nListed by Anthropic as a partner connector in its Connectors Directory .\nConnection checked by Agentman on 22 August 2026 .\nAnthropic states this reflects the level of review a connector received, not a security audit.\n\nPitchBook Premium tools (16)\n\n* pitchbook_search\n* pitchbook_get_profile\n\n...\n\n* pitchbook_get_call_transcripts_analysis\n* pitchbook_get_private_market_reports_analysis\n* pitchbook_get_public_market_reports_analysis\n* pitchbook_get_help_center_analysis\nTool names from Anthropic's directory listing. This server requires sign-in, so we could not read tool descriptions or parameter schemas.\n\nLimits\n\n* 150 tool calls per hour and 300 per day. PitchBook's published caps, counted per call rather than per conversation. No Retry-After behaviour, 429 semantics or cap-exhaustion message is documented, and no tool reports remaining quota.\n* No application scopes exist. The RFC 9728 descriptor and the authorization server metadata both advertise exactly three scopes — openid , offline_access and claudeai . Two are identity and refresh; the third names a client, not a capability. There is no scope boundary between a company lookup and an LP commitment list , which is the boundary a reviewer of this dataset would most want. PitchBook states access is \"tied to each user's permissions\", so narrowing happens in its own entitlement model, invisibly to the consent screen.\n* The integration excludes some third-party data. Anthropic's tutorial states it \"excludes some proprietary 3rd-party data included in the PitchBook platform\" without naming which, so a figure present in the web platform can be absent here.\n\n...\n\n* The main help centre is login-gated. help.pitchbook.com , which Anthropic's directory nominates as documentation, redirects every route to a Salesforce SAML sign-in. The public mirror at pitchbook.com/help carries the connector articles cited here; the two hosts are not interchangeable.\n* No prompts or resources could be enumerated. Anthropic's directory records no prompt names, and the authentication gate prevented us from reading the server's declared capabilities.\n\nFrequently asked questions\n\nHow many PitchBook queries can an agent make per day?\n\nThree hundred, with a ceiling of 150 in any 60-minute window. PitchBook publishes both figures as tool calls rather than conversations, so one question that checks a company, its investors and its deals spends three. That is the number to plan around, because the connector's own relationship-mapping use case chains four hops.\n\nDo I need a PitchBook subscription to use the MCP server?\n\nYes, plus a paid Claude plan. PitchBook states you need a seat-based, unlimited, or trial PitchBook licence and single sign-on credentials, and a Pro, Max, Teams or Enterprise Claude subscription. The endpoint returned an authentication challenge to an anonymous request on 2026-08-22, so there is no unauthenticated access.\n\nCan the PitchBook connector change anything in my account?\n\nNo. All 16 tool names begin with search or get, none carries a create, update, delete or export verb, and Anthropic's directory records the connector's permissions as Read. No tool takes a method or action argument that could forward to a wider API, so the read-only reading survives the dispatcher check.\n\n...\n\nWhat OAuth permissions does the PitchBook MCP server request?\n\nThree, and none is an application permission. The server's RFC 9728 descriptor advertised openid, offline_access and claudeai on 2026-08-22. The first two are identity and refresh scopes; claudeai names a client rather than a capability. Narrowing happens in PitchBook's own per-user entitlements, not at the consent screen.\n\nShould I set the PitchBook connector to always allow?\n\nPitchBook recommends it and the tools are all reads, but weigh it against the daily cap. Every call is metered against 150 an hour and 300 a day, and an approval prompt is the only thing that shows an agent spending that budget on a multi-hop chain. Nothing in the surface reports remaining quota.\n\nWhat data does the PitchBook connector not include?\n\n...\n\nSources\n\n* PitchBook help, \"PitchBook Premium Connector for Claude by Anthropic\" (retrieved 2026-08-22). Source for licence prerequisites, the owner-enablement step, the connection steps and the \"Always allow\" recommendation. · retrieved 2026-08-22\n* PitchBook help, \"Getting started with PitchBook Premium Connector\" (retrieved 2026-08-22). Source for the 150-per-hour and 300-per-day limits and the eleven partner platforms. · retrieved 2026-08-22\n* Claude Academy, \"Using PitchBook for investment research\" (retrieved 2026-08-22). Source for the dataset sizes, the five capability groups, the third-party-data exclusion and the custom-connector setup path. · retrieved 2026-08-22\n* PitchBook Terms of Use (retrieved 2026-08-22). Sections 3.2, 3.3, 4.3, 4.6, 4.9, 4.10, 9.2, 10.2, 13.2 and 23 are quoted or cited above. · retrieved 2026-08-22\n* PitchBook Privacy Policy, last updated 14 July 2026 (retrieved 2026-08-22). Source for the \"business professionals\" record contents and the California data broker disclosure. · retrieved 2026-08-22\n* PitchBook MCP documentation on the gated help host, probed and not readable (probed 2026-08-22; redirects to Salesforce SAML sign-in) · retrieved 2026-08-22\n* Live OAuth posture check: anonymous initialize returned HTTP 401 with a Bearer challenge; RFC 9728 metadata at premium.mcp.pitchbook.com/.well-known/oauth-protected-resource/mcp ; authorization server metadata at premium.mcp.pitchbook.com/.well-known/oauth-authorization-server (2026-08-22) · retrieved 2026-08-22\n* Anthropic Connectors Directory entry — , read from our directory snapshot dated 2026-08-16 · retrieved 2026-08-16\n* Morningstar personal data request route, cited by PitchBook's privacy policy as morningstar.com/request-data — that URL redirects to (retrieved 2026-08-22) · retrieved 2026-08-22\n* PitchBook support — mailto:support@pitchbook.com · Privacy enquiries — mailto:privacyenquiries@morningstar.com"
+    ]
+   },
+   {
+    "url": "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+    "title": "PitchBook API Documentation",
+    "publish_date": null,
+    "excerpts": [
+     "Public\n\nDocumentation Settings\n\nENVIRONMENT\n\nNo Environment\n\nLAYOUT\n\nDouble Column\n\ncURL - cURL\n\nPitchBook API Documentation\n\nIntroduction\n\nGeneral\n\nCompanies\n\nPatents\n\nDeals\n\nInvestors\n\nPeople\n\nFunds\n\nLimited Partners\n\nService Providers\n\nCredit Analysis\n\nAccount Information\n\nFundamentals\n\n# PitchBook API Documentation\n\n## Introduction\n\nThe PitchBook API allows for direct, real time access to our expansive database of Companies, Deals, People, Investors, Fund, Service Provider and Limited Partner information. Power your own custom applications and CRM systems with the industry’s best data.\n\nThis API is a RESTFUL implementation that can be easily accessed by most HTTP clients in the language of your choosing.\n\nTo get started with the PitchBook API, there are a few simple steps.\n\n##### **Step 1: Check out our test \"Sandbox\"**\n\nTo help developers get comfortable with the PitchBook API, a test \"sandbox\" environment has been created to show how API calls are structured and how to integrate them with your system. Please reach out to your account manager to request a sandbox key.\n\n##### **Step 2: Review the API contract**\n\nThe API is a separate offering from the PitchBook platform that requires a standalone contract agreement. Please note that not all endpoints included here are necessarily included in a subscription - contact your PitchBook representative for specifics on what you have licensed. This will also be laid out within your contract.\n\n##### **Step 3: Estimate usage and credits required**\n\nEach request for data to the API will have an associated credit cost. After determining the scope of the data your application will need, both the developer “sandbox” and your Customer Success Manager can help you select a subscription package that fits the best.\n\n##### **Step 4: Purchase credits**\n\nOnce you have estimated your API credit requirements, reach out to your Customer Success Manager to be invoiced for the required dollar amount. After payment has been settled, the API credits will be added to your account for immediate use.\n\n##### **Step 5. Get your data**\n\nPitchBook will provide you with a unique API key that will allow you to make calls to the API. Your developer can use this key to retrieve our data and start powering your application. Your Customer Success Manager can help answer any questions about getting started with the API or the developer test \"sandbox\".\n\n## Authentication\n\nTo authenticate to the PitchBook API, simply include a header named \"Authorization\" with the value of \"PB-Token {API\\_KEY}\" with each API request.\n\nReplace {API\\_KEY} with your actual API key value.\n\nIn addition to an API key, please make sure you have purchased API credits. Each call has a defined cost. Reach out to your account manager to view and add credits to your API credit balance.\n\n**Authentication Example**\n\n> [api.pitchbook.com/{route}](api-v2.pitchbook.com/%7Broute%7D)  \n> Authorization: PB-Token LzUU9xgNjn7avDw5Bd96xNVS0t5dlGuD\n> \n> \n\n**Base URL (production and sandbox)**\n\n[api.pitchbook.com](api-v2.pitchbook.com/)\n\n## Response Codes\n\nPitchBook API returns standard HTTP response codes for every request. The HTTP error or success codes that may be returned are listed below.\n\nView More\n\n|Code |Title |Description |\n| --- | --- | --- |\n|200 |OK |Standard response description for successful HTTP request |\n|400 |Bad Request |The server cannot or will not process the request due to something that is perceived to be a client error (e.g., malformed request syntax, invalid request message framing, or deceptive request routing) |\n|400 |Bad Request |Results per page must be between 1 and {PER\\_PAGE\\_LIMIT} |\n|401 |Unauthorized |Please check your Authorization header value |\n|402 |Payment Required |Insufficient credit balance limits. Credit balance = {CURRENT\\_CREDIT\\_BALANCE}, call cost = {ENDPOINT\\_COST} |\n|403 |Forbidden |Permission denied. You do not have access to {ENDPOINT} |\n|404 |Not Found |No {REQUEST\\_PROFILE\\_TYPE} found |\n|405 |Method Not Allowed |A request method is not supported for the requested resource |\n|415 |Unsupported Media Type |Supportable media types: {SUPPORTED\\_TYPE} |\n|429 |Too Many Requests |{LIMIT\\_TYPE} rate limit exceeded. Please wait until rate limit period is renewed |\n|503 |Service Unavailable |{REQUESTED\\_DATA\\_TYPE} data is temporarily unavailable due to service maintenance or a capacity issue. Please try again later |\n\n## Headers\n\nThe PitchBook API can accept headers, for example, to default values to a specific currency.\n\n**X-Currency:** Converts values returned as currencies (e.g. totalMoneyRaised) to the currency specified. (e.g. USD, JPY). See the lookup table CURRENCY\\_CODE for the full list of available currencies."
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/help/pitchbook-premium-connector-north",
+    "title": "Help: PitchBook Premium Connector: North setup guide - PitchBook",
+    "publish_date": "2026-11-05",
+    "excerpts": [
+     "MCP Connectors Premium\n\nHelp: PitchBook Premium Connector: North setup guide\n\nThis article explains the PitchBook Premium Connector and how to integrate it with North by Cohere.\nTable of contents\n\nOverview\n\n...\n\nAccess and authentication\n\nTo connect and use the PitchBook Premium Connector, you need:\n* A seat-based, unlimited, or trial PitchBook license.\n* Single sign-on (SSO) credentials. For more information about PitchBook’s SSO steps, see the PitchBook Help Center article Getting started with single sign-on (SSO) .\n* An administrator account for North Admin.\n\nNorth integration steps"
+    ]
+   },
+   {
+    "url": "https://pitchbook.com/help/pitchbook-premium-connector-rogo",
+    "title": "Help: PitchBook Premium Connector: Rogo setup guide - PitchBook",
+    "publish_date": "2026-10-08",
+    "excerpts": [
+     "To connect and use the PitchBook Premium Connector, you need:\n* A seat-based, unlimited, or PitchBook trial license.\n* Single sign-on (SSO) credentials. For more information about PitchBook’s SSO steps, visit our Help Center article Getting started with single sign-on (SSO).\n\nUsage\n\nWith Premium Connector access, you get:\n* 150 tool calls per hour – In any 60-minute window, you can make up to 150 individual requests to pull PitchBook data."
+    ]
+   }
+  ],
+  "warnings": null,
+  "usage": [
+   {
+    "name": "sku_search",
+    "count": 1
+   }
+  ],
+  "metadata": null,
+  "session_id": "session_90eeec2227cb3b3f96c1d0d19b3712f8"
+ },
+ "extraction_raw": "{\"description\": \"PitchBook API provides private market data access for CRM enrichment and internal systems via RESTful endpoints.\", \"official_docs_url\": \"https://pitchbook.com/help/pitchbook-api\", \"auth_methods\": [\"API key\", \"Token\"], \"auth_notes\": \"API key or authentication token provided by PitchBook's Direct Data team after approval.\", \"auth_evidence\": [{\"url\": \"https://pitchbook.com/help/pitchbook-api\", \"excerpt\": \"Our team will work with you to ... establish the API connection through an API key or authentication token.\"}, {\"url\": \"https://pitchbook.com/products/direct-access-data/api\", \"excerpt\": \"Pull the exact data you need into the systems you use every day.\"}], \"dev_access\": \"Approval required\", \"dev_access_evidence\": [{\"url\": \"https://pitchbook.com/help/pitchbook-api\", \"excerpt\": \"To start your API connection, you will need to send a request directly to our Direct Data team through this link.\"}, {\"url\": \"https://pitchbook.com/products/direct-access-data/api\", \"excerpt\": \"Request Direct Data\"}], \"prod_gate\": \"Unknown\", \"prod_gate_evidence\": [], \"public_api\": \"yes\", \"api_type\": \"REST\", \"api_breadth\": \"Broad\", \"api_evidence\": [{\"url\": \"https://pitchbook.com/help/pitchbook-api\", \"excerpt\": \"PitchBook’s API solution allows you to call specific PitchBook data into your internal business systems on demand.\"}, {\"url\": \"https://pitchbook.com/products/direct-access-data/api\", \"excerpt\": \"Pull the exact data you need into the systems you use every day.\"}], \"mcp\": \"Both\", \"mcp_urls\": [\"https://pitchbook.com/products/premium-connectors\", \"https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence\"], \"mcp_evidence\": [{\"url\": \"https://pitchbook.com/products/premium-connectors\", \"excerpt\": \"PitchBook clients with seat-based, unlimited, or trial licenses ... can access the PitchBook Premium Connector by following the MCP integration guide.\"}, {\"url\": \"https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence\", \"excerpt\": \"Through Perplexity’s new PitchBook Essential MCP server, users can now access PitchBook’s trusted firmographic intelligence directly within Perplexity’s conversational interface.\"}], \"blocker_note\": \"API access requires approval from PitchBook's Direct Data team, which may delay or restrict developer onboarding.\"}",
+ "extraction": {
+  "description": "PitchBook API provides private market data access for CRM enrichment and internal systems via RESTful endpoints.",
+  "official_docs_url": "https://pitchbook.com/help/pitchbook-api",
+  "auth_methods": [
+   "API key",
+   "Token"
+  ],
+  "auth_notes": "API key or authentication token provided by PitchBook's Direct Data team after approval.",
+  "auth_evidence": [
+   {
+    "url": "https://pitchbook.com/help/pitchbook-api",
+    "excerpt": "Our team will work with you to ... establish the API connection through an API key or authentication token."
+   },
+   {
+    "url": "https://pitchbook.com/products/direct-access-data/api",
+    "excerpt": "Pull the exact data you need into the systems you use every day."
+   }
+  ],
+  "dev_access": "Approval required",
+  "dev_access_evidence": [
+   {
+    "url": "https://pitchbook.com/help/pitchbook-api",
+    "excerpt": "To start your API connection, you will need to send a request directly to our Direct Data team through this link."
+   },
+   {
+    "url": "https://pitchbook.com/products/direct-access-data/api",
+    "excerpt": "Request Direct Data"
+   }
+  ],
+  "prod_gate": "Unknown",
+  "prod_gate_evidence": [],
+  "public_api": "yes",
+  "api_type": "REST",
+  "api_breadth": "Broad",
+  "api_evidence": [
+   {
+    "url": "https://pitchbook.com/help/pitchbook-api",
+    "excerpt": "PitchBook’s API solution allows you to call specific PitchBook data into your internal business systems on demand."
+   },
+   {
+    "url": "https://pitchbook.com/products/direct-access-data/api",
+    "excerpt": "Pull the exact data you need into the systems you use every day."
+   }
+  ],
+  "mcp": "Both",
+  "mcp_urls": [
+   "https://pitchbook.com/products/premium-connectors",
+   "https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence"
+  ],
+  "mcp_evidence": [
+   {
+    "url": "https://pitchbook.com/products/premium-connectors",
+    "excerpt": "PitchBook clients with seat-based, unlimited, or trial licenses ... can access the PitchBook Premium Connector by following the MCP integration guide."
+   },
+   {
+    "url": "https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence",
+    "excerpt": "Through Perplexity’s new PitchBook Essential MCP server, users can now access PitchBook’s trusted firmographic intelligence directly within Perplexity’s conversational interface."
+   }
+  ],
+  "blocker_note": "API access requires approval from PitchBook's Direct Data team, which may delay or restrict developer onboarding."
+ },
+ "sources": [
+  {
+   "url": "https://pitchbook.com",
+   "title": "Private Market Data, Research & Tools - PitchBook",
+   "trimmed": "# The private capital financial research platform\n\n## Trusted by\n\n## Platform\n\nPitchBook brings together private market data, research, workflow tools, AI-powered insights, and integrations in one platform. From sourcing deals and researching companies to benchmarking funds and planning exits, teams can access the data and tools they need to move faster, work smarter, and make more confident decisions.\n\nIntegrations help teams bring private market data directly into the tools they already use, from Excel and PowerPoint to CRM systems. With real-time data, dynamic updates, and enriched company, deal, and contact insights, teams can streamline workflows, reduce manual work, and create more accurate models, presentations, and outreach strategies faster.\n\nLumonic helps teams manage private market portfolios by bringing unstructured data, market signals, and reporting workflows into one connected solution. By consolidating spreadsheets, PDFs, APIs, and portal exports, teams can turn fragmented information into actionable insights, track performance, identify trends, and build dashboards that support faster, more confident portfolio decisions.\n\nDirect Data puts PitchBook company, deal, and fund data inside your own systems and data warehouses. Pull specific data points on demand through the API, or receive a scheduled feed delivered to your cloud platform or database. Your team stops collecting data and starts working with it.\n\nPitchBook’s AI learning capabilities help teams accelerate research, uncover insights, and make more confident decisions using trusted private market data. By combining advanced AI with human insights and authoritative research, PitchBook supports faster workflows, reliable analysis, and smarter decision-making across the private capital markets.\n\n## Unrivaled data, research, and technology for:\n\n* ### Market Intelligence\n\n  Never miss a beat with the most accurate private capital market analysis.\n* ### Deal Sourcing\n\n  Expedite private market deal sourcing with the most accurate, timely information.\n* ### Deal Execution\n\n  Improve speed, reliability, and outcomes with actionable intelligence.\n* ### Networking\n\n  Build high-value relationships faster with world-class data and tools.\n* ### Due Diligence\n\n  Discover comprehensive data to start your due diligence process.\n* ### Fundraising\n\n  Fundraise faster with industry-leading mandate and commitments insights.\n* ### Benchmarking\n\n  Benchmark investments, asset classes, and fund strategies with current and historical data.\n* ### Business Development\n\n  Source high-value prospects, close more deals, and expand into new markets.\n* ### Asset Allocation\n\n  Source the best managers, measure risk, and find promising investment entry points.\n* ### Portfolio Management\n\n  Reduce time to insight with AI-powered data extraction and tracking.\n\n## Get the data you need, where you need it\n\n* Expand your company, investor, deal, and manager coverage in all your workflows and systems with CRM, API or LLM connector.\n* Enrich internal assets with trusted financial, ownership, contacts, and signals data.\n* Improve benchmarking and market analysis with standardized fields and definitions.\n* Validate outputs to make more confident decisions.\n\n* companies\n* deals\n* investors\n* funds\n\nDiscover the most comprehensive, accurate, and timely intelligence for the complex private capital markets.",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  },
+  {
+   "url": "https://pitchbook.com/help/pitchbook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "trimmed": "## Overview\n\nPitchBook’s API solution allows you to call specific PitchBook data into your internal business systems on demand. This flexible solution means you have access to PitchBook’s expansive database. It’s the ideal integration for CRM enrichment, allowing you to extract data on an ad-hoc basis that meets the needs of your organization.\n\nYou can explore a specific entity and retrieve valuable data, and the API solution enables you to apply specific criteria, such as location and industry, to drill down into the businesses you discover.\n\n## Use cases\n\nThe API is a good solution if:\n\n* Your scope and data points are subject to change frequently.\n* You require a near-instant population of data.\n* You perform ad-hoc research.\n* You want to see past and present financial data.\n* RESTful API is a system requirement.\n\n## How the API works\n\n**Accessing the API**\n\nThe PitchBook API is a RESTful implementation that most HTTP clients can easily access in your chosen language or via a web browser. Every call will use the same base URL: https://api.pitchbook.com\n\n**Available data points**\n\nThe API solution offers a variety of relational endpoints, including financing details, deal stock information, as well as AI-powered VC exit predictor data. See the full list from our API Endpoints Overview document.\n\n**Create your API connection**\n\nTo start your API connection, you will need to send a request directly to our Direct Data team through this link.\n\nOr if you’re a PitchBook client, you can also head to the Plugins & Apps section from the My PitchBook section of the left-hand sidebar on the PitchBook Platform and choose PitchBook API.\n\nFrom this section on the platform, you can test specific endpoints. This section on PitchBook also allows you to reach out to our Direct Data team to request access to the API.\n\n## \n\n## Next steps\n\nOur team will work with you to understand the insights and data you’re looking for and help you establish the API connection through an API key or authentication token. Available data for each entity type is packaged across several endpoints so you can map the data to your desired format and structure.\n\n### Experience the PitchBook Platform firsthand\n\nDiscover how PitchBook’s leading tools and capabilities can strengthen your due diligence workflows.\n\n* PitchBook API and Data Feed\n* Overview",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  },
+  {
+   "url": "https://pitchbook.com/help/getting-started-with-pitchbook-premium-connector",
+   "title": "Help: Getting started with PitchBook's Premium Connector - PitchBook",
+   "trimmed": "## Overview\n\nAs we rely on AI tools to move faster and make smarter decisions, switching between tools to find data can be time-consuming. PitchBook’s Premium Connector solves this by integrating PitchBook data directly into the AI platforms you already use. With secure access, you can query private market insights without disrupting workflow. In this article, learn how our Premium Connector works and which AI platforms we partner with.\n\n## How it works\n\nThe Premium Connector provides a secure link between PitchBook and AI tools. Once connected, you can use your AI tool to access a wide range of PitchBook’s private market data directly. By specifying **“**Using PitchBook data as the source**”** in your query, you ensure the response includes only PitchBook’s verified proprietary data.\n\nWhen a question is sent, the connector translates it into a query that PitchBook can pr\n...\ns. It then retrieves the relevant information, formats it, and sends it back to the AI tool. This workflow ensures that data is delivered accurately and only according to the permissions assigned to each user.\n\n## Workflow\n\nThis section outlines the general workflow for using the Premium Connector. While setup may vary slightly across different AI partners, the core process follows these steps:\n\n* **Setup** – AI partners connect securely to PitchBook’s Premium Connector (built on MCP server technology) directly through the partner’s site. There’s no need for local installation or custom integration as the connection is managed in the cloud, allowing quick deployment.\n* **Authenticate via SSO** – Only licensed PitchBook users can access the connector. Authentication happens through single sign-on (SSO), ensuring that access is secure and tied to each user’s permissions. Additional application-level safeguards ensure that only approved AI platforms, such as authorized enterprise accounts, can interact with PitchBook data. For instructions on enabling SSO, see Getting started with single sign-on (SSO).\n* **Use** –Once connected, you can query PitchBook data directly within their AI tool. Common use cases include company research, deal sourcing, fundraising analysis, and benchmarking comparable companies.\n\n## Use cases\n\nThe PitchBook team has developed the following use cases to help you navigate Premium Conn\n...\nme about Plaid’s funding status, including the most recent investment date, round type, and use of proceeds. Include a list of lenders, active and former investors, and relevant news coverage about previous investment rounds. |\n| **Competitive analysis**  Quickly compare targets to identify opportunities for investments, mergers, acquisitions, and partnerships. | Comparing financial and performance metrics across multiple companies to find new opportunities, accelerate market mapp\n...\ner connections between companies, investors, and professionals using Claude to transform PitchBook’s private capital market data into market maps that demonstrate complex relationships within the industry. | Visualizing the business, investment, and product relationships between companies to inform deal sourcing, supply chain management, strategic partnerships, investor sourcing, and more. | Using PitchBook data, identify InstaCart investors. Then pull each investor’s portfolio to see other companies in this space, and analyze those VCs’ investors to map the competitive landscape. |\n\n## Premium Connector AI Partners\n\nPitchBook offers an integration using the Premium Connector with the following partners:\n\n**Note**: To connect and use PitchBook Premium, you will need to have a seat-based, unlimited, or trial PitchBook license and Single Sign-On (SSO) credentials.\n\n## Helpful links\n\nTo understand how this feature fits into a broader workflow, check out PitchBook Pioneer’s course – PitchBook 101.\n\n### Experience the PitchBook Platform firsthand\n\nDiscover how PitchBook’s leading tools and capabilities can strengthen your due diligence workflows.\n\n* Getting started\n* MCP Connectors Premium",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  },
+  {
+   "url": "https://pitchbook.com/media/press-releases/pitchbook-announces-new-essential-mcp-integration-with-perplexity-expanding-access-to-ai-powered-verifiable-market-intelligence",
+   "title": "PitchBook Announces New Essential MCP Integration with Perplexity, Expanding Access to AI-Powered, Verifiable Market Intelligence | PitchBook",
+   "trimmed": "PRESS RELEASES\n\n# PitchBook Announces New Essential MCP Integration with Perplexity, Expanding Access to AI-Powered, Verifiable Market Intelligence\n\n*Perplexity users can now surface PitchBook’s industry-trusted firmographic data with full source attribution*\n\n**SEATTLE — March 12, 2026 —** PitchBook, the leading private capital market intelligence platform, today announced a new partnership with Perplexity, the leading AI-answer engine. Through Perplexity’s new PitchBook Essential MCP server, users can now access PitchBook’s trusted firmographic intelligence directly within Perplexity’s conversational interface.\n\nAI adoption continues to accelerate across financial services, but the ability to ask questions and receive answers powered by high-quality, comprehensive data is what drives better decision making and delivers meaningful ROI. PitchBook’s AI and machine learning strategy centers on pairing advanced technology with human insight to create one of the most comprehensive and dependable private market datasets in the industry. Perplexity’s answer engine retrieves and synthesizes information from authoritative sources in real-time, delivering citied, verifiable answers that are crucial for high-stakes financial decisions. Through this Essential Partner integration, Perplexity users can ask complex questions about companies and deals and receive clear, sourced insights supported by PitchBook’s intelligence.\n\n“Together, PitchBook and Perplexity are expanding access to private market intelligence,” said Tom Van Buskirk, EVP of Technology & Engineering at PitchBook. “AI is most effective when it’s powered by the most accurate, high-quality data. Perplexity’s conversational interface opens new ways\n...\nlligence into Perplexity’s conversational interface, we’re enabling new ways to explore private markets, where professionals can conduct deep research, ask follow-up questions, and uncover connections they might not have found through traditional search.”\n\nThe Perplexity integration marks the latest milestone in PitchBook’s expanding network of AI partnerships, which include Anthropic, FarsightAI, Finster, Hebbia, Model ML, OpenAI, Rogo, and Writer. Together, these collaborations extend PitchBook’s intentional approach to working across the AI ecosystem, extending access to trusted private market intelligence wherever professionals choose to work.\n\nTo learn more about PitchBook’s AI capabilities and partnerships, click here.\n\n**About PitchBook, a Morningstar company** As the pulse of private capital markets, PitchBook delivers trusted, real-time data, research, and technology to help investors, dealmakers, and innovators make decisions with confidence. Its products provide comprehensive information on companies, investors, funds, deals, and people, along with tools that help professionals analyze market activity and make informed decisions. Founded",
+   "via": "tinyfish",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  },
+  {
+   "url": "https://pitchbook.com/help/PitchBook-api",
+   "title": "Help: PitchBook API - PitchBook",
+   "trimmed": "PitchBook API and Data Feed\n\n...\n\n**Create your API connection**\n\nTo start your API connection, you will need to send a request directly to our Direct Data team [through this link.](pitchbook.com/products/direct-access-data?adgroup=&device=c&_bk=pitchbook&_bt=692687660336&_bm=e&_bn=g&_bg=159619233076&kwdaud=kwd-334479000139&sfid=-dc_pcrid_692687660336_pkw_pitchbook_pmt_e_slid__p…)\n\nOr if you’re a PitchBook client, you can also head to the Plugins & Apps section from the My PitchBook section of the left-hand sidebar on the PitchBook Platform and choose PitchBook API.",
+   "via": "parallel_index",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  },
+  {
+   "url": "https://pitchbook.com/products/premium-connectors",
+   "title": "LLM Data Connectors for Enterprise AI Tools - PitchBook",
+   "trimmed": "## How to get access\n\n[](help.pitchbook.com/s/article/Getting-started-with-PitchBook-Premium-Connectors)\n\nPitchBook clients with seat-based, unlimited, or trial licenses—and an enterprise partner license—can access the PitchBook Premium Connector by following the MCP integration guide.\n\n[Unlock access ](help.pitchbook.com/s/article/Getting-started-with-PitchBook-Premium-Connectors)",
+   "via": "parallel_index",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  },
+  {
+   "url": "https://pitchbook.com/products/direct-access-data/api",
+   "title": "API: Flexibly call down data on demand - PitchBook",
+   "trimmed": "PITCHBOOK DIRECT DATA\n\n# API: Flexibly call down data on demand\n\nPull the exact data you need into the systems you use every day. Get direct, flexible access to our in-depth private and public market data, so you can track trends, patterns and triggers as the market and your needs shift.\n\n[Request Direct Data](pitchbook.com/products/direct-access-data)",
+   "via": "parallel_index",
+   "retrieved_at": "2026-11-23T19:12:42+0530"
+  }
+ ]
+}

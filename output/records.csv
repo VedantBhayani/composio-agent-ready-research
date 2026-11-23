@@ -1,0 +1,101 @@
+﻿app,category,archetype,buildability,main_blocker,auth_methods,dev_access,prod_gate,public_api,api_type,mcp,composio_slug,composio_tools,confidence,official_docs_url,evidence_count
+Salesforce,CRM and Sales,Open API,Yes,None,OAuth2; Token,Free self-serve,Unknown,yes,REST,Official,salesforce,556,High,https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html,12
+HubSpot,CRM and Sales,Defeated,Yes,App review,OAuth2; API key,Unknown,App review,yes,REST,Official,hubspot,354,Low,https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens,15
+Pipedrive,CRM and Sales,Open + app review,Yes,App review,OAuth2; API key,Free trial,App review,yes,REST,Official,pipedrive,404,High,https://developers.pipedrive.com/docs/api/v1,9
+Attio,CRM and Sales,Open + app review,Yes,App review,OAuth2; API key; Basic,Free self-serve,App review,yes,REST,Official,attio,105,High,https://docs.attio.com/rest-api/guides/authentication,14
+Twenty,CRM and Sales,Open API,Yes,None,OAuth2; API key,Free trial,Unknown,yes,REST,Official,twenty,23,High,https://docs.twenty.com/developers/extend/oauth,13
+Podio,CRM and Sales,Open API,Yes,None,OAuth2,Free self-serve,Unknown,yes,REST,Official,podio,143,High,https://developers.podio.com/authentication,7
+Zoho CRM,CRM and Sales,Open API,Yes,None,OAuth2,Free trial,Unknown,yes,REST,Official,zoho,115,High,https://www.zoho.com/crm/developer/docs/api/v3/oauth-overview.html,10
+Close,CRM and Sales,Open API,Yes,None,OAuth2,Free self-serve,Unknown,yes,REST,Official,close,75,High,https://help.close.com/docs/api-keys-oauth,12
+Copper,CRM and Sales,Approval gate,Partial,App review,OAuth2; API key,Approval required,Unknown,yes,REST,None found,copper,65,High,https://developer.copper.com/introduction/oauth/index.html,10
+DealCloud,CRM and Sales,Paid gate,Yes,App review,OAuth2,Paid plan,App review,yes,REST,Official,,,High,https://api.docs.dealcloud.com/mcp/authentication,13
+Zendesk,Support and Helpdesk,Open API,Yes,None,OAuth2,Free self-serve,Unknown,yes,REST,Community,zendesk,483,High,https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth,8
+Intercom,Support and Helpdesk,Open + app review,Yes,App review,OAuth2; Token,Free trial,App review,yes,REST,Official,intercom,138,High,https://developers.intercom.com/docs/guides/mcp,9
+Freshdesk,Support and Helpdesk,Open API,Yes,None,API key,Free self-serve,Unknown,yes,REST,Official,freshdesk,184,High,http://developer.freshdesk.com/api,8
+Front,Support and Helpdesk,Open API,Yes,None,OAuth2; API key; Basic; Token,Free self-serve,Unknown,yes,REST,Official,front,180,High,https://help.front.com/en/articles/4883136,9
+Pylon,Support and Helpdesk,Paid gate,Yes,Paid plan,OAuth2,Paid plan,Unknown,yes,REST,Official,pylon_mcp,12,High,https://docs.usepylon.com/pylon-docs/integrations/pylon-mcp,12
+LiveAgent,Support and Helpdesk,Open API,Yes,None,OAuth2; Token,Free trial,Unknown,yes,REST,Official,,,High,https://support.liveagent.com/647358-MCP-Integration-for-Agents,9
+Plain,Support and Helpdesk,Open API,Yes,None,API key,Free self-serve,Unknown,yes,GraphQL,Official,plain,119,High,https://www.plain.com/docs/graphql/oauth,9
+Help Scout,Support and Helpdesk,Paid gate,Yes,Paid plan,OAuth2; API key,Paid plan,Unknown,yes,REST,Official,help_scout,129,High,https://developer.helpscout.com/llms.txt,11
+Gorgias,Support and Helpdesk,Approval gate,Yes,App review,OAuth2; API key,Approval required,App review,yes,REST,Official,gorgias,51,High,https://developers.gorgias.com/docs/set-up-oauth2-app-store,12
+Gladly,Support and Helpdesk,Partner gate,Yes,Partner gate,OAuth2; API key; Token; Other,Partner or contact sales,Unknown,yes,REST,Official,,,Medium,https://help.gladly.com/docs/what-are-mcp-connections,8
+Slack,Communications and Messaging,Open + app review,Yes,App review,OAuth2,Free self-serve,App review,yes,REST,Official,slack,165,High,https://docs.slack.dev/authentication/installing-with-oauth,11
+Twilio,Communications and Messaging,Open API,Yes,None,OAuth2; API key; Basic,Free self-serve,Unknown,yes,REST,Official,twilio,452,High,https://www.twilio.com/docs/iam/api-keys,10
+Zoho Cliq,Communications and Messaging,Open API,Yes,None,OAuth2,Free self-serve,Unknown,yes,REST,Official,zoho_cliq,162,High,https://www.zoho.com/cliq/help/restapi/v2/,8
+Lark (Larksuite),Communications and Messaging,Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,Official,lark,451,High,https://open.larksuite.com,8
+Pumble,Communications and Messaging,Open API,Yes,None,API key; OAuth2,Free self-serve,None,yes,REST,Official,pumble,9,Medium,https://docs.pumble.com/,12
+Discord,Communications and Messaging,Defeated,Unknown,App review,OAuth2,Unknown,App review,yes,REST,None found,discord,23,Low,https://docs.discord.com/developers/topics/oauth2,5
+Telegram,Communications and Messaging,Open API,Yes,None,Token,Free self-serve,Unknown,yes,REST,Community,telegram,18,High,https://core.telegram.org,11
+WhatsApp Business,Communications and Messaging,Defeated,Yes,App review,OAuth2; Token,Unknown,App review,yes,REST,Official,whatsapp,127,Low,https://developers.facebook.com/docs/whatsapp,12
+Aircall,Communications and Messaging,Partner gate,Partial,Partner gate,OAuth2; Basic,Partner or contact sales,Partner program,yes,REST,None found,aircall,48,High,https://developer.aircall.io/docs/oauth,8
+Vonage,Communications and Messaging,Open API,Yes,None,API key,Free self-serve,Unknown,yes,REST,Official,,,High,https://developer.vonage.com,11
+Google Ads,"Marketing, Ads, Email and Social",Open API,Yes,None,OAuth2; Token,Free self-serve,Unknown,yes,REST,Official,googleads,78,High,https://developers.google.com/google-ads,9
+Meta Ads,"Marketing, Ads, Email and Social",Defeated,Yes,App review,Token,Unknown,App review,yes,REST,Official,metaads,99,High,https://developers.facebook.com/docs/marketing-apis,17
+LinkedIn Ads,"Marketing, Ads, Email and Social",Approval gate,Partial,App review,OAuth2; Token,Approval required,App review,yes,REST,None found,linkedin_ads,28,High,https://learn.microsoft.com/linkedin/marketing,9
+GoHighLevel,"Marketing, Ads, Email and Social",Open + app review,Yes,App review,OAuth2; API key,Free self-serve,App review,yes,REST,Official,highlevel_location,554,Medium,https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0,11
+Mailchimp,"Marketing, Ads, Email and Social",Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,None found,mailchimp,275,High,https://mailchimp.com/developer,7
+Klaviyo,"Marketing, Ads, Email and Social",Defeated,Yes,App review,OAuth2; API key,Unknown,App review,yes,REST,Official,klaviyo,233,Low,https://developers.klaviyo.com,12
+systeme.io,"Marketing, Ads, Email and Social",Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,Official,,,High,https://developer.systeme.io/reference,11
+Pinterest,"Marketing, Ads, Email and Social",Approval gate,Yes,App review,OAuth2,Approval required,App review,yes,REST,Official,pinterest,27,Medium,https://developers.pinterest.com,9
+Threads (Meta),"Marketing, Ads, Email and Social",Open + app review,Partial,App review,OAuth2,Free self-serve,App review,yes,REST,None found,threads,24,Low,https://developers.facebook.com/docs/threads,7
+SendGrid,"Marketing, Ads, Email and Social",Open API,Yes,None,API key,Free self-serve,None,yes,REST,Community,sendgrid,359,Medium,https://sendgrid.com/docs/api-reference,8
+Shopify,Ecommerce,Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,GraphQL,Official,shopify,386,Medium,https://shopify.dev,12
+WooCommerce,Ecommerce,Open API,Yes,None,API key,Free self-serve,None,yes,REST,Both,,,Medium,https://developer.woocommerce.com/docs/apis/rest-api/authentication,10
+BigCommerce,Ecommerce,Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,bigcommerce,532,Medium,https://developer.bigcommerce.com,12
+Salesforce Commerce Cloud,Ecommerce,Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,None found,,,Medium,https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html,10
+Magento (Adobe Commerce),Ecommerce,Open + app review,Partial,App review,OAuth2; Token,Free self-serve,App review,yes,REST,Community,,,Medium,https://developer.adobe.com/commerce,9
+Squarespace,Ecommerce,Partner gate,Yes,Partner gate,OAuth2,Approval required,Partner program,yes,REST,Official,,,Low,https://developers.squarespace.com,7
+Ecwid,Ecommerce,Open + app review,Partial,App review,OAuth2; Token,Free self-serve,App review,yes,REST,None found,,,Low,https://api-docs.ecwid.com,10
+Gumroad,Ecommerce,Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,gumroad,13,Medium,https://gumroad.com/api,12
+Amazon Selling Partner,Ecommerce,Approval gate,Yes,App review,OAuth2; Token,Approval required,App review,yes,REST,Official,,,Medium,https://developer-docs.amazon.com/sp-api,11
+fanbasis,Ecommerce,Defeated,Unknown,Insufficient evidence,Unknown,Unknown,Unknown,unknown,None found,Community,,,Low,,2
+DataForSEO,"Data, SEO and Scraping",Open API,Yes,None,Basic; Token,Free self-serve,Unknown,yes,REST,Official,dataforseo,354,Medium,https://docs.dataforseo.com,8
+SE Ranking,"Data, SEO and Scraping",Open API,Yes,None,API key; OAuth2,Free self-serve,None,yes,REST,Official,,,Medium,https://seranking.com/api,9
+Ahrefs,"Data, SEO and Scraping",Paid gate,Yes,Paid plan,Token,Paid plan,None,yes,REST,Official,ahrefs,46,Medium,https://ahrefs.com/api,10
+MrScraper,"Data, SEO and Scraping",Open API,Yes,None,OAuth2; API key,Free self-serve,None,yes,REST,Official,mrscraper,11,Medium,https://docs.mrscraper.com,14
+Apify,"Data, SEO and Scraping",Open API,Yes,None,API key; OAuth2,Free self-serve,None,yes,REST,Official,apify,184,Medium,https://docs.apify.com,13
+Firecrawl,"Data, SEO and Scraping",Open API,Yes,None,OAuth2; API key,Free self-serve,None,yes,REST,Official,firecrawl,245,Medium,https://docs.firecrawl.dev,19
+Bright Data,"Data, SEO and Scraping",Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,Official,brightdata,167,Medium,https://docs.brightdata.com/products/mcp-server/remote/oauth,8
+Sherlock,"Data, SEO and Scraping",Open API,Yes,None,Token,Free self-serve,Unknown,yes,REST,Community,,,Medium,https://app.sherlock.sh/reference,7
+Waterfall.io,"Data, SEO and Scraping",Approval gate,Partial,App review,API key,Approval required,Unknown,yes,REST,None found,,,Medium,https://docs.waterfall.io/v1/introduction,7
+Clay,"Data, SEO and Scraping",Open API,Yes,None,OAuth2; API key,Free self-serve,None,yes,REST,Official,clay,15,Low,https://university.clay.com/docs/connect-to-clay-mcp,9
+GitHub,"Developer, Infra and Data platforms",Open + app review,Yes,App review,OAuth2; Token,Free self-serve,App review,yes,REST,Both,github,883,Medium,https://docs.github.com/rest,11
+Vercel,"Developer, Infra and Data platforms",Open API,Yes,None,Token,Free self-serve,None,yes,REST,None found,vercel,399,Low,https://vercel.com/docs/rest-api,9
+Netlify,"Developer, Infra and Data platforms",Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,netlify_mcp,9,Medium,https://docs.netlify.com/api,12
+Cloudflare,"Developer, Infra and Data platforms",Open + app review,Yes,App review,OAuth2; API key,Free self-serve,App review,yes,REST,Official,cloudflare,171,Low,https://developers.cloudflare.com/api,9
+Supabase,"Developer, Infra and Data platforms",Open API,Yes,None,API key; Token,Free self-serve,None,yes,REST,Official,supabase,230,Medium,https://supabase.com/docs,10
+Neo4j,"Developer, Infra and Data platforms",Open API,Yes,None,OAuth2; API key; Basic,Free self-serve,Unknown,yes,REST,Official,neo4j,21,Medium,https://neo4j.com/docs/aura/api/authentication,11
+Snowflake,"Developer, Infra and Data platforms",Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,snowflake,16,Medium,https://docs.snowflake.com,12
+MongoDB Atlas,"Developer, Infra and Data platforms",Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,Official,mongodb,496,Medium,https://mongodb.com/docs/atlas/api,7
+Datadog,"Developer, Infra and Data platforms",Partner gate,Yes,Partner gate,OAuth2; API key,Partner or contact sales,Partner program,yes,REST,Official,datadog,255,Medium,https://docs.datadoghq.com/api,8
+Sentry,"Developer, Infra and Data platforms",Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,sentry,210,Medium,https://docs.sentry.io/api,10
+Notion,Productivity and Project Management,Open API,Yes,None,Token; OAuth2,Free self-serve,None,yes,REST,Official,notion,57,Medium,https://developers.notion.com,10
+Airtable,Productivity and Project Management,Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,airtable,26,Medium,https://airtable.com/developers,11
+Linear,Productivity and Project Management,Open API,Yes,None,OAuth2; API key,Free self-serve,None,yes,GraphQL,None found,linear,47,Medium,https://developers.linear.app,10
+Jira,Productivity and Project Management,Open + app review,Yes,App review,OAuth2; API key; Basic; Token,Free self-serve,App review,yes,REST,Official,jira,166,Medium,https://developer.atlassian.com/cloud/rovo-mcp/guides/configuring-authentication-via-api-token,11
+Asana,Productivity and Project Management,Open + app review,Yes,App review,OAuth2; Token,Free self-serve,App review,yes,REST,Official,asana,247,Medium,https://developers.asana.com,12
+Monday.com,Productivity and Project Management,Open + app review,Yes,App review,OAuth2; API key; Token,Free self-serve,App review,yes,GraphQL,Both,monday,122,Medium,https://developer.monday.com,16
+ClickUp,Productivity and Project Management,Open API,Yes,None,OAuth2,Free self-serve,None,yes,REST,Official,clickup,163,Medium,https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server,9
+Coda,Productivity and Project Management,Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,coda,109,Medium,https://coda.io/developers,10
+Smartsheet,Productivity and Project Management,Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,Official,smartsheet,180,Medium,https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication,5
+Harvest,Productivity and Project Management,Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,harvest,57,Medium,https://help.getharvest.com/api-v2,10
+Stripe,Finance and Fintech,Open API,Yes,None,API key; OAuth2,Free self-serve,Unknown,yes,REST,Official,stripe,428,High,https://stripe.com/docs/api,11
+Plaid,Finance and Fintech,Paid gate,Yes,App review,OAuth2; API key,Paid plan,App review,yes,REST,Official,plaid,70,Medium,https://plaid.com/docs,11
+Binance,Finance and Fintech,Approval gate,Yes,App review,OAuth2; API key; Token,Approval required,App review,yes,REST,Official,,,Medium,https://developer.binance.com/docs,8
+Paygent Connect,Finance and Fintech,Open API,Yes,None,API key,Free self-serve,None,yes,REST,Official,,,Medium,https://www.withpaygent.com/documentation/mcp-setup,11
+iPayX,Finance and Fintech,Open API,Yes,None,Token,Free self-serve,None,yes,REST,Official,,,Medium,https://ipayx.ai/docs,10
+QuickBooks,Finance and Fintech,Open + app review,Yes,App review,OAuth2,Free self-serve,App review,yes,REST,Official,quickbooks,119,Low,http://developer.intuit.com/app/developer/qbo/docs/develop,8
+Xero,Finance and Fintech,Open + app review,Yes,App review,OAuth2,Free self-serve,App review,yes,REST,Official,xero,109,Medium,https://developer.xero.com,10
+Brex,Finance and Fintech,Open API,Yes,None,OAuth2; API key,Free self-serve,None,yes,REST,Official,brex,84,Low,https://developer.brex.com,11
+Ramp,Finance and Fintech,Open + app review,Yes,App review,OAuth2; API key,Free self-serve,App review,yes,REST,Both,ramp,186,Medium,https://docs.ramp.com,12
+PitchBook,Finance and Fintech,Approval gate,Yes,App review,API key; Token,Approval required,Unknown,yes,REST,Both,pitchbook,130,Medium,https://pitchbook.com/help/pitchbook-api,8
+NotebookLM,"AI, Research and Media-native",Paid gate,Yes,Paid plan,OAuth2,Paid plan,Unknown,yes,REST,Official,notebook_lm,11,Medium,https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks,10
+Otter AI,"AI, Research and Media-native",Partner gate,Yes,Partner gate,OAuth2; Token,Partner or contact sales,Unknown,yes,REST,Official,otter_ai_mcp,3,High,https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server,6
+Fathom,"AI, Research and Media-native",Open API,Yes,None,API key; OAuth2,Free self-serve,None,yes,REST,Official,fathom,10,Medium,https://developers.fathom.ai/llms-full.txt,15
+Consensus,"AI, Research and Media-native",Open API,Yes,None,API key,Free self-serve,None,yes,REST,Official,consensus,1,Medium,https://docs.consensus.app/core-features/api,12
+Reducto,"AI, Research and Media-native",Open API,Yes,None,Token,Free self-serve,None,yes,REST,Official,,,Medium,https://docs.reducto.ai/mcp-server,16
+Devin,"AI, Research and Media-native",Open API,Yes,None,Token; API key,Free self-serve,Unknown,yes,REST,Official,devin_mcp,23,Medium,https://docs.devin.ai,9
+higgsfield,"AI, Research and Media-native",Open API,Yes,None,API key,Free self-serve,None,yes,REST,Official,higgsfield,13,Medium,https://docs.higgsfield.ai/docs,13
+Mermaid CLI,"AI, Research and Media-native",MCP-only,Yes,None,Unknown,Free self-serve,None,no,None found,Both,,,Low,https://github.com/mermaid-js/mermaid-cli,5
+YouTube Transcript,"AI, Research and Media-native",Open API,Yes,None,OAuth2; API key,Free self-serve,None,yes,REST,Official,youtube_transcript,9,Medium,https://transcriptapi.com,10
+Grain,"AI, Research and Media-native",Open API,Yes,None,OAuth2; Token,Free self-serve,None,yes,REST,Official,grain,17,Low,https://developers.grain.com/,14

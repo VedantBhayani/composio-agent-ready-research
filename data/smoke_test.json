@@ -1,0 +1,177 @@
+{
+ "parallel": {
+  "status": 200,
+  "secs": 2.92,
+  "n_results": 5,
+  "urls": [
+   "https://stripe.com/docs/keys",
+   "https://docs.stripe.com/api/authentication?api-version=2026-10-28.preview",
+   "https://stripe.com/docs/api",
+   "https://docs.stripe.com/get-started/api-request?locale=en-GB",
+   "https://docs.stripe.com/api/authentication?lang=node%29%3A"
+  ],
+  "usage": [
+   {
+    "name": "sku_search",
+    "count": 1
+   }
+  ],
+  "warnings": null,
+  "error": null
+ },
+ "tinyfish_fetch": {
+  "status": 200,
+  "secs": 15.13,
+  "results": [
+   {
+    "url": "https://docs.stripe.com/keys",
+    "final_url": "https://docs.stripe.com/keys",
+    "title": "API keys",
+    "chars": 21143,
+    "head": "# API keys\n\n## Use API keys to authenticate API requests.\n\nStripe uses API keys to authenticate requests from your integration and determine which Stripe resour"
+   },
+   {
+    "url": "https://highlevel.stoplight.io/",
+    "final_url": "https://highlevel.stoplight.io/welcome",
+    "title": "Stoplight",
+    "chars": 126,
+    "head": "Stoplight\n\n## Workspace does not exist\n\nThere is no workspace at this URL. Click below to create one.\n\nCreate a new workspace!"
+   }
+  ],
+  "errors": [],
+  "rate_headers": {
+   "x-ratelimit-limit": "150",
+   "x-ratelimit-remaining": "148",
+   "x-ratelimit-reset": "1795440600"
+  }
+ },
+ "tinyfish_search": {
+  "status": 200,
+  "n": 10,
+  "top": [
+   [
+    "Otter MCP Server \u2013 Help Center",
+    "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
+   ],
+   [
+    "Claude + Otter.ai Integration",
+    "https://otter.ai/integration/claude"
+   ],
+   [
+    "Otter for Enterprise: Connect AI-to-AI with Otter's MCP",
+    "https://otter.ai/blog/otter-for-enterprise-connect-ai-to-ai-with-otters-mcp"
+   ],
+   [
+    "Otter.ai Connector Risk - PromptArmor",
+    "https://www.promptarmor.com/connectors/otter-ai"
+   ],
+   [
+    "How Otter's MCP Turned 76 Conversations into a Searchable ...",
+    "https://otter.ai/case-study/audience-strategies"
+   ]
+  ]
+ },
+ "mistral": {
+  "import": "mistralai.client",
+  "mistral-small-latest": {
+   "secs": 1.47,
+   "content": "{\"auth_methods\": [\"API keys\", \"OAuth\"], \"excerpt\": \"Stripe authenticates API requests using your account's API keys. Use OAuth for Connect platforms.\"}",
+   "parsed_attr": "Probe",
+   "usage": {
+    "prompt_tokens": 42,
+    "completion_tokens": 39,
+    "total_tokens": 81,
+    "service_tier": "standard",
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 0
+    }
+   }
+  },
+  "mistral-large-latest": {
+   "error": "SDKError: API error occurred: Status 400. Body: {\"object\":\"error\",\"message\":\"top_p must be 1 when using greedy sampling.\",\"type\":\"invalid_request_greedy_sampling\",\"param\":null,\"code\":\"3054\",\"raw_status_code\":400}"
+  },
+  "rate_headers": {
+   "x-ratelimit-limit-tokens-minute": "100000",
+   "x-ratelimit-remaining-tokens-minute": "99898",
+   "x-ratelimit-tokens-query-cost": "21",
+   "x-ratelimit-limit-req-minute": "100",
+   "x-ratelimit-remaining-req-minute": "98"
+  }
+ },
+ "composio": {
+  "pages": 2,
+  "toolkits": 1842,
+  "with_auth_schemes": 1842,
+  "sample": [
+   {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "toolkit_type": "api",
+    "auth_schemes": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "composio_managed_auth_schemes": [
+     "OAUTH2"
+    ],
+    "no_auth": false,
+    "deprecated": {
+     "toolkitId": "635cc036-aba3-48ad-a6ab-1abd84f8817b"
+    },
+    "tools_count": 354,
+    "app_url": "https://www.hubspot.com/",
+    "categories": [
+     "crm",
+     "marketing automation"
+    ]
+   },
+   {
+    "slug": "linear",
+    "name": "Linear",
+    "toolkit_type": "api",
+    "auth_schemes": [
+     "OAUTH2",
+     "API_KEY"
+    ],
+    "composio_managed_auth_schemes": [
+     "OAUTH2"
+    ],
+    "no_auth": false,
+    "deprecated": {
+     "toolkitId": "1614fd24-d056-465e-b5a1-714ef9e1a960"
+    },
+    "tools_count": 47,
+    "app_url": "https://linear.app",
+    "categories": [
+     "project management",
+     "task management"
+    ]
+   },
+   {
+    "slug": "stripe",
+    "name": "Stripe",
+    "toolkit_type": "api",
+    "auth_schemes": [
+     "API_KEY",
+     "OAUTH2"
+    ],
+    "composio_managed_auth_schemes": [
+     "OAUTH2"
+    ],
+    "no_auth": false,
+    "deprecated": {
+     "toolkitId": "3ff781de-0918-4e8c-801c-e6b1c1d0b1c7"
+    },
+    "tools_count": 428,
+    "app_url": "https://stripe.com",
+    "categories": [
+     "payment processing",
+     "ecommerce"
+    ]
+   }
+  ]
+ }
+}
