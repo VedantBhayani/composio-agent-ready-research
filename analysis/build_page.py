@@ -316,14 +316,16 @@ $("tagline").textContent=B.copy.tagline;
 const NI=I.n_apps||N;
 if(NI!==N)document.getElementById("tagline").after(h("p",{class:"pending"},`Note: pattern figures come from insights.json computed on ${NI} apps (${I.dataset}); the matrix below has ${N} records. Re-run analysis/analyze.py then build_page.py to sync.`));
 const topArch=archE[0],topBl=blk[0];
-$("headline").textContent=`${topArch?topArch[0]:"n/a"} is the most common archetype (${topArch?topArch[1].count:0} of ${NI} apps)`+
- (topBl?`, and the most common blocker is ${topBl[0]} (${topBl[1]} apps).`:".");
+{const da=I.dev_access||{},ss=(da["Free self-serve"]||0)+(da["Free trial"]||0),qw=((I.opportunities||{}).quick_wins_build_now||[]).length;
+ $("headline").textContent=`Free to start, gated to ship: ${ss} of ${NI} apps let a developer get credentials on their own, `+
+ (topBl?`but ${topBl[0].toLowerCase()} before going live is the #1 blocker (${topBl[1]} apps). `:"")+
+ `${qw} buildable apps have no Composio toolkit yet: the build-now list.`;}
 const au=I.auth||{},opp=I.opportunities||{};
 const bigCats=cats.filter(c=>c.n>=3);const pool=bigCats.length?bigCats:cats;
 const topSS=[...pool].sort((a,b)=>b.self_serve_pct-a.self_serve_pct||b.n-a.n)[0];
 const topG=[...pool].sort((a,b)=>b.gated-a.gated||b.n-a.n)[0];
 const cards=[
- ["Which auth dominates?",`OAuth2 ${au.oauth_pct}% vs API key ${au.api_key_pct}%`,`${au.both_pct}% support both. ${au.unknown||0} apps with unknown auth.`],
+ ["Which auth dominates?",`OAuth2 ${au.oauth_pct}% vs API key ${au.api_key_pct}%`,`${au.both_pct}% support both. Unknown auth: ${au.unknown||0}.`],
  ["Which categories are self-serve vs gated?",topSS?`Most self-serve: ${topSS.category} (${topSS.self_serve_pct}%)`:"n/a",
    topG?`Most gated: ${topG.category} (${topG.gated} of ${topG.n} gated)`:""],
  ["Most common blocker?",topBl?`${topBl[0]}: ${topBl[1]} apps`:"None",`${(blk.slice(1,3)).map(x=>x[0]+" "+x[1]).join(", ")}`],
@@ -349,6 +351,7 @@ const rev=pg["App review"]||0,unkG=pg["Unknown"]||0;
 F.push(`Review-to-ship: ${rev} apps (${pct(rev,NI)}%) need an app review before going live; prod gate is unknown for ${unkG} (${pct(unkG,NI)}%).`);
 const mc=I.mcp||{};F.push(`MCP: ${I.official_mcp_pct}% have an official MCP server; ${sorted(mc).map(x=>x[0]+" "+x[1]).join(", ")}.`);
 F.push(`Composio coverage: ${cmp.covered} of ${NI} apps (${cmp.covered_pct}%) already have a toolkit, ${cmp.tools_total} tools in total.`);
+{const bp=I.buildable_paths||{};if(bp.self_serve_api!=null)F.push(`Two roads to "buildable": ${bp.self_serve_api} apps via a self-serve API with no known go-live gate; ${bp.official_mcp_only} more only via the vendor's own MCP server (their REST API is gated by review, approval, a plan or unverified access). MCP is now the faster path for gated apps.`);}
 if(lt.n_with!=null)F.push(`Long-tail test: ${lt.gated_or_unknown_pct_with_toolkit}% of apps with a toolkit are gated or unknown (n=${lt.n_with}), vs ${lt.gated_or_unknown_pct_without_toolkit}% of those without (n=${lt.n_without}).`);
 for(const f of F)$("findlist").append(h("li",{},f));
 for(const [key,head,frame] of B.copy.backlog){const L=opp[key]||[];
