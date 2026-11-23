@@ -2,11 +2,37 @@
 
 An agent that researches 100 apps and asks of each one: **could this be an agent toolkit today, and if not, what's blocking it?** It records auth methods, how developers get credentials, the approval needed to go live, the API surface, MCP servers and Composio toolkit coverage. Every answer carries a fetched URL and a verbatim excerpt. The output is checked by four automated loops and then a blind human audit.
 
-- **Live page:** {{LIVE_URL}}
+- **Live page:** not deployed yet (GitHub Pages pending owner OK); open `output/index.html` locally
 - **Data:** `output/data.json`, `output/records.csv`, `output/llms.txt` (for agents)
 
 ## Results (all computed from `data/`)
-{{RESULTS}}
+**Coverage:** 100 of 100 apps researched, each with fetched evidence. Pass 1 is frozen at `data/pass1.jsonl`; `data/pass2.jsonl` holds the output of the automated loops; `data/final.jsonl` adds the human corrections.
+
+**Findings** (from `data/insights.json`, computed on `final.jsonl`):
+- **Free to start, gated to ship.** 68 of 100 apps let a developer get credentials on their own (63 free self-serve, 5 free trial). App review before going live is the #1 blocker (36 apps), followed by partner gates (6) and paid plans (4).
+- **OAuth2 leads:** it appears in 75% of apps and API keys in 55%; 38% support both.
+- **There are two roads to "buildable":** 86 apps rate Yes, Partial 9 and Unknown 5. Of those 86, only 45 get there through a self-serve REST API. The rest rely on the vendor's official MCP server while the API itself is gated.
+- **Composio** has a toolkit for 80 of 100 apps. Apps without one skew gated or unknown: 30% of them, against 10% of covered apps. Fourteen buildable apps have no toolkit yet, which makes them a build-now list (DealCloud, LiveAgent, Gladly, Vonage, systeme.io, WooCommerce, Squarespace, fanbasis, SE Ranking, Binance, Paygent Connect, iPayX, Reducto, Mermaid CLI).
+
+**Accuracy** (blind human audit: 15 apps, 90 claims, sample seed 42, scoring rules fixed before results; see `data/accuracy.json`):
+
+| | Pass 1 | Pass 2 (after loops) | Final |
+|---|---|---|---|
+| Precision on answered | 71.9% (64/89), CI95 62-80% | 69.0% (60/87), CI95 59-78% | matches human by construction |
+| Abstained (Unknown) | 0 | 2 | 0 |
+| Unsupported (excerpt not in page) | 5 | 0 | - |
+
+One human answer was outside the allowed values (Salesforce auth: "yes, Rest") and is excluded as unresolved.
+
+**The honest result: the automated loops did not raise precision.** The confidence intervals overlap, so the 3-point drop is noise rather than a gain, and nothing here shows the "lower first pass rising to higher" pattern from the automated loops alone. The rise comes from the human tier. What the loops did achieve:
+- **Grounding.** Unsupported claims fell from 5 to 0. Unverified fields became Unknown instead of staying guesses.
+- **Fewer Unknowns.** Unknown dev_access fell from 34 to 15 across all 100 apps.
+
+Where the errors are:
+- **Public API, Composio toolkit and buildability** were 15/15, 15/15 and 14/15 correct in pass 2.
+- **MCP:** 10 of the 11 MCP errors are "Official" where the human also found a community GitHub repo ("Both"). On whether an official MCP exists, agent and human agree on 14 of 15. The fix is to search GitHub for community servers even when a vendor server exists.
+- **Auth** is scored as an exact set, and the agent tends to add a method the human did not confirm (OAuth2 on Pumble, Plaid and MrScraper).
+- **Access got worse, 11 → 8 correct.** A real before→after example of a loop helping: Twenty's dev_access went from Unknown to Free self-serve (browser agent, L4), which the human confirmed. And one of a loop hurting: Salesforce's prod_gate went from Unknown to Partner program (L4), where the human found App review. The loops also left free trials labelled "Free self-serve" (SendGrid, BigCommerce).
 
 ## Architecture
 ```
@@ -92,4 +118,11 @@ python -m pytest -q
 ```
 
 ## Limitations
-{{LIMITATIONS}}
+- **Automated loops did not raise human-audited precision** (see Results). The audit is 90 claims, so each CI is about ±10 points.
+- **The final tier is not a measurement.** Human corrections apply only to the 15 audited apps. The other 85 are pass 2 as it stands.
+- **The judge (L1) runs on Mistral Small.** Mistral Large timed out at over 60 s per call. This makes self-consistency weaker than having a different model judge.
+- **The browser loop (L4) ran on 8 audit apps only** (cost about $1.40, one timeout). Only 4 of 23 browser quotes matched our own fetch verbatim, and one L4 change (Salesforce) was wrong.
+- **Known wrong value outside the sample:** Datadog's dev_access came from the OAuth partner-sandbox path. It is left as is, not hand-fixed.
+- **Strict evidence costs coverage.** prod_gate is Unknown for 53 apps because no page stated it directly. Missing evidence is not proof of absence.
+- **The Composio catalog is a snapshot** (1,842 toolkits via REST), and `toolkits.get()` in SDK 0.34.0 returns at most 1,000. The aliases are hand-verified by listing each toolkit's tools.
+- **Public docs only.** Nothing was checked by signing up or logging in.

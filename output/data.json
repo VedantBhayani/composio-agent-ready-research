@@ -12,7 +12,7 @@
     ],
     "auth_notes": "Bearer token = access token; OAuth2 flows include client credentials, authorization code (PKCE), and JWT-based tokens; API key may refer to client ID/secret in connected apps",
     "dev_access": "Free self-serve",
-    "prod_gate": "Partner program",
+    "prod_gate": "App review",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
@@ -34,9 +34,9 @@
       "match_method": "name"
     },
     "buildability": "Yes",
-    "main_blocker": "Partner gate",
+    "main_blocker": "App review",
     "blocker_note": "MCP server URLs require org-specific placeholders and My Domain handling; OAuth PKCE is required for hosted MCP.",
-    "archetype": "Partner gate",
+    "archetype": "Open + app review",
     "confidence": "High",
     "evidence": [
       {
@@ -220,9 +220,22 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L4"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Free self-serve ; App review (human)",
+        "source_url": "",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Salesforce API authentication",
@@ -1274,7 +1287,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://{your-workspace-url}/mcp"
     ],
@@ -1476,9 +1489,22 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L4"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://docs.twenty.com/user-guide/ai/capabilities/mcp, https://github.com/sebbaker/twenty-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Twenty API authentication",
@@ -5460,13 +5486,10 @@
     "description": "Support and helpdesk platform with AI-driven customer conversations and MCP integrations",
     "official_docs_url": "https://help.gladly.com/docs/what-are-mcp-connections",
     "auth_methods": [
-      "OAuth2",
-      "API key",
-      "Token",
-      "Other"
+      "Basic"
     ],
     "auth_notes": "Bearer token, API key, OAuth (Authorization Code or Client Credentials), or None supported for MCP servers; OAuth2 and API key are primary for API access",
-    "dev_access": "Free self-serve",
+    "dev_access": "Partner or contact sales",
     "prod_gate": "Unknown",
     "public_api": "yes",
     "api_type": "REST",
@@ -5487,9 +5510,9 @@
       "match_method": null
     },
     "buildability": "Yes",
-    "main_blocker": "None",
+    "main_blocker": "Partner gate",
     "blocker_note": "MCP access requires organization-level beta enablement and eligible roles; MCP for Claude requires paid Claude plan",
-    "archetype": "Open API",
+    "archetype": "Partner gate",
     "confidence": "High",
     "evidence": [
       {
@@ -5634,9 +5657,35 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = Basic (human)",
+        "source_url": "https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Partner or contact sales ; Unknown (human)",
+        "source_url": "https://www.gladly.ai/, https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Gladly API authentication",
@@ -6760,8 +6809,7 @@
     "description": "Team messaging app with API, MCP server, and AI automation addons",
     "official_docs_url": "https://docs.pumble.com/",
     "auth_methods": [
-      "API key",
-      "OAuth2"
+      "API key"
     ],
     "auth_notes": "Bearer token = API key; OAuth2 for app interactions",
     "dev_access": "Free self-serve",
@@ -6769,7 +6817,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://pumble.com/mcp",
       "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server"
@@ -6959,9 +7007,35 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = API key (human)",
+        "source_url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/, https://pumble.com/learn/pumble/ai-automation-guide/",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://pumble.com/mcp, https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/, https://github.com/shoutkol/pumble-mcp-server",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Pumble API authentication",
@@ -10722,14 +10796,14 @@
       "OAuth2"
     ],
     "auth_notes": "Threads user access tokens (OAuth2) required for all API calls; short-lived (1h) or long-lived (60 days)",
-    "dev_access": "Unknown",
+    "dev_access": "Free self-serve",
     "prod_gate": "App review",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "None found",
+    "mcp": "Community",
     "mcp_urls": [],
-    "integration_shape": "Hosted API",
+    "integration_shape": "Multiple",
     "composio_toolkit": {
       "exists": true,
       "slug": "threads",
@@ -10740,11 +10814,11 @@
       ],
       "match_method": "name"
     },
-    "buildability": "Unknown",
+    "buildability": "Partial",
     "main_blocker": "App review",
     "blocker_note": "App Review required for permissions beyond tester roles",
-    "archetype": "Access unverified",
-    "confidence": "Low",
+    "archetype": "Open + app review",
+    "confidence": "Medium",
     "evidence": [
       {
         "claim_field": "public_api",
@@ -10810,9 +10884,35 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Free self-serve ; App review (human)",
+        "source_url": "https://www.postman.com/meta/threads/documentation/dht3nzz/threads-api, https://developers.facebook.com/docs/resp-plat-initiatives/app-review/introduction, https://developers.facebook.com/docs/resp-plat-initiatives/individual-processes/data-handling-questions/faqs",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Community (human)",
+        "source_url": "https://github.com/andreaselmi/threads-mcp, https://github.com/SmarterCL/meta-mcp-instagram, https://github.com/meta/agentic-tools",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Threads API authentication",
@@ -10950,15 +11050,16 @@
     "description": "Send transactional and marketing emails via REST API and SMTP",
     "official_docs_url": "https://sendgrid.com/docs/api-reference",
     "auth_methods": [
-      "API key"
+      "API key",
+      "Basic"
     ],
     "auth_notes": "Bearer token = API key; Basic Auth no longer accepted",
-    "dev_access": "Free self-serve",
+    "dev_access": "Free trial",
     "prod_gate": "Unknown",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Community",
+    "mcp": "Both",
     "mcp_urls": [
       "https://github.com/deyikong/sendgrid-mcp",
       "https://github.com/Garoth/sendgrid-mcp"
@@ -11083,9 +11184,48 @@
         "excerpt_match": true,
         "verifier": "unsupported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = API key; Basic (human)",
+        "source_url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication, https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Free trial ; Unknown (human)",
+        "source_url": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts, https://www.twilio.com/docs/sendgrid/ui/account-and-settings/verifying-your-account",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://www.twilio.com/docs/ai/mcp, https://github.com/deyikong/sendgrid-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "SendGrid API authentication",
@@ -11803,16 +11943,15 @@
     "description": "Ecommerce platform with REST and GraphQL APIs for store management and storefronts",
     "official_docs_url": "https://developer.bigcommerce.com",
     "auth_methods": [
-      "OAuth2",
-      "Token"
+      "OAuth2"
     ],
     "auth_notes": "Bearer token = access_token; OAuth2 for app-level accounts; static access_token for store-level accounts",
-    "dev_access": "Free self-serve",
+    "dev_access": "Free trial",
     "prod_gate": "App review",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "http://docs.bigcommerce.com/developer/api-reference/mcp/overview"
     ],
@@ -12002,9 +12141,48 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = OAuth2 (human)",
+        "source_url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Free trial ; App review (human)",
+        "source_url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/publishing-apps",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview, https://docs.bigcommerce.com/developer/api-reference/mcp/store-management, https://github.com/isaacgounton/bigcommerce-api-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "BigCommerce API authentication",
@@ -14906,8 +15084,7 @@
     "description": "AI-ready web scraping and search platform with MCP, API, SDKs and CLI",
     "official_docs_url": "https://docs.mrscraper.com",
     "auth_methods": [
-      "OAuth2",
-      "API key"
+      "Token"
     ],
     "auth_notes": "Bearer token = API key; OAuth2 scopes: scrape:read, scrape:write, account:read",
     "dev_access": "Free self-serve",
@@ -15118,9 +15295,22 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = Token (human)",
+        "source_url": "https://docs.mrscraper.com/docs/api/authentication, https://docs.mrscraper.com/docs/api/overview",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "MrScraper API authentication",
@@ -17754,7 +17944,8 @@
     "description": "Cloudflare API for managing DNS, Workers, Zero Trust, and other services",
     "official_docs_url": "https://developers.cloudflare.com/api",
     "auth_methods": [
-      "OAuth2"
+      "API key",
+      "Token"
     ],
     "auth_notes": "Bearer token = API key; OAuth2 via Authorization Code flow with PKCE support",
     "dev_access": "Free self-serve",
@@ -17762,7 +17953,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.cloudflare.com/mcp"
     ],
@@ -17886,9 +18077,35 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = Token; API key (human)",
+        "source_url": "https://developers.cloudflare.com/api/overview/, https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/, https://github.com/cloudflare/mcp, https://github.com/mattzcarey/cloudflare-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Cloudflare API authentication",
@@ -19788,16 +20005,15 @@
     "official_docs_url": "https://developers.notion.com",
     "auth_methods": [
       "OAuth2",
-      "API key",
       "Token"
     ],
     "auth_notes": "Bearer token = PAT (personal access token) or OAuth access token; HTTP Basic for OAuth token exchange.",
     "dev_access": "Free self-serve",
-    "prod_gate": "App review",
+    "prod_gate": "None",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://mcp.notion.com/mcp"
     ],
@@ -19814,9 +20030,9 @@
       "match_method": "name"
     },
     "buildability": "Yes",
-    "main_blocker": "App review",
+    "main_blocker": "None",
     "blocker_note": "PAT creation restricted on Business/Enterprise plans unless workspace owner enables it.",
-    "archetype": "Open + app review",
+    "archetype": "Open API",
     "confidence": "High",
     "evidence": [
       {
@@ -19961,9 +20177,48 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = OAuth2; Token (human)",
+        "source_url": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://developers.notion.com/reference/intro",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Free self-serve ; None (human)",
+        "source_url": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://www.notion.com/help/create-integrations-with-the-notion-api",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://developers.notion.com/guides/mcp/overview, https://github.com/makenotion/notion-mcp-server, https://github.com/snickery/notion-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Notion API authentication",
@@ -20079,7 +20334,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://airtable.com/developers/agents/mcp/getting-started",
       "http://support.airtable.com/docs/using-the-airtable-mcp-server"
@@ -20270,9 +20525,22 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://airtable.com/platform/mcp, https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server, https://github.com/rashidazarang/airtable-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Airtable API authentication",
@@ -23051,7 +23319,6 @@
     "description": "Plaid provides APIs to connect bank accounts and access financial data.",
     "official_docs_url": "https://plaid.com/docs",
     "auth_methods": [
-      "OAuth2",
       "API key"
     ],
     "auth_notes": "OAuth2 tokens and API keys (client_id + secret) are used; OAuth2 supports scopes like mcp:dashboard.",
@@ -23060,7 +23327,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://api.dashboard.plaid.com/mcp/",
       "https://data-partner.mcp.plaid.com/mcp"
@@ -23237,9 +23504,35 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = API key (human)",
+        "source_url": "https://plaid.com/docs/api/, https://composio.dev/auth/plaid, https://docs.composio.dev/toolkits/plaid",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://plaid.com/docs/resources/mcp/, https://github.com/plaid/ai-coding-toolkit, https://github.com/t-rhex/plaid-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Plaid API authentication",
@@ -23855,7 +24148,7 @@
     "description": "FX audit API and MCP server for verifying FX rates and transaction costs",
     "official_docs_url": "https://ipayx.ai/docs",
     "auth_methods": [
-      "Token"
+      "API key"
     ],
     "auth_notes": "Bearer token = API key (starts with ipx_live_)",
     "dev_access": "Free self-serve",
@@ -24011,9 +24304,22 @@
         "excerpt_match": false,
         "verifier": "unsupported",
         "loop": "pass1"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = API key (human)",
+        "source_url": "https://www.ipayx.ai/docs/api, https://www.ipayx.ai/docs/mcp-server, https://www.ipayx.ai/developers",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "iPayX API authentication",
@@ -25767,16 +26073,15 @@
     "description": "Otter AI provides AI-powered meeting transcription and MCP server for AI assistants.",
     "official_docs_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
     "auth_methods": [
-      "OAuth2",
-      "Token"
+      "API key"
     ],
     "auth_notes": "Bearer token = API key; OAuth2 for MCP access",
-    "dev_access": "Approval required",
+    "dev_access": "Paid plan",
     "prod_gate": "Unknown",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
       "https://help.otter.ai/hc/en-us/articles/35287607569687-Set-up-Otter-MCP"
@@ -25793,9 +26098,9 @@
       "match_method": "alias"
     },
     "buildability": "Yes",
-    "main_blocker": "App review",
+    "main_blocker": "Paid plan",
     "blocker_note": "API access limited to Enterprise workspaces; MCP requires OAuth2 authorization per user.",
-    "archetype": "Approval gate",
+    "archetype": "Paid gate",
     "confidence": "High",
     "evidence": [
       {
@@ -25914,9 +26219,48 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = API key (human)",
+        "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "access = Paid plan ; Unknown (human)",
+        "source_url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API, https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API, https://otter.ai/pricing",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server, https://github.com/DarrenZal/otter-mcp",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Otter AI API authentication",
@@ -28065,7 +28409,7 @@
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Moderate",
-    "mcp": "Official",
+    "mcp": "Both",
     "mcp_urls": [
       "https://api.grain.com/_/mcp"
     ],
@@ -28254,9 +28598,22 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "mcp",
+        "claim": "mcp = Both (human)",
+        "source_url": "https://developers.grain.com/mcp/, https://support.grain.com/en/articles/14811968-grain-mcp, https://github.com/eadm/grain-mcp-server",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       }
     ],
-    "verification_status": "reverified",
+    "verification_status": "human_corrected",
     "trace": {
       "queries": [
         "Grain API authentication",

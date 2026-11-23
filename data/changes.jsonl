@@ -115,3 +115,31 @@
 {"app_id": 100, "app": "Grain", "field": "prod_gate", "old": "None", "new": "Unknown", "loop": "unverified->Unknown", "reason": "L0: no excerpt found verbatim in a fetched page"}
 {"app_id": 5, "app": "Twenty", "field": "dev_access", "old": "Unknown", "new": "Free self-serve", "loop": "L4", "reason": "browser evidence: The excerpt only shows how to create an API key in the developer settings but does not indicate whether this is free, requires a paid plan, or is self-service. No evidence of free self-service or paywall is provided."}
 {"app_id": 1, "app": "Salesforce", "field": "prod_gate", "old": "Unknown", "new": "Partner program", "loop": "L4", "reason": "browser evidence: The excerpt explicitly states that joining the Partner Program requires an application, indicating that a partner program approval gate exists."}
+{"app_id": 1, "app": "Salesforce", "field": "access", "old": "Free self-serve ; Partner program", "new": "Free self-serve ; App review", "loop": "human", "reason": "human blind check"}
+{"app_id": 5, "app": "Twenty", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 20, "app": "Gladly", "field": "auth", "old": ["OAuth2", "API key", "Token", "Other"], "new": "Basic", "loop": "human", "reason": "human blind check"}
+{"app_id": 20, "app": "Gladly", "field": "access", "old": "Free self-serve ; Unknown", "new": "Partner or contact sales ; Unknown", "loop": "human", "reason": "human blind check"}
+{"app_id": 25, "app": "Pumble", "field": "auth", "old": ["API key", "OAuth2"], "new": "API key", "loop": "human", "reason": "human blind check"}
+{"app_id": 25, "app": "Pumble", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 39, "app": "Threads (Meta)", "field": "access", "old": "Unknown ; App review", "new": "Free self-serve ; App review", "loop": "human", "reason": "human blind check"}
+{"app_id": 39, "app": "Threads (Meta)", "field": "mcp", "old": "None found", "new": "Community", "loop": "human", "reason": "human blind check"}
+{"app_id": 40, "app": "SendGrid", "field": "auth", "old": ["API key"], "new": "API key; Basic", "loop": "human", "reason": "human blind check"}
+{"app_id": 40, "app": "SendGrid", "field": "access", "old": "Free self-serve ; Unknown", "new": "Free trial ; Unknown", "loop": "human", "reason": "human blind check"}
+{"app_id": 40, "app": "SendGrid", "field": "mcp", "old": "Community", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 43, "app": "BigCommerce", "field": "auth", "old": ["OAuth2", "Token"], "new": "OAuth2", "loop": "human", "reason": "human blind check"}
+{"app_id": 43, "app": "BigCommerce", "field": "access", "old": "Free self-serve ; App review", "new": "Free trial ; App review", "loop": "human", "reason": "human blind check"}
+{"app_id": 43, "app": "BigCommerce", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 54, "app": "MrScraper", "field": "auth", "old": ["OAuth2", "API key"], "new": "Token", "loop": "human", "reason": "human blind check"}
+{"app_id": 64, "app": "Cloudflare", "field": "auth", "old": ["OAuth2"], "new": "Token; API key", "loop": "human", "reason": "human blind check"}
+{"app_id": 64, "app": "Cloudflare", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 71, "app": "Notion", "field": "auth", "old": ["OAuth2", "API key", "Token"], "new": "OAuth2; Token", "loop": "human", "reason": "human blind check"}
+{"app_id": 71, "app": "Notion", "field": "access", "old": "Free self-serve ; App review", "new": "Free self-serve ; None", "loop": "human", "reason": "human blind check"}
+{"app_id": 71, "app": "Notion", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 72, "app": "Airtable", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 82, "app": "Plaid", "field": "auth", "old": ["OAuth2", "API key"], "new": "API key", "loop": "human", "reason": "human blind check"}
+{"app_id": 82, "app": "Plaid", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 85, "app": "iPayX", "field": "auth", "old": ["Token"], "new": "API key", "loop": "human", "reason": "human blind check"}
+{"app_id": 92, "app": "Otter AI", "field": "auth", "old": ["OAuth2", "Token"], "new": "API key", "loop": "human", "reason": "human blind check"}
+{"app_id": 92, "app": "Otter AI", "field": "access", "old": "Approval required ; Unknown", "new": "Paid plan ; Unknown", "loop": "human", "reason": "human blind check"}
+{"app_id": 92, "app": "Otter AI", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}
+{"app_id": 100, "app": "Grain", "field": "mcp", "old": "Official", "new": "Both", "loop": "human", "reason": "human blind check"}

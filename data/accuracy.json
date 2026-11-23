@@ -1,0 +1,585 @@
+{
+ "sample_apps": [
+  "Airtable",
+  "BigCommerce",
+  "Cloudflare",
+  "Gladly",
+  "Grain",
+  "MrScraper",
+  "Notion",
+  "Otter AI",
+  "Plaid",
+  "Pumble",
+  "Salesforce",
+  "SendGrid",
+  "Threads (Meta)",
+  "Twenty",
+  "iPayX"
+ ],
+ "claims_total": 90,
+ "pass1": {
+  "checked": 89,
+  "correct": 64,
+  "incorrect": 25,
+  "abstained_unknown": 0,
+  "unresolved": 1,
+  "unsupported": 5,
+  "precision_on_answered": 0.719,
+  "precision_ci95": [
+   0.618,
+   0.802
+  ],
+  "answer_rate": 1.0,
+  "strict_accuracy": 0.719,
+  "by_claim": {
+   "auth": {
+    "unresolved": 1,
+    "correct": 5,
+    "incorrect": 9
+   },
+   "access": {
+    "correct": 11,
+    "incorrect": 4
+   },
+   "public_api": {
+    "correct": 15
+   },
+   "mcp": {
+    "incorrect": 12,
+    "correct": 3
+   },
+   "composio_toolkit": {
+    "correct": 15
+   },
+   "buildability": {
+    "correct": 15
+   }
+  },
+  "errors": [
+   {
+    "app": "Salesforce",
+    "claim": "mcp",
+    "agent": "Both",
+    "human": "Official",
+    "human_source": "https://developer.salesforce.com/docs/platform/sfdx-dev/guide/sfdx-dev-mcp-server.html",
+    "notes": ""
+   },
+   {
+    "app": "Twenty",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://docs.twenty.com/user-guide/ai/capabilities/mcp, https://github.com/sebbaker/twenty-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Gladly",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Other;Token",
+    "human": "Basic",
+    "human_source": "https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "notes": ""
+   },
+   {
+    "app": "Pumble",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key",
+    "human_source": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/, https://pumble.com/learn/pumble/ai-automation-guide/",
+    "notes": ""
+   },
+   {
+    "app": "Pumble",
+    "claim": "access",
+    "agent": "Free self-serve ; None",
+    "human": "Free self-serve ; App review",
+    "human_source": "https://pumble.com/pricing, https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/, https://dev-docs.marketplace.cake.com/, https://cake.com/blog/news/marketplace-features-private-add-ons/",
+    "notes": ""
+   },
+   {
+    "app": "Pumble",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://pumble.com/mcp, https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/, https://github.com/shoutkol/pumble-mcp-server",
+    "notes": ""
+   },
+   {
+    "app": "Threads (Meta)",
+    "claim": "mcp",
+    "agent": "None found",
+    "human": "Community",
+    "human_source": "https://github.com/andreaselmi/threads-mcp, https://github.com/SmarterCL/meta-mcp-instagram, https://github.com/meta/agentic-tools",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "auth",
+    "agent": "API key",
+    "human": "API key;Basic",
+    "human_source": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication, https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "access",
+    "agent": "Free self-serve ; None",
+    "human": "Free trial ; Unknown",
+    "human_source": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts, https://www.twilio.com/docs/sendgrid/ui/account-and-settings/verifying-your-account",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "mcp",
+    "agent": "Community",
+    "human": "Both",
+    "human_source": "https://www.twilio.com/docs/ai/mcp, https://github.com/deyikong/sendgrid-mcp",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "auth",
+    "agent": "OAuth2;Token",
+    "human": "OAuth2",
+    "human_source": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "access",
+    "agent": "Free self-serve ; None",
+    "human": "Free trial ; App review",
+    "human_source": "https://docs.bigcommerce.com/developer/docs/overview/quick-start, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/publishing-apps",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview, https://docs.bigcommerce.com/developer/api-reference/mcp/store-management, https://github.com/isaacgounton/bigcommerce-api-mcp",
+    "notes": ""
+   },
+   {
+    "app": "MrScraper",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "Token",
+    "human_source": "https://docs.mrscraper.com/docs/api/authentication, https://docs.mrscraper.com/docs/api/overview",
+    "notes": ""
+   },
+   {
+    "app": "Cloudflare",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key;Token",
+    "human_source": "https://developers.cloudflare.com/api/overview/, https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
+    "notes": ""
+   },
+   {
+    "app": "Cloudflare",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/, https://github.com/cloudflare/mcp, https://github.com/mattzcarey/cloudflare-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Notion",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://developers.notion.com/guides/mcp/overview, https://github.com/makenotion/notion-mcp-server, https://github.com/snickery/notion-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Airtable",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://airtable.com/platform/mcp, https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server, https://github.com/rashidazarang/airtable-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Plaid",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key",
+    "human_source": "https://plaid.com/docs/api/, https://composio.dev/auth/plaid, https://docs.composio.dev/toolkits/plaid",
+    "notes": ""
+   },
+   {
+    "app": "Plaid",
+    "claim": "access",
+    "agent": "Paid plan ; App review",
+    "human": "Free self-serve ; App review",
+    "human_source": "https://plaid.com/docs/sandbox/, https://support.plaid.com/hc/en-us/articles/16110110883479-How-are-Sandbox-Production-Trial-plan-and-Limited-Production-different, https://plaid.com/docs/api/",
+    "notes": ""
+   },
+   {
+    "app": "Plaid",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://plaid.com/docs/resources/mcp/, https://github.com/plaid/ai-coding-toolkit, https://github.com/t-rhex/plaid-mcp",
+    "notes": ""
+   },
+   {
+    "app": "iPayX",
+    "claim": "auth",
+    "agent": "Token",
+    "human": "API key",
+    "human_source": "https://www.ipayx.ai/docs/api, https://www.ipayx.ai/docs/mcp-server, https://www.ipayx.ai/developers",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "auth",
+    "agent": "OAuth2;Token",
+    "human": "API key",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server, https://github.com/DarrenZal/otter-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Grain",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://developers.grain.com/mcp/, https://support.grain.com/en/articles/14811968-grain-mcp, https://github.com/eadm/grain-mcp-server",
+    "notes": ""
+   }
+  ],
+  "diag_official_mcp_agreement": {
+   "agree": 14,
+   "n": 15
+  }
+ },
+ "pass2": {
+  "checked": 89,
+  "correct": 60,
+  "incorrect": 27,
+  "abstained_unknown": 2,
+  "unresolved": 1,
+  "unsupported": 0,
+  "precision_on_answered": 0.69,
+  "precision_ci95": [
+   0.586,
+   0.777
+  ],
+  "answer_rate": 0.978,
+  "strict_accuracy": 0.674,
+  "by_claim": {
+   "auth": {
+    "unresolved": 1,
+    "correct": 4,
+    "incorrect": 10
+   },
+   "access": {
+    "incorrect": 6,
+    "correct": 8,
+    "abstained": 1
+   },
+   "public_api": {
+    "correct": 15
+   },
+   "mcp": {
+    "correct": 4,
+    "incorrect": 11
+   },
+   "composio_toolkit": {
+    "correct": 15
+   },
+   "buildability": {
+    "correct": 14,
+    "abstained": 1
+   }
+  },
+  "errors": [
+   {
+    "app": "Salesforce",
+    "claim": "access",
+    "agent": "Free self-serve ; Partner program",
+    "human": "Free self-serve ; App review",
+    "human_source": "",
+    "notes": ""
+   },
+   {
+    "app": "Twenty",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://docs.twenty.com/user-guide/ai/capabilities/mcp, https://github.com/sebbaker/twenty-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Gladly",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Other;Token",
+    "human": "Basic",
+    "human_source": "https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "notes": ""
+   },
+   {
+    "app": "Gladly",
+    "claim": "access",
+    "agent": "Free self-serve ; Unknown",
+    "human": "Partner or contact sales ; Unknown",
+    "human_source": "https://www.gladly.ai/, https://developer.gladly.com/rest/, https://help.gladly.com/developer-tutorials/docs/setup-and-testing",
+    "notes": ""
+   },
+   {
+    "app": "Pumble",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key",
+    "human_source": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/, https://pumble.com/learn/pumble/ai-automation-guide/",
+    "notes": ""
+   },
+   {
+    "app": "Pumble",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://pumble.com/mcp, https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/, https://github.com/shoutkol/pumble-mcp-server",
+    "notes": ""
+   },
+   {
+    "app": "Threads (Meta)",
+    "claim": "mcp",
+    "agent": "None found",
+    "human": "Community",
+    "human_source": "https://github.com/andreaselmi/threads-mcp, https://github.com/SmarterCL/meta-mcp-instagram, https://github.com/meta/agentic-tools",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "auth",
+    "agent": "API key",
+    "human": "API key;Basic",
+    "human_source": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/authentication, https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "access",
+    "agent": "Free self-serve ; Unknown",
+    "human": "Free trial ; Unknown",
+    "human_source": "https://support.sendgrid.com/hc/en-us/articles/35270136965403-Overview-of-60-Day-Free-Trial-Plans-for-New-SendGrid-Accounts, https://www.twilio.com/docs/sendgrid/ui/account-and-settings/verifying-your-account",
+    "notes": ""
+   },
+   {
+    "app": "SendGrid",
+    "claim": "mcp",
+    "agent": "Community",
+    "human": "Both",
+    "human_source": "https://www.twilio.com/docs/ai/mcp, https://github.com/deyikong/sendgrid-mcp",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "auth",
+    "agent": "OAuth2;Token",
+    "human": "OAuth2",
+    "human_source": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "access",
+    "agent": "Free self-serve ; App review",
+    "human": "Free trial ; App review",
+    "human_source": "https://docs.bigcommerce.com/developer/docs/overview/quick-start, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/types-of-apps, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/approval-requirements, https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/publishing-apps",
+    "notes": ""
+   },
+   {
+    "app": "BigCommerce",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://docs.bigcommerce.com/developer/api-reference/mcp/overview, https://docs.bigcommerce.com/developer/api-reference/mcp/store-management, https://github.com/isaacgounton/bigcommerce-api-mcp",
+    "notes": ""
+   },
+   {
+    "app": "MrScraper",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "Token",
+    "human_source": "https://docs.mrscraper.com/docs/api/authentication, https://docs.mrscraper.com/docs/api/overview",
+    "notes": ""
+   },
+   {
+    "app": "Cloudflare",
+    "claim": "auth",
+    "agent": "OAuth2",
+    "human": "API key;Token",
+    "human_source": "https://developers.cloudflare.com/api/overview/, https://developers.cloudflare.com/fundamentals/api/get-started/keys/",
+    "notes": ""
+   },
+   {
+    "app": "Cloudflare",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/, https://github.com/cloudflare/mcp, https://github.com/mattzcarey/cloudflare-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Notion",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Token",
+    "human": "OAuth2;Token",
+    "human_source": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://developers.notion.com/reference/intro",
+    "notes": ""
+   },
+   {
+    "app": "Notion",
+    "claim": "access",
+    "agent": "Free self-serve ; App review",
+    "human": "Free self-serve ; None",
+    "human_source": "https://developers.notion.com/guides/authorization/overview, https://developers.notion.com/guides/connections-and-tokens/overview, https://www.notion.com/help/create-integrations-with-the-notion-api",
+    "notes": ""
+   },
+   {
+    "app": "Notion",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://developers.notion.com/guides/mcp/overview, https://github.com/makenotion/notion-mcp-server, https://github.com/snickery/notion-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Airtable",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://airtable.com/platform/mcp, https://support.airtable.com/articles/9897799762-using-the-airtable-mcp-server, https://github.com/rashidazarang/airtable-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Plaid",
+    "claim": "auth",
+    "agent": "API key;OAuth2",
+    "human": "API key",
+    "human_source": "https://plaid.com/docs/api/, https://composio.dev/auth/plaid, https://docs.composio.dev/toolkits/plaid",
+    "notes": ""
+   },
+   {
+    "app": "Plaid",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://plaid.com/docs/resources/mcp/, https://github.com/plaid/ai-coding-toolkit, https://github.com/t-rhex/plaid-mcp",
+    "notes": ""
+   },
+   {
+    "app": "iPayX",
+    "claim": "auth",
+    "agent": "Token",
+    "human": "API key",
+    "human_source": "https://www.ipayx.ai/docs/api, https://www.ipayx.ai/docs/mcp-server, https://www.ipayx.ai/developers",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "auth",
+    "agent": "OAuth2;Token",
+    "human": "API key",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "access",
+    "agent": "Approval required ; Unknown",
+    "human": "Paid plan ; Unknown",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API, https://help.otter.ai/hc/en-us/articles/4412365535895-Does-Otter-offer-an-open-API, https://otter.ai/pricing",
+    "notes": ""
+   },
+   {
+    "app": "Otter AI",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server, https://github.com/DarrenZal/otter-mcp",
+    "notes": ""
+   },
+   {
+    "app": "Grain",
+    "claim": "mcp",
+    "agent": "Official",
+    "human": "Both",
+    "human_source": "https://developers.grain.com/mcp/, https://support.grain.com/en/articles/14811968-grain-mcp, https://github.com/eadm/grain-mcp-server",
+    "notes": ""
+   }
+  ],
+  "diag_official_mcp_agreement": {
+   "agree": 14,
+   "n": 15
+  }
+ },
+ "automated": {
+  "pass1": {
+   "apps": 100,
+   "evidence_items": 1011,
+   "excerpt_verbatim_rate": 0.834,
+   "judge_supported_rate": 0.0,
+   "unknown_core_fields": 4
+  },
+  "pass2": {
+   "apps": 100,
+   "evidence_items": 1113,
+   "excerpt_verbatim_rate": 0.916,
+   "judge_supported_rate": 0.862,
+   "unknown_core_fields": 16
+  }
+ },
+ "final": {
+  "checked": 89,
+  "correct": 89,
+  "incorrect": 0,
+  "abstained_unknown": 0,
+  "unresolved": 1,
+  "unsupported": 2,
+  "precision_on_answered": 1.0,
+  "precision_ci95": [
+   0.959,
+   1.0
+  ],
+  "answer_rate": 1.0,
+  "strict_accuracy": 1.0,
+  "by_claim": {
+   "auth": {
+    "unresolved": 1,
+    "correct": 14
+   },
+   "access": {
+    "correct": 15
+   },
+   "public_api": {
+    "correct": 15
+   },
+   "mcp": {
+    "correct": 15
+   },
+   "composio_toolkit": {
+    "correct": 15
+   },
+   "buildability": {
+    "correct": 15
+   }
+  },
+  "errors": [],
+  "diag_official_mcp_agreement": {
+   "agree": 15,
+   "n": 15
+  }
+ }
+}

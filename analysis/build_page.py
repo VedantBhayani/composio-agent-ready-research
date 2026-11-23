@@ -188,7 +188,7 @@ def make_llms(records, ins, acc, ds, run, gen):
         for k in ("pass1", "pass2", "final"):
             if acc.get(k):
                 x = acc[k]
-                L.append(f"- Human-audited {k}: precision on answered {pc(x.get('precision_on_answered'))} "
+                L.append(f"- Human-audited {k}{' (human-corrected, matches by construction)' if k == 'final' else ''}: precision on answered {pc(x.get('precision_on_answered'))} "
                          f"(95% CI {x.get('precision_ci95')}), answer rate {pc(x.get('answer_rate'))}, checked {x.get('checked')}.")
     else:
         L.append("- Human audit: pending (no accuracy numbers published yet).")
@@ -333,8 +333,8 @@ const cards=[
    "Build-now = buildable and no Composio toolkit yet."]];
 for(const c of cards)$("answers").append(h("div",{class:"card"},h("div",{class:"q"},c[0]),h("div",{class:"a"},c[1]),h("div",{class:"d"},c[2])));
 const stat=(v,l)=>h("div",{class:"stat"},h("b",{},v),h("span",{},l));
-const accTxt=()=>{if(!A)return["audit pending","Human audit pending"];const a=A.final||A.pass2,b=A.pass1;
- return[`${fp(b&&b.precision_on_answered)} \u2192 ${fp(a&&a.precision_on_answered)}`,`precision on answered, pass 1 \u2192 ${A.final?"final":"pass 2"} (n=${a&&a.checked} claims)`]};
+const accTxt=()=>{if(!A)return["audit pending","Human audit pending"];const a=A.pass2,b=A.pass1;
+ return[`${fp(b&&b.precision_on_answered)} \u2192 ${fp(a&&a.precision_on_answered)}`,`human-audited precision, pass 1 \u2192 pass 2 (${a&&a.checked} claims, 15 apps). The loops did not raise it.`]};
 $("stats").append(stat(`${N}/100`,"apps researched"),stat((I.composio||{}).covered_pct+"%","Composio toolkit coverage"),
  stat(I.official_mcp_pct+"%","official MCP server"),stat(...accTxt()));
 function stacked(parts,total,label){const s=sv("svg",{class:"stack",viewBox:"0 0 1000 34",preserveAspectRatio:"none",role:"img","aria-label":label});let x=0;
@@ -436,7 +436,15 @@ $("vlines").append(...cp.verify.map(s=>h("li",{},s)));
 function pend(){return h("div",{class:"pending"},h("b",{},"Human audit pending."),h("p",{},"No accuracy numbers are published until the blind audit is scored. Automated checks below do not replace it."))}
 const V=$("vbody");
 if(!A)V.append(pend());
-else{const tiers=[["pass1","Pass 1"],["pass2","Pass 2"],["final","Final (human-corrected)"]].filter(t=>A[t[0]]);
+else{const tiers=[["pass1","Pass 1"],["pass2","Pass 2"],["final","Final (human-corrected: matches the human by construction, not a measurement)"]].filter(t=>A[t[0]]);
+ const p1=A.pass1,p2=A.pass2,bc1=p1.by_claim,bc2=p2.by_claim,d2=p2.diag_official_mcp_agreement||{};
+ const mcpErr=p2.errors.filter(e=>e.claim==="mcp"),mcpBoth=mcpErr.filter(e=>e.human==="Both").length;
+ V.append(h("div",{class:"card"},h("b",{},"What the audit says"),h("ul",{},
+  h("li",{},`The automated loops did not improve precision: pass 1 ${fp(p1.precision_on_answered)} (CI ${p1.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}) vs pass 2 ${fp(p2.precision_on_answered)} (CI ${p2.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join("–")}). The intervals overlap; the difference is noise, not a gain. What the loops did remove was ${p1.unsupported} unsupported claim(s) (pass 1) → ${p2.unsupported} (pass 2).`),
+  h("li",{},`Public API, Composio toolkit and buildability were ${bc2.public_api.correct}/15, ${bc2.composio_toolkit.correct}/15 and ${bc2.buildability.correct||0}/15 correct in pass 2. Errors sit in three fields: auth, access and MCP.`),
+  h("li",{},`MCP: ${mcpBoth} of ${mcpErr.length} pass 2 MCP errors are "Official" where the human also found a community repo ("Both"). On whether an official MCP exists, agent and human agree on ${d2.agree}/${d2.n}. The agent did not search GitHub for community servers once it found the vendor's own one.`),
+  h("li",{},`Auth is scored as an exact set, so one extra or missing method counts as wrong (${bc2.auth.incorrect} wrong in pass 2). The usual mistake is adding a method the human did not confirm (OAuth2 on Pumble, Plaid and MrScraper; Token on BigCommerce).`),
+  h("li",{},`Access got worse in pass 2 (${bc1.access.correct} → ${bc2.access.correct} correct). The browser agent moved Salesforce to "Partner program", and the human found "App review" there. The loops also left free trials labelled "Free self-serve".`))));
  const rows=[["Checked","checked"],["Correct","correct"],["Incorrect","incorrect"],["Abstained (Unknown)","abstained_unknown"],["Unresolved","unresolved"],["Unsupported","unsupported"],
   ["Precision on answered","precision_on_answered",1],["95% CI","precision_ci95",2],["Answer rate","answer_rate",1]];
  const fmt=(x,k,t)=>t===1?fp(x[k]):t===2?(x[k]?x[k].map(v=>(v*100).toFixed(1)+"%").join(" to "):"n/a"):(x[k]??"n/a");
@@ -467,7 +475,7 @@ const defeated=R.filter(r=>r.archetype==="Defeated").map(r=>r.app_name);
 const ml=[`Dataset in use: ${B.dataset}. ${N} apps; ${B.n_pass1} in the frozen pass 1.`,
  `${unkF} core fields across all apps are Unknown (kept as Unknown rather than guessed).`,
  `Defeated apps (no usable evidence found): ${defeated.length?defeated.join(", "):"none"}.`];
-if(A){const x=A.final||A.pass2||{};ml.push(`Human audit sample: ${A.sample_apps} apps, ${A.claims_total} claims; precision CI95 ${x.precision_ci95?x.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join(" to "):"n/a"}.`)}
+if(A){const x=A.pass2||{};ml.push(`Human audit sample: ${A.sample_apps} apps, ${A.claims_total} claims; precision CI95 ${x.precision_ci95?x.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join(" to "):"n/a"}.`)}
 else ml.push("Human audit not yet scored: no accuracy figures are claimed.");
 for(const s of [...ml,...cp.limitations])$("limits").append(h("li",{},s));
 $("foot").append(h("a",{href:cp.repo},"Repo"),h("a",{href:cp.repo+"/blob/main/README.md"},"README"),h("a",{href:"data.json"},"data.json"),

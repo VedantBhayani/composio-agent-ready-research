@@ -1,4 +1,4 @@
-"""Accuracy from the human's blind judgments only (data/checklist.csv -> YOUR_ANSWER).
+﻿"""Accuracy from the human's blind judgments only (data/checklist.csv -> YOUR_ANSWER).
 Scores pass1 (raw first pass) and pass2 (after automated loops) on the same 15 apps x 6 claims.
 --apply: writes data/final.jsonl = pass2 + human corrections on audited apps (tagged), logged in changes.jsonl.
 
@@ -64,6 +64,8 @@ def judge(claim, truth_raw, rec):
         truth = {a for a in AUTH if a.lower() in t.lower()}
         if "api_key" in t.lower() or "apikey" in t.lower():
             truth.add("API key")
+        if not truth:  # answer outside the allowed values (e.g. a public_api answer in the auth row)
+            return "unresolved", None, t, False
         agent = set(rec["auth_methods"])
         if not agent:
             return "abstained", "Unknown", ";".join(sorted(truth)), False
@@ -129,11 +131,26 @@ def score(recs, rows):
            "answer_rate": round(answered / checked, 3) if checked else None,
            "strict_accuracy": round(out["correct"] / checked, 3) if checked else None,
            "by_claim": {k: dict(v) for k, v in by_claim.items()}, "errors": errors}
+    # diagnostic only (not the headline): does the agent agree on whether an OFFICIAL MCP exists?
+    # Separates "missed a community repo" (Official vs Both) from a wrong official claim.
+    agree = n = 0
+    for row in rows:
+        rec = recs.get(int(row["app_id"]))
+        if row["claim"] != "mcp" or rec is None or rec["mcp"] == "Unknown":
+            continue
+        tv = pick(row["YOUR_ANSWER"], MCP)
+        if tv is None:
+            continue
+        n += 1
+        agree += (rec["mcp"] in ("Official", "Both")) == (tv in ("Official", "Both"))
+    res["diag_official_mcp_agreement"] = {"agree": agree, "n": n}
     return res
 
 
 def main():
-    rows = list(csv.DictReader(open(D / "checklist.csv", encoding="utf-8-sig")))
+    ck = Path(sys.argv[sys.argv.index("--checklist") + 1]) if "--checklist" in sys.argv else D / "checklist.csv"
+    out = Path(sys.argv[sys.argv.index("--out") + 1]) if "--out" in sys.argv else D / "accuracy.json"
+    rows = list(csv.DictReader(open(ck, encoding="utf-8-sig")))
     filled = [r for r in rows if (r.get("YOUR_ANSWER") or "").strip()]
     print(f"checklist rows: {len(rows)}, filled: {len(filled)}")
     p1, p2 = load(D / "pass1.jsonl"), load(D / "pass2.jsonl")
@@ -151,7 +168,7 @@ def main():
     if "--apply" in sys.argv:
         final = apply_corrections(p2, rows)
         res["final"] = score(final, rows)
-    (D / "accuracy.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
+    out.write_text(json.dumps(res, indent=1), encoding="utf-8")
     for k in ("pass1", "pass2", "final"):
         if k in res:
             s = res[k]
@@ -216,3 +233,4 @@ def apply_corrections(p2, rows):
 
 if __name__ == "__main__":
     main()
+

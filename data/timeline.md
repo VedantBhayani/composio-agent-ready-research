@@ -14,3 +14,4 @@
 | Verifier v3 | est. 17m | 19:54 | 20:05 | 11m | 0 L3 errors; dev Unknown 34 -> 15; spot-check: MCP official claims backed by vendor pages; Datadog dev_access wrong (OAuth partner sandbox path) - logged as limitation |
 | L4 browser (8 audit apps) | est. 8-20m, ~$2.5 | 20:06 | | | |
 | L4 browser (8 audit apps) | est. 8-20m | 20:06 | 20:15 | 9m | 7 completed, 1 timeout; 4/23 browser quotes verified verbatim against our own fetch; 2 changes; ~86 steps (~$1.4) |
+| Score + final + page + README | est. 15m | 21:19 | 21:22 | | pass1 71.9% -> pass2 69.0% precision on answered (overlapping CIs: loops gave no gain); final = human-corrected tier |
