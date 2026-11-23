@@ -12,7 +12,7 @@
     ],
     "auth_notes": "Bearer token = access token; OAuth2 flows include client credentials, authorization code (PKCE), and JWT-based tokens; API key may refer to client ID/secret in connected apps",
     "dev_access": "Free self-serve",
-    "prod_gate": "Unknown",
+    "prod_gate": "Partner program",
     "public_api": "yes",
     "api_type": "REST",
     "api_breadth": "Broad",
@@ -34,9 +34,9 @@
       "match_method": "name"
     },
     "buildability": "Yes",
-    "main_blocker": "None",
+    "main_blocker": "Partner gate",
     "blocker_note": "MCP server URLs require org-specific placeholders and My Domain handling; OAuth PKCE is required for hosted MCP.",
-    "archetype": "Open API",
+    "archetype": "Partner gate",
     "confidence": "High",
     "evidence": [
       {
@@ -207,6 +207,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "prod_gate",
+        "claim": "prod_gate (browser)",
+        "source_url": "https://www.salesforce.com/partners/become-a-partner",
+        "source_title": "",
+        "supporting_excerpt": "To join the Partner Program and become an Independent Software Vendor (ISV) with Salesforce, the first step is to apply.",
+        "source_type": "official",
+        "retrieved_at": "2026-11-23T20:09:04+0530",
+        "fetched_via": "browser",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L4"
       }
     ],
     "verification_status": "reverified",
@@ -259,7 +272,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 9.4,
       "cost": {
@@ -303,7 +317,59 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 15,
+        "usd": 0.24,
+        "seconds": 144.3,
+        "error": null,
+        "raw_quotes": [
+          {
+            "field": "auth_methods",
+            "url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+            "quote": "REST API requests require an access token for authentication."
+          },
+          {
+            "field": "dev_access",
+            "url": "https://developer.salesforce.com/docs-platform/api-rest/guide/quickstart-dev-org.html",
+            "quote": "Developer Edition provides a free and easy solution for testing and development."
+          },
+          {
+            "field": "dev_access",
+            "url": "https://developer.salesforce.com/docs-platform/api-rest/guide/quickstart-dev-org.html",
+            "quote": "Sign up for a free Developer Edition account directly at developer.salesforce.com/signup."
+          },
+          {
+            "field": "prod_gate",
+            "url": "https://www.salesforce.com/partners/become-a-partner",
+            "quote": "Salesforce partners must apply and get approved through the Partner Program to publish on AppExchange."
+          },
+          {
+            "field": "prod_gate",
+            "url": "https://www.salesforce.com/partners/become-a-partner",
+            "quote": "To join the Partner Program and become an Independent Software Vendor (ISV) with Salesforce, the first step is to apply."
+          },
+          {
+            "field": "mcp",
+            "url": "https://agentexchange.salesforce.com/explore/agentforce?agenticContent=mcpServers",
+            "quote": "The AgentExchange MCP servers page lists only third-party MCP servers (e.g., Coveo MCP Server, Seismic MCP). There is no officially branded Salesforce MCP server."
+          }
+        ],
+        "quotes": 6,
+        "quotes_verified": 1,
+        "fields": [
+          "prod_gate"
+        ],
+        "browser_answer": {
+          "auth_methods": [
+            "OAuth 2.0 (Bearer Token)"
+          ],
+          "dev_access": "free_signup",
+          "prod_gate": "partner_contact_sales",
+          "mcp": "not_officially_offered"
+        },
+        "judge_usd": 0.00010004999999999999
+      },
       "verify_usd": 0.00261,
       "open_issues": {
         "prod_gate": "L1 judge: unsupported â€” The provided excerpts do not mention any production gate (e.g., app review, partner program) or lack thereof. The excerpt about 'Govern with inherited trust and security' does not explicitly describe a production gate."
@@ -1203,7 +1269,7 @@
       "API key"
     ],
     "auth_notes": "Bearer token = OAuth2 access token or API key; OAuth supports Authorization Code + PKCE and Client Credentials flows",
-    "dev_access": "Unknown",
+    "dev_access": "Free self-serve",
     "prod_gate": "App review",
     "public_api": "yes",
     "api_type": "REST",
@@ -1226,8 +1292,8 @@
     "buildability": "Yes",
     "main_blocker": "App review",
     "blocker_note": "MCP server requires workspace URL; OAuth flow needs MCP client support for authorization spec.",
-    "archetype": "Access unverified",
-    "confidence": "Low",
+    "archetype": "Open + app review",
+    "confidence": "High",
     "evidence": [
       {
         "claim_field": "auth_methods",
@@ -1371,6 +1437,45 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L3"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth_methods (browser)",
+        "source_url": "https://docs.twenty.com/developers/extend/api",
+        "source_title": "",
+        "supporting_excerpt": "Authorization: Bearer YOUR_API_KEY",
+        "source_type": "official",
+        "retrieved_at": "2026-11-23T20:08:30+0530",
+        "fetched_via": "browser",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L4"
+      },
+      {
+        "claim_field": "dev_access",
+        "claim": "dev_access (browser)",
+        "source_url": "https://docs.twenty.com/developers/extend/api",
+        "source_title": "",
+        "supporting_excerpt": "Creating an API key in Settings → Developers → API → + Create key",
+        "source_type": "official",
+        "retrieved_at": "2026-11-23T20:08:30+0530",
+        "fetched_via": "browser",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L4"
+      },
+      {
+        "claim_field": "prod_gate",
+        "claim": "prod_gate (browser)",
+        "source_url": "https://docs.twenty.com/developers/extend/apps/operations/marketplace-review",
+        "source_title": "",
+        "supporting_excerpt": "Every app listed in the marketplace has passed Twenty’s security and quality review. Publishing to npm does not list an app on its own: it stays unlisted until the review is complete.",
+        "source_type": "official",
+        "retrieved_at": "2026-11-23T20:08:31+0530",
+        "fetched_via": "browser",
+        "excerpt_match": true,
+        "verifier": "supported",
+        "loop": "L4"
       }
     ],
     "verification_status": "reverified",
@@ -1423,7 +1528,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 20.1,
       "cost": {
@@ -1462,7 +1568,52 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 11,
+        "usd": 0.176,
+        "seconds": 112.6,
+        "error": null,
+        "raw_quotes": [
+          {
+            "field": "auth_methods",
+            "url": "https://docs.twenty.com/developers/extend/api",
+            "quote": "Authorization: Bearer YOUR_API_KEY"
+          },
+          {
+            "field": "dev_access",
+            "url": "https://docs.twenty.com/developers/extend/api",
+            "quote": "Creating an API key in Settings → Developers → API → + Create key"
+          },
+          {
+            "field": "prod_gate",
+            "url": "https://docs.twenty.com/developers/extend/apps/operations/marketplace-review",
+            "quote": "Every app listed in the marketplace has passed Twenty’s security and quality review. Publishing to npm does not list an app on its own: it stays unlisted until the review is complete."
+          },
+          {
+            "field": "mcp",
+            "url": "N/A (not found)",
+            "quote": "N/A (no mention of an official MCP server exists in the visited documentation)"
+          }
+        ],
+        "quotes": 4,
+        "quotes_verified": 3,
+        "fields": [
+          "auth_methods",
+          "dev_access",
+          "prod_gate"
+        ],
+        "browser_answer": {
+          "auth_methods": [
+            "API requests are authenticated via two methods: (a) **API Keys** — used for internal scripts and automation. The header is `Authorization: Bearer YOUR_API_KEY`. Quote: 'Authorization: Bearer YOUR_API_KEY' — URL: https://docs.twenty.com/developers/extend/api#authentication",
+            "(b) **OAuth 2.0** — for user-facing apps via Authorization Code flow with PKCE, and for server-to-server access via Client Credentials flow. Quote (from OAuth page): 'Implementing OAuth 2.0 within the Twenty platform' — URL: https://docs.twenty.com/developers/extend/oauth"
+          ],
+          "dev_access": "Developers get API credentials by creating an API key in Settings → Developers → API → + Create Key. No paid plan, trial, or application process is required — it is a free, self-service action. Quote: 'A developer gets API credentials by creating an API key in Settings → Developers → API → + Create key' — URL: https://docs.twenty.com/developers/extend/api#authentication",
+          "prod_gate": "Publishing an app to the Twenty marketplace **does require a security and quality review by Twenty**, but it does NOT require partner approval. Publishing to npm alone does not list the app — it stays unlisted until review. Quote (from marketplace review page): 'Every app listed in the marketplace has passed Twenty’s security and quality review. Publishing to npm does not list an app on its own: it stays unlisted until the review is complete.' — URL: https://docs.twenty.com/developers/extend/apps/operations/marketplace-review\n\nAdditionally, from the publishing page: 'A newly published app stays unlisted until it passes the marketplace review; claiming establishes ownership but does not list it.' — URL: https://docs.twenty.com/developers/extend/apps/operations/publishing",
+          "mcp": "There is **no mention of an official MCP server** anywhere in the Twenty developer documentation visited (OAuth, API, publishing, or marketplace review pages). The documentation was also searched and no MCP server was referenced."
+        },
+        "judge_usd": 0.00023384999999999997
+      },
       "verify_usd": 0.00278,
       "open_issues": {
         "dev_access": "L1 judge rejected re-pass evidence: The excerpt only shows how to create an API key in the settings, but does not mention any paywall, free plan, or requirement for a paid plan. There is no evidence of a 'Paid plan' requirement."
@@ -10718,7 +10869,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 9.8,
       "cost": {
@@ -10767,7 +10919,23 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "TIMEOUT_CANCELLED",
+        "steps": 0,
+        "usd": 0.0,
+        "seconds": 606.0,
+        "error": null,
+        "raw_quotes": [],
+        "quotes": 0,
+        "quotes_verified": 0,
+        "fields": [],
+        "browser_answer": {
+          "auth_methods": null,
+          "dev_access": null,
+          "prod_gate": null,
+          "mcp": null
+        }
+      },
       "verify_usd": 0.00282,
       "open_issues": {
         "dev_access": "L1 judge rejected re-pass evidence: The excerpt only mentions creating an app and picking the Threads use case but does not indicate that developer access is free or self-serve. Meta's typical app development process requires app review for public use, implying approval is needed."
@@ -10975,7 +11143,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 27.1,
       "cost": {
@@ -11004,7 +11173,41 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 18,
+        "usd": 0.288,
+        "seconds": 166.0,
+        "error": null,
+        "raw_quotes": [
+          {
+            "field": "auth_methods",
+            "url": "https://www.twilio.com/docs/sendgrid/api-reference/how-to-use-the-sendgrid-v3-api/authentication",
+            "quote": "To authenticate, add an HTTP Authorization header to your API request that contains an API Key. ... include an Authorization header with the value Bearer <YOUR_API_KEY_HERE> in your request."
+          },
+          {
+            "field": "dev_access",
+            "url": "https://signup.sendgrid.com/",
+            "quote": "Start your free trial today to test out the Twilio platform with no strings attached: No credit card required."
+          },
+          {
+            "field": "mcp",
+            "url": "https://www.twilio.com/docs/ai/mcp",
+            "quote": "No MCP server for SendGrid found. The page has no mention of an MCP server for SendGrid specifically."
+          }
+        ],
+        "quotes": 3,
+        "quotes_verified": 0,
+        "fields": [],
+        "browser_answer": {
+          "auth_methods": [
+            "API Key"
+          ],
+          "dev_access": "Free sign-up (trial)",
+          "prod_gate": "free_trial",
+          "mcp": "No official MCP server mentioned in docs"
+        }
+      },
       "verify_usd": 0.00147,
       "open_issues": {
         "prod_gate": "L1 judge rejected re-pass evidence: The provided excerpt only mentions account review for abnormal activity, not a general app review requirement for production access."
@@ -14971,7 +15174,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 8.0,
       "cost": {
@@ -15005,7 +15209,23 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 12,
+        "usd": 0.192,
+        "seconds": 134.5,
+        "error": null,
+        "raw_quotes": [],
+        "quotes": 0,
+        "quotes_verified": 0,
+        "fields": [],
+        "browser_answer": {
+          "auth_methods": [],
+          "dev_access": "free sign-up",
+          "prod_gate": "",
+          "mcp": "yes"
+        }
+      },
       "verify_usd": 0.00217,
       "open_issues": {
         "prod_gate": "L1 judge: unsupported â€” The excerpts do not explicitly state that no approval is required for production use. The mention of OAuth 2.1 sign-in and a step-by-step walkthrough does not confirm or deny production gate requirements."
@@ -17718,7 +17938,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 25.8,
       "cost": {
@@ -17772,7 +17993,38 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 5,
+        "usd": 0.08,
+        "seconds": 174.9,
+        "error": null,
+        "raw_quotes": [
+          {
+            "field": "dev_access",
+            "url": "https://developers.cloudflare.com/fundamentals/api/get-started/create-token/",
+            "quote": "To obtain API credentials, a developer can create an API token directly from the Cloudflare dashboard by navigating to 'My Profile' → 'API Tokens' and selecting 'Create Token'."
+          },
+          {
+            "field": "mcp",
+            "url": "https://developers.cloudflare.com/api/",
+            "quote": "Agent resources: Code Mode MCP Server, Domain-specific MCP Servers, MCP, Cloudflare Skills"
+          }
+        ],
+        "quotes": 2,
+        "quotes_verified": 0,
+        "fields": [],
+        "browser_answer": {
+          "auth_methods": [
+            "API tokens (recommended) and API keys (legacy). API tokens use cfut_ prefixed scannable format; Bearer token authentication.",
+            "Quote: 'Cloudflare supports authentication via API tokens and API keys, with API tokens being the recommended, more secure method.'",
+            "URL: https://developers.cloudflare.com/api/overview/"
+          ],
+          "dev_access": "Free sign-up — developers can create API tokens directly from the Cloudflare dashboard after signing up. No paid plan required, no application/approval process.",
+          "prod_gate": "Free sign-up via https://dash.cloudflare.com/sign-up. From the dashboard, go to My Profile → API Tokens and select 'Create Token' to generate credentials.",
+          "mcp": "Yes, Cloudflare offers official MCP servers: 'Code Mode MCP Server' and 'Domain-specific MCP Servers'."
+        }
+      },
       "verify_usd": 0.00374,
       "open_issues": {
         "prod_gate": "L1 judge: unsupported â€” The excerpt describes an OAuth authorization flow for MCP servers but does not mention any production gate (e.g., app review, partner program) or lack thereof."
@@ -23823,7 +24075,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 6.6,
       "cost": {
@@ -23857,7 +24110,46 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 10,
+        "usd": 0.16,
+        "seconds": 110.7,
+        "error": null,
+        "raw_quotes": [
+          {
+            "field": "auth_methods",
+            "url": "https://www.ipayx.ai/docs/api",
+            "quote": "API requests are authenticated using a Bearer token passed in the 'Authorization' header. The keys are specifically identified as Bearer tokens and must start with the prefix 'ipx_live_'."
+          },
+          {
+            "field": "dev_access",
+            "url": "https://www.ipayx.ai/developers",
+            "quote": "Users must create an account via the dashboard to generate a production API key. There is no mention of an application or sales contact requirement for basic access, though enterprise plans are available."
+          },
+          {
+            "field": "prod_gate",
+            "url": "https://www.ipayx.ai/developers",
+            "quote": "There is no information provided regarding an app review process for publishing apps."
+          },
+          {
+            "field": "mcp",
+            "url": "https://www.ipayx.ai/developers",
+            "quote": "iPayX offers an officially listed MCP server (v1.4.0) that allows AI agents (such as Claude Desktop, Cursor, and ChatGPT) to perform FX audits, verify rates, and generate forensic reports directly within their interface. It provides the MCP server URL (https://mcp.ipayx.ai/mcp) and specific configur"
+          }
+        ],
+        "quotes": 4,
+        "quotes_verified": 0,
+        "fields": [],
+        "browser_answer": {
+          "auth_methods": [
+            "Bearer token (API key, must start with 'ipx_live_')"
+          ],
+          "dev_access": "Create an account via the dashboard to generate a production API key — no application, sales contact, or paid plan required",
+          "prod_gate": "No information provided regarding an app review process for publishing apps",
+          "mcp": "iPayX offers an official MCP server (v1.4.0) with configurable instructions for Claude Desktop, Cursor, and ChatGPT via https://mcp.ipayx.ai/mcp"
+        }
+      },
       "verify_usd": 0.00112,
       "open_issues": {
         "prod_gate": "L1 judge: unsupported â€” The excerpts mention 'Marketplace ready' and MCP integrations but do not explicitly state whether production access requires approval, a partner program, or app review. No evidence supports 'None'."
@@ -28022,7 +28314,8 @@
         "L0",
         "L1",
         "L2",
-        "L3"
+        "L3",
+        "L4"
       ],
       "seconds": 6.3,
       "cost": {
@@ -28071,7 +28364,46 @@
           }
         }
       ],
-      "l4_browser": null,
+      "l4_browser": {
+        "status": "COMPLETED",
+        "steps": 15,
+        "usd": 0.24,
+        "seconds": 102.1,
+        "error": null,
+        "raw_quotes": [
+          {
+            "field": "auth_methods",
+            "url": "https://developers.grain.com/authentication.html",
+            "quote": "Bearer token in the Authorization header (Authorization: Bearer TOKEN). The documentation details three token types: Personal Access Tokens (PAT), Workspace Access Tokens (WAT), and OAuth Tokens."
+          },
+          {
+            "field": "dev_access",
+            "url": "https://developers.grain.com/authentication.html",
+            "quote": "Developers obtain credentials manually from the integrations page for PATs and WATs, or through an OAuth2 flow for OAuth tokens."
+          },
+          {
+            "field": "prod_gate",
+            "url": "https://developers.grain.com/authentication.html",
+            "quote": "The 'workspace' scope is not available on all plans, and developers are directed to check https://grain.com/pricing to see if their plan includes Workspace API access."
+          },
+          {
+            "field": "mcp",
+            "url": "https://developers.grain.com/mcp/",
+            "quote": "This page serves as the Quick Start Guide for the Official Grain MCP Server."
+          }
+        ],
+        "quotes": 4,
+        "quotes_verified": 0,
+        "fields": [],
+        "browser_answer": {
+          "auth_methods": [
+            "Bearer token (Personal Access Token, Workspace Access Token, and OAuth tokens)"
+          ],
+          "dev_access": "Free sign-up - developers create PATs manually from the integrations page: https://grain.com/app/settings/integrations?tab=api",
+          "prod_gate": "workspace scope is not available on all plans; check https://grain.com/pricing",
+          "mcp": "Yes, official Grain MCP Server available with Claude support and ChatGPT in development"
+        }
+      },
       "verify_usd": 0.00302,
       "open_issues": {
         "prod_gate": "L0: no excerpt found verbatim in a fetched page",

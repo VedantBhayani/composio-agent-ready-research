@@ -1,9 +1,9 @@
 ﻿app,category,archetype,buildability,main_blocker,auth_methods,dev_access,prod_gate,public_api,api_type,mcp,composio_slug,composio_tools,confidence,official_docs_url,evidence_count
-Salesforce,CRM and Sales,Open API,Yes,None,OAuth2; API key; Token,Free self-serve,Unknown,yes,REST,Official,salesforce,556,High,https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html,13
+Salesforce,CRM and Sales,Partner gate,Yes,Partner gate,OAuth2; API key; Token,Free self-serve,Partner program,yes,REST,Official,salesforce,556,High,https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html,14
 HubSpot,CRM and Sales,Access unverified,Yes,App review,OAuth2; API key; Token,Unknown,App review,yes,REST,Official,hubspot,354,Low,https://developers.hubspot.com/docs/api-reference/latest/authentication/manage-oauth-tokens,15
 Pipedrive,CRM and Sales,Open + app review,Yes,App review,OAuth2; API key,Free self-serve,App review,yes,REST,Official,pipedrive,404,High,https://developers.pipedrive.com/docs/api/v1,9
 Attio,CRM and Sales,Open + app review,Yes,App review,OAuth2; API key; Basic,Free self-serve,App review,yes,REST,Official,attio,105,High,https://docs.attio.com/rest-api/guides/authentication,14
-Twenty,CRM and Sales,Access unverified,Yes,App review,OAuth2; API key,Unknown,App review,yes,REST,Official,twenty,23,Low,https://docs.twenty.com/developers/extend/oauth,11
+Twenty,CRM and Sales,Open + app review,Yes,App review,OAuth2; API key,Free self-serve,App review,yes,REST,Official,twenty,23,High,https://docs.twenty.com/developers/extend/oauth,14
 Podio,CRM and Sales,Open API,Yes,None,OAuth2,Free self-serve,Unknown,yes,REST,Official,podio,143,High,https://developers.podio.com/authentication,8
 Zoho CRM,CRM and Sales,Open + app review,Yes,App review,OAuth2,Free trial,App review,yes,REST,Official,zoho,115,High,https://www.zoho.com/crm/developer/docs/api/v3/oauth-overview.html,11
 Close,CRM and Sales,Open API,Yes,None,OAuth2; API key,Free self-serve,Unknown,yes,REST,Official,close,75,High,https://help.close.com/docs/api-keys-oauth,9

@@ -13,3 +13,4 @@
 | Verifier v3 (retry + targeted re-pass + judge rule for self-serve) | est. 100 / ~6 per min = 17m | 19:54 | | | |
 | Verifier v3 | est. 17m | 19:54 | 20:05 | 11m | 0 L3 errors; dev Unknown 34 -> 15; spot-check: MCP official claims backed by vendor pages; Datadog dev_access wrong (OAuth partner sandbox path) - logged as limitation |
 | L4 browser (8 audit apps) | est. 8-20m, ~$2.5 | 20:06 | | | |
+| L4 browser (8 audit apps) | est. 8-20m | 20:06 | 20:15 | 9m | 7 completed, 1 timeout; 4/23 browser quotes verified verbatim against our own fetch; 2 changes; ~86 steps (~$1.4) |

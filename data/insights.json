@@ -2,8 +2,8 @@
  "dataset": "pass2.jsonl",
  "n_apps": 100,
  "buildable_paths": {
-  "self_serve_api": 46,
-  "official_mcp_only": 40,
+  "self_serve_api": 45,
+  "official_mcp_only": 41,
   "official_mcp_only_apps": [
    "Ahrefs",
    "Asana",
@@ -34,6 +34,7 @@
    "Pylon",
    "QuickBooks",
    "Ramp",
+   "Salesforce",
    "Shopify",
    "Slack",
    "Smartsheet",
@@ -65,18 +66,18 @@
   "both_pct": 43.0
  },
  "dev_access": {
-  "Free self-serve": 64,
-  "Unknown": 15,
+  "Free self-serve": 65,
+  "Unknown": 14,
   "Approval required": 12,
   "Paid plan": 4,
   "Free trial": 3,
   "Partner or contact sales": 2
  },
  "prod_gate": {
-  "Unknown": 54,
+  "Unknown": 53,
   "App review": 31,
   "None": 10,
-  "Partner program": 5
+  "Partner program": 6
  },
  "public_api": {
   "yes": 98,
@@ -107,13 +108,13 @@
   "Unknown": 6
  },
  "confidence": {
-  "High": 83,
-  "Low": 15,
+  "High": 84,
+  "Low": 14,
   "Medium": 2
  },
  "archetypes": {
   "Open API": {
-   "count": 46,
+   "count": 45,
    "apps": [
     "Airtable",
     "Apify",
@@ -147,7 +148,6 @@
     "Podio",
     "Reducto",
     "SE Ranking",
-    "Salesforce",
     "SendGrid",
     "Sentry",
     "Supabase",
@@ -164,7 +164,7 @@
    ]
   },
   "Open + app review": {
-   "count": 19,
+   "count": 20,
    "apps": [
     "Asana",
     "Attio",
@@ -183,12 +183,13 @@
     "Slack",
     "Snowflake",
     "Stripe",
+    "Twenty",
     "Xero",
     "Zoho CRM"
    ]
   },
   "Access unverified": {
-   "count": 14,
+   "count": 13,
    "apps": [
     "ClickUp",
     "Ecwid",
@@ -201,7 +202,6 @@
     "Shopify",
     "Smartsheet",
     "Threads (Meta)",
-    "Twenty",
     "WhatsApp Business",
     "Zendesk"
    ]
@@ -222,13 +222,14 @@
    ]
   },
   "Partner gate": {
-   "count": 5,
+   "count": 6,
    "apps": [
     "Aircall",
     "Amazon Selling Partner",
     "Copper",
     "Datadog",
-    "Front"
+    "Front",
+    "Salesforce"
    ]
   },
   "Paid gate": {
@@ -251,7 +252,7 @@
  "blockers": {
   "App review": 37,
   "Insufficient evidence": 8,
-  "Partner gate": 5,
+  "Partner gate": 6,
   "Paid plan": 3
  },
  "by_category": [
@@ -289,6 +290,17 @@
    "official_mcp": 9
   },
   {
+   "category": "CRM and Sales",
+   "n": 10,
+   "self_serve": 7,
+   "gated": 2,
+   "unknown": 1,
+   "needs_review_to_ship": 8,
+   "self_serve_pct": 70.0,
+   "composio_coverage": 9,
+   "official_mcp": 9
+  },
+  {
    "category": "Support and Helpdesk",
    "n": 10,
    "self_serve": 7,
@@ -320,17 +332,6 @@
    "self_serve_pct": 70.0,
    "composio_coverage": 7,
    "official_mcp": 8
-  },
-  {
-   "category": "CRM and Sales",
-   "n": 10,
-   "self_serve": 6,
-   "gated": 2,
-   "unknown": 2,
-   "needs_review_to_ship": 7,
-   "self_serve_pct": 60.0,
-   "composio_coverage": 9,
-   "official_mcp": 9
   },
   {
    "category": "Marketing, Ads, Email and Social",
@@ -605,6 +606,17 @@
     "note": "OAuth registration requires contacting Copper to obtain client_id/client_secret"
    },
    {
+    "app": "Salesforce",
+    "category": "CRM and Sales",
+    "archetype": "Partner gate",
+    "buildability": "Yes",
+    "blocker": "Partner gate",
+    "composio": "salesforce",
+    "tools": 556,
+    "mcp": "Official",
+    "note": "MCP server URLs require org-specific placeholders and My Domain handling; OAuth PKCE is required for hosted MCP."
+   },
+   {
     "app": "Front",
     "category": "Support and Helpdesk",
     "archetype": "Partner gate",
@@ -776,7 +788,7 @@
    {
     "app": "Twenty",
     "category": "CRM and Sales",
-    "archetype": "Access unverified",
+    "archetype": "Open + app review",
     "buildability": "Yes",
     "blocker": "App review",
     "composio": "twenty",
