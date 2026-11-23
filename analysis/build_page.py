@@ -1,4 +1,4 @@
-﻿"""Build the deliverable page + data exports.  Run: python analysis/build_page.py
+"""Build the deliverable page + data exports.  Run: python analysis/build_page.py
 Writes output/index.html, output/data.json, output/records.csv, output/llms.txt.
 All numbers come from data files; prose strings live in the constants below."""
 import csv
@@ -16,11 +16,12 @@ TAGLINE = ("An AI agent researched 100 apps for Composio: how you authenticate, 
            "self-serve or gated, what API and MCP exist, and what it would take to ship an agent toolkit. "
            "Every claim is backed by a source excerpt, and a human audited a sample.")
 LIMITATIONS = [
+    "Pass 3 (L5 community-MCP sweep) was designed after seeing the blind audit errors, so its 77.3% audit score is not blind and likely flatters it. It matches by repo name only: one known false positive (LiveAgent: the vendor's own org), and the 73 changes outside the audit sample were not hand-checked.",
     "Unknown means no verified evidence was found. It is not a claim that the answer is 'no'. 'None found' for MCP means none was found, not that none exists.",
     "The judge (L1) runs on Mistral Small, the same model family as the extractor. Mistral Large was the plan, but it timed out (>60 s per call) on this key, so the judge is less independent than intended.",
     "Evidence-strict by design: when the docs pages we fetched don't state something (often the go-live approval), the field becomes Unknown even when the answer is 'well known'.",
     "The browser loop (L4) ran on only 8 audit apps. TinyFish browser runs averaged ~17 steps (~$0.30) and run one at a time, so it was capped on cost and time.",
-    "The human audit covers 15 apps Ã— 6 claims (90 claims), one person, in about an hour. The confidence intervals are wide, and the human can be wrong too.",
+    "The human audit covers 15 apps x 6 claims (90 claims), one person, in about an hour. The confidence intervals are wide, and the human can be wrong too.",
     "Composio coverage is a snapshot of the catalog (1,842 toolkits) taken on 2026-11-23. Matching is exact name, a reviewed alias, or a single-product domain. Renamed toolkits can be missed, and that's preferred over false matches.",
     "Only public docs were read. Pages behind a login and partner portals were not.",
 ]
@@ -45,7 +46,7 @@ PIPELINE_LOOPS = [
     ("L3", "Agentic re-pass", "tool-calling search/fetch on disputed claims"),
     ("L4", "TinyFish browser agent", "a real browser navigates the docs; its quotes are re-fetched and must match (audit apps)"),
 ]
-PIPELINE_END = [("Pass 2", "after loops"), ("Human blind audit", "scored against the human"), ("Final", "human corrections tier")]
+PIPELINE_END = [("Pass 2", "after L0-L4"), ("Human blind audit", "scored against the human"), ("L5 community-MCP sweep", "added after the audit, all 100 apps; pass 3 score not blind"), ("Pass 3", "after L5"), ("Final", "human corrections tier")]
 COMPOSIO_LEDGER = [
     ("C1", "Catalog: toolkit exists, slug and tool count for all 100 apps", "Used",
      "REST v3.1 /toolkits with cursor pagination (1,842 toolkits). The Python SDK's toolkits.get() returned only the first 1,000, with no cursor."),
@@ -475,7 +476,7 @@ const unkF=R.reduce((a,r)=>a+["auth_methods","dev_access","prod_gate","public_ap
 const defeated=R.filter(r=>r.archetype==="Defeated").map(r=>r.app_name);
 const ml=[`Dataset in use: ${B.dataset}. ${N} apps; ${B.n_pass1} in the frozen pass 1.`,
  `${unkF} core fields across all apps are Unknown (kept as Unknown rather than guessed).`,
- `Defeated apps (no usable evidence found): ${defeated.length?defeated.join(", "):"none"}.`];
+ `Defeated apps (no usable evidence at all): ${defeated.length?defeated.join(", "):"none"}. Not fully resolved (buildability Unknown: API found but access could not be verified): ${R.filter(r=>r.buildability==="Unknown").map(r=>r.app_name).join(", ")||"none"}.`];
 if(A){const x=A.pass2||{};ml.push(`Human audit sample: ${A.sample_apps} apps, ${A.claims_total} claims; precision CI95 ${x.precision_ci95?x.precision_ci95.map(v=>(v*100).toFixed(0)+"%").join(" to "):"n/a"}.`)}
 else ml.push("Human audit not yet scored: no accuracy figures are claimed.");
 for(const s of [...ml,...cp.limitations])$("limits").append(h("li",{},s));

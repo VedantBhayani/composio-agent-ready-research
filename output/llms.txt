@@ -1,7 +1,7 @@
 # 100 Apps, Agent-Ready?
 
 What this is: a researched dataset of 100 apps (auth, access gating, API, MCP, Composio toolkit coverage) built by an AI agent for Composio, with source evidence per claim.
-Generated: 2026-11-23 21:41. Dataset: final.jsonl.
+Generated: 2026-11-23 21:50. Dataset: final.jsonl.
 
 ## Headline numbers
 - OAuth2 in 75.0% of apps; API key in 54.0%.
