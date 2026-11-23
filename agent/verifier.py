@@ -95,7 +95,8 @@ Allowed values: auth_methods = list from OAuth2, API key, Basic, Token, Other (c
 dev_access = Free self-serve | Free trial | Paid plan | Approval required | Partner or contact sales | Unknown;
 prod_gate = None | App review | Partner program | Unknown; public_api = yes | no | unknown;
 mcp = Official | Community | Both | None found | Unknown.
-Rules: paid API is still a public API; prod_gate 'None' needs an excerpt saying no approval is needed; an API on Enterprise/paid tiers only is 'Paid plan'."""
+Rules: paid API is still a public API; prod_gate 'None' needs an excerpt saying no approval is needed; an API on Enterprise/paid tiers only is 'Paid plan'.
+dev_access 'Free self-serve' is supported when the excerpts show a developer can create the credentials themselves (e.g. generate an API key / personal access token / register an app in their account or developer portal) AND either a free plan/free account/free developer sandbox exists or nothing says a paid plan is required. Explicit 'free' wording is not mandatory if self-service creation is shown and no paywall is mentioned."""
 
 
 async def l1(r: AppRecord, only: set | None = None, include_unknown=False) -> tuple[list[Verdict], dict]:
@@ -173,6 +174,9 @@ REPASS_SYS = """You re-research specific fields for one app using the tools. Pre
 Call search then fetch the most relevant official pages (max 3 fetches). Then answer every requested field
 with a value and VERBATIM excerpts (exact sentences) from pages you fetched, with their exact url.
 If you cannot find a direct statement, answer Unknown with no evidence. Never invent urls or quotes.
+Where to look: for dev_access, find the page that says how to create an account / API key / personal access token
+/ developer app, and the pricing page that says whether the API is on the free plan; for prod_gate, find the
+app review / marketplace publishing / partner program page; for mcp, find the vendor's MCP server page.
 Value vocab: auth_methods = comma list of OAuth2, API key, Basic, Token, Other; dev_access = Free self-serve |
 Free trial | Paid plan | Approval required | Partner or contact sales | Unknown; prod_gate = None | App review |
 Partner program | Unknown; public_api = yes | no | unknown; mcp = Official | Community | Both | None found | Unknown."""
@@ -205,9 +209,18 @@ async def l3(r: AppRecord, fields: list[str], reasons: dict, http, budget) -> tu
     messages = [{"role": "system", "content": REPASS_SYS},
                 {"role": "user", "content": f"APP: {r.app_name} ({r.category}). Official docs: {r.official_docs_url}\nFields to re-research:\n{want}"}]
     usd, calls = 0.0, []
-    for _ in range(6):
-        resp = await asyncio.to_thread(client().chat.complete, model=C.EXTRACT_MODEL, messages=messages,
-                                       tools=TOOLS, tool_choice="auto", temperature=0, max_tokens=1500)
+    async def complete():
+        for i in range(5):  # rate limits (429) are expected at this concurrency: back off, never give up silently
+            try:
+                return await asyncio.to_thread(client().chat.complete, model=C.EXTRACT_MODEL, messages=messages,
+                                               tools=TOOLS, tool_choice="auto", temperature=0, max_tokens=1500)
+            except Exception as e:
+                if i == 4:
+                    raise
+                await asyncio.sleep(15 if "429" in str(e) else 3 * (2 ** i))
+
+    for _ in range(5):
+        resp = await complete()
         u = resp.usage
         usd += (u.prompt_tokens * C.PRICE_MISTRAL[C.EXTRACT_MODEL][0] + u.completion_tokens * C.PRICE_MISTRAL[C.EXTRACT_MODEL][1]) / 1e6
         m = resp.choices[0].message
@@ -457,7 +470,7 @@ async def run(browser_inline: bool = False):
     todo = [r for r in p1 if r["app_id"] not in skip]
     print(f"verify: {len(todo)} (already done: {len(skip)})")
     budget = {"fetches": 400, "browser_runs": 15 if browser_inline else 0}
-    sem = asyncio.Semaphore(6)
+    sem = asyncio.Semaphore(4)
     lock = asyncio.Lock()
     async with httpx.AsyncClient() as http:
         async def one(rec):
@@ -474,4 +487,5 @@ async def run(browser_inline: bool = False):
                 except Exception as e:
                     print(f"  ERR {rec['app_id']} {rec['app_name']}: {type(e).__name__}: {str(e)[:200]}")
         await asyncio.gather(*(one(r) for r in todo))
+
 

@@ -19,7 +19,7 @@ Buildability = Literal["Yes", "Partial", "No", "Unknown"]
 Blocker = Literal["None", "Paid plan", "Partner gate", "App review", "No public interface",
                   "Insufficient evidence"]
 Archetype = Literal["Open API", "Open + app review", "Approval gate", "Paid gate", "Partner gate", "MCP-only",
-                    "Skill-only", "Defeated"]
+                    "Skill-only", "Access unverified", "Defeated"]
 Confidence = Literal["High", "Medium", "Low"]
 
 CORE_FIELDS = ["auth_methods", "dev_access", "prod_gate", "public_api", "api_type", "mcp"]
@@ -101,4 +101,5 @@ class AppRecord(BaseModel):
     verification_status: Literal["pass1", "reverified", "human_corrected"] = "pass1"
     trace: dict = {}
     last_verified: str = ""
+
 

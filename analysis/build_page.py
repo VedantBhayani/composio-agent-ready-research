@@ -1,4 +1,4 @@
-"""Build the deliverable page + data exports.  Run: python analysis/build_page.py
+﻿"""Build the deliverable page + data exports.  Run: python analysis/build_page.py
 Writes output/index.html, output/data.json, output/records.csv, output/llms.txt.
 All numbers come from data files; prose strings live in the constants below."""
 import csv
@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent.parent
 DATA, OUT = ROOT / "data", ROOT / "output"
 
 # ------------------------- editable copy -------------------------
-REPO_URL = "https://github.com/REPLACE/ME"
+REPO_URL = "https://github.com/VedantBhayani/composio-agent-ready-research"
 PAGE_TITLE = "100 Apps, Agent-Ready?"
 TAGLINE = ("An AI agent researched 100 apps for Composio: how you authenticate, whether access is "
            "self-serve or gated, what API and MCP exist, and what it would take to ship an agent toolkit. "
@@ -20,7 +20,7 @@ LIMITATIONS = [
     "The judge (L1) runs on Mistral Small, the same model family as the extractor. Mistral Large was the plan, but it timed out (>60 s per call) on this key, so the judge is less independent than intended.",
     "Evidence-strict by design: when the docs pages we fetched don't state something (often the go-live approval), the field becomes Unknown even when the answer is 'well known'.",
     "The browser loop (L4) ran on only 8 audit apps. TinyFish browser runs averaged ~17 steps (~$0.30) and run one at a time, so it was capped on cost and time.",
-    "The human audit covers 15 apps × 6 claims (90 claims), one person, in about an hour. The confidence intervals are wide, and the human can be wrong too.",
+    "The human audit covers 15 apps Ã— 6 claims (90 claims), one person, in about an hour. The confidence intervals are wide, and the human can be wrong too.",
     "Composio coverage is a snapshot of the catalog (1,842 toolkits) taken on 2026-11-23. Matching is exact name, a reviewed alias, or a single-product domain. Renamed toolkits can be missed, and that's preferred over false matches.",
     "Only public docs were read. Pages behind a login and partner portals were not.",
 ]
@@ -468,3 +468,4 @@ $("foot").append(h("a",{href:cp.repo},"Repo"),h("a",{href:cp.repo+"/blob/main/RE
 
 if __name__ == "__main__":
     main()
+

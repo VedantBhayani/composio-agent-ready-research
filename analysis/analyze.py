@@ -72,8 +72,14 @@ def main():
     def gated_or_unknown(rs):
         return pct(sum(r["buildability"] in ("Partial", "No", "Unknown") for r in rs), len(rs))
 
+    via_api = [r for r in recs if r["public_api"] == "yes" and r["api_type"] != "CLI/library"
+               and r["dev_access"] in self_serve and r["prod_gate"] in ("None", "Unknown")]
+    via_mcp_only = [r for r in recs if r["buildability"] == "Yes" and r not in via_api]
     ins = {
         "dataset": src, "n_apps": n,
+        "buildable_paths": {"self_serve_api": len(via_api), "official_mcp_only": len(via_mcp_only),
+                            "official_mcp_only_apps": sorted(r["app_name"] for r in via_mcp_only),
+                            "note": "Yes = self-serve API path OR vendor MCP path; split shown so MCP does not hide API gating"},
         "auth": {"counts": dict(auth.most_common()), "unknown": auth_unknown, "oauth_any": oauth_any,
                  "api_key_any": key_any, "both_oauth_and_key": both,
                  "oauth_pct": pct(oauth_any, n), "api_key_pct": pct(key_any, n), "both_pct": pct(both, n)},

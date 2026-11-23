@@ -73,8 +73,8 @@ def archetype(r: AppRecord) -> str:
         return "Open + app review"
     if r.dev_access in SELF_SERVE:
         return "Open API"
-    if r.public_api == "no":
-        return "Defeated"
+    if r.public_api == "yes":
+        return "Access unverified"  # API documented, but how credentials are obtained could not be verified
     return "Defeated"
 
 

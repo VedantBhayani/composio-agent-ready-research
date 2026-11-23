@@ -9,3 +9,5 @@
 | Checklist (blind, seed 42) | — | 19:28 | 19:31 | 3m | 15 apps × 6 claims |
 | Verifier v1 run | est. 25 m | 19:33 | 19:39 | stopped | bugs: L1 narrowed auth; L4 quotes never mapped; L4 queue ~3 min/run; Large judge timeouts |
 | Verifier v2 (L0–L3, all 100) | est. 100 ÷ ~5.5/min ≈ 18 m | 19:42 | | | browser L4 split out as its own step |
+| Verifier v2 (L0-L3) | est. 18m | 19:42 | 19:53 | 11m | REVIEW: 35 apps' L3 died on Mistral 429 (no retry) -> unjust Unknowns. Superseded (kept in data/superseded/). |
+| Verifier v3 (retry + targeted re-pass + judge rule for self-serve) | est. 100 / ~6 per min = 17m | 19:54 | | | |

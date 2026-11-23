@@ -48,6 +48,7 @@ def test_no_public_interface():
 def test_unknown_access_is_not_guessed():
     r = rec(dev_access="Unknown")
     assert r.buildability == "Unknown" and r.main_blocker == "Insufficient evidence"
+    assert r.archetype == "Access unverified"
 
 
 def test_defeated_when_nothing_known():
