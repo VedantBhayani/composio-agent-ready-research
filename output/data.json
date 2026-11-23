@@ -6,9 +6,7 @@
     "description": "Salesforce: AI-powered CRM platform with APIs and MCP servers",
     "official_docs_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
     "auth_methods": [
-      "OAuth2",
-      "API key",
-      "Token"
+      "OAuth2"
     ],
     "auth_notes": "Bearer token = access token; OAuth2 flows include client credentials, authorization code (PKCE), and JWT-based tokens; API key may refer to client ID/secret in connected apps",
     "dev_access": "Free self-serve",
@@ -220,6 +218,19 @@
         "excerpt_match": true,
         "verifier": "supported",
         "loop": "L4"
+      },
+      {
+        "claim_field": "auth_methods",
+        "claim": "auth = OAuth2 (human)",
+        "source_url": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+        "source_title": "human check",
+        "supporting_excerpt": "",
+        "source_type": "official",
+        "retrieved_at": "",
+        "fetched_via": "none",
+        "excerpt_match": null,
+        "verifier": "supported",
+        "loop": "human"
       },
       {
         "claim_field": "dev_access",

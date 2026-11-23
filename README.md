@@ -10,7 +10,7 @@ An agent that researches 100 apps and asks of each one: **could this be an agent
 
 **Findings** (from `data/insights.json`, computed on `final.jsonl`):
 - **Free to start, gated to ship.** 68 of 100 apps let a developer get credentials on their own (63 free self-serve, 5 free trial). App review before going live is the #1 blocker (36 apps), followed by partner gates (6) and paid plans (4).
-- **OAuth2 leads:** it appears in 75% of apps and API keys in 55%; 38% support both.
+- **OAuth2 leads:** it appears in 75% of apps and API keys in 54%; 37% support both.
 - **There are two roads to "buildable":** 86 apps rate Yes, Partial 9 and Unknown 5. Of those 86, only 45 get there through a self-serve REST API. The rest rely on the vendor's official MCP server while the API itself is gated.
 - **Composio** has a toolkit for 80 of 100 apps. Apps without one skew gated or unknown: 30% of them, against 10% of covered apps. Fourteen buildable apps have no toolkit yet, which makes them a build-now list (DealCloud, LiveAgent, Gladly, Vonage, systeme.io, WooCommerce, Squarespace, fanbasis, SE Ranking, Binance, Paygent Connect, iPayX, Reducto, Mermaid CLI).
 
@@ -18,11 +18,11 @@ An agent that researches 100 apps and asks of each one: **could this be an agent
 
 | | Pass 1 | Pass 2 (after loops) | Final |
 |---|---|---|---|
-| Precision on answered | 71.9% (64/89), CI95 62-80% | 69.0% (60/87), CI95 59-78% | matches human by construction |
+| Precision on answered | 71.1% (64/90), CI95 61-80% | 68.2% (60/88), CI95 58-77% | matches human by construction |
 | Abstained (Unknown) | 0 | 2 | 0 |
 | Unsupported (excerpt not in page) | 5 | 0 | - |
 
-One human answer was outside the allowed values (Salesforce auth: "yes, Rest") and is excluded as unresolved.
+All 90 human answers were scorable. The human fixed one data-entry slip in the truth file before the final score: the Salesforce auth row held a public_api answer and now reads OAuth2. See human_log.md.
 
 **The honest result: the automated loops did not raise precision.** The confidence intervals overlap, so the 3-point drop is noise rather than a gain, and nothing here shows the "lower first pass rising to higher" pattern from the automated loops alone. The rise comes from the human tier. What the loops did achieve:
 - **Grounding.** Unsupported claims fell from 5 to 0. Unverified fields became Unknown instead of staying guesses.

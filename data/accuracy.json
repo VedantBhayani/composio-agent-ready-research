@@ -18,24 +18,23 @@
  ],
  "claims_total": 90,
  "pass1": {
-  "checked": 89,
+  "checked": 90,
   "correct": 64,
-  "incorrect": 25,
+  "incorrect": 26,
   "abstained_unknown": 0,
-  "unresolved": 1,
+  "unresolved": 0,
   "unsupported": 5,
-  "precision_on_answered": 0.719,
+  "precision_on_answered": 0.711,
   "precision_ci95": [
-   0.618,
-   0.802
+   0.61,
+   0.795
   ],
   "answer_rate": 1.0,
-  "strict_accuracy": 0.719,
+  "strict_accuracy": 0.711,
   "by_claim": {
    "auth": {
-    "unresolved": 1,
-    "correct": 5,
-    "incorrect": 9
+    "incorrect": 10,
+    "correct": 5
    },
    "access": {
     "correct": 11,
@@ -56,6 +55,14 @@
    }
   },
   "errors": [
+   {
+    "app": "Salesforce",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Token",
+    "human": "OAuth2",
+    "human_source": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "notes": ""
+   },
    {
     "app": "Salesforce",
     "claim": "mcp",
@@ -263,24 +270,23 @@
   }
  },
  "pass2": {
-  "checked": 89,
+  "checked": 90,
   "correct": 60,
-  "incorrect": 27,
+  "incorrect": 28,
   "abstained_unknown": 2,
-  "unresolved": 1,
+  "unresolved": 0,
   "unsupported": 0,
-  "precision_on_answered": 0.69,
+  "precision_on_answered": 0.682,
   "precision_ci95": [
-   0.586,
-   0.777
+   0.579,
+   0.77
   ],
   "answer_rate": 0.978,
-  "strict_accuracy": 0.674,
+  "strict_accuracy": 0.667,
   "by_claim": {
    "auth": {
-    "unresolved": 1,
-    "correct": 4,
-    "incorrect": 10
+    "incorrect": 11,
+    "correct": 4
    },
    "access": {
     "incorrect": 6,
@@ -303,6 +309,14 @@
    }
   },
   "errors": [
+   {
+    "app": "Salesforce",
+    "claim": "auth",
+    "agent": "API key;OAuth2;Token",
+    "human": "OAuth2",
+    "human_source": "https://developer.salesforce.com/docs/platform/api-rest/guide/quickstart-oauth.html",
+    "notes": ""
+   },
    {
     "app": "Salesforce",
     "claim": "access",
@@ -542,11 +556,11 @@
   }
  },
  "final": {
-  "checked": 89,
-  "correct": 89,
+  "checked": 90,
+  "correct": 90,
   "incorrect": 0,
   "abstained_unknown": 0,
-  "unresolved": 1,
+  "unresolved": 0,
   "unsupported": 2,
   "precision_on_answered": 1.0,
   "precision_ci95": [
@@ -557,8 +571,7 @@
   "strict_accuracy": 1.0,
   "by_claim": {
    "auth": {
-    "unresolved": 1,
-    "correct": 14
+    "correct": 15
    },
    "access": {
     "correct": 15

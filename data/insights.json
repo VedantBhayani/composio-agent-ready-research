@@ -52,17 +52,17 @@
  "auth": {
   "counts": {
    "OAuth2": 75,
-   "API key": 55,
-   "Token": 41,
+   "API key": 54,
+   "Token": 40,
    "Basic": 12
   },
   "unknown": 1,
   "oauth_any": 75,
-  "api_key_any": 55,
-  "both_oauth_and_key": 38,
+  "api_key_any": 54,
+  "both_oauth_and_key": 37,
   "oauth_pct": 75.0,
-  "api_key_pct": 55.0,
-  "both_pct": 38.0
+  "api_key_pct": 54.0,
+  "both_pct": 37.0
  },
  "dev_access": {
   "Free self-serve": 63,
